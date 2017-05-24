@@ -1,0 +1,257 @@
+<!-- user menu and cart -->				
+<div class="menu-login">
+	<input class="btn-menu-login-click hidden" id="menu-login-click" type="checkbox">
+	<label for="menu-login-click"></label>			
+	<div class="not-logged-in">
+		<ul class="menu-login-cart">
+			<li class="user-menu__item">
+				<a id="js-login" href="/#/login/" title="Войти" class="menu-login__login">Войти на сайт</a>
+			</li>
+			<li class="user-menu__item">
+				<!-- cart -->	
+				<div class="cart-menu dropdown" style="">
+					<a id="cart_dropdown__trigger" href="javascript:void(0);" data-target="cart" class="with-icon dropdown__trigger icon__cart">Корзина<sup class="circles-menu__num">10</sup></a>
+					<div id="cart_dropdown__content" data-target="cart" class="cart-menu dropdown__content hidden">
+						<div class="cart-menu__body">
+							<ol class="b-cart-menu__goods">
+								<li class="cart-menu__goods-item order-item">
+									<div class="order-item__img">
+										<img src="../images/pages/catalog/book1.jpg" title="Гигантский транспорт">
+									</div>						
+									<div class="order-item__name"><span>Гигантский транспорт</span></div>
+									<div class="order-item__cost price_item"><span class="price__number">2400.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+									<div class="order-item__drop"></div>
+									<a href="javascript:void(0);" class="cart-menu__bay-button">Купить</a>
+								</li>
+								
+								<li class="cart-menu__goods-item order-item">
+									<div class="order-item__img">
+										<img src="../images/pages/catalog/book2.jpg" title="психология отношений">
+									</div>						
+									<div class="order-item__name"><span>психология отношений</span></div>
+									<div class="order-item__cost price_item"><span class="price__number">1999.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+									<div class="order-item__drop"></div>
+									<a href="javascript:void(0);" class="cart-menu__bay-button">Купить</a>
+								</li>
+								
+								<li class="cart-menu__goods-item order-item">
+									<div class="order-item__img">
+										<img src="../images/pages/catalog/book2-2.jpg" title="Playstation Network (PSN) 50 регион - USA [Цифровая Версия]">
+									</div>						
+									<div class="order-item__name"><span>Playstation Network (PSN) 50 регион - USA [Цифровая Версия]</span></div>
+									<div class="order-item__cost price_item"><span class="price__number">3990.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+									<div class="order-item__drop"></div>
+									<a href="javascript:void(0);" class="cart-menu__bay-button">Купить</a>
+								</li>
+								
+								<li class="cart-menu__goods-item order-item">
+									<div class="order-item__img">
+										<img src="../images/pages/catalog/book2-3.jpg" title="обучение фотошоп">
+									</div>						
+									<div class="order-item__name"><span>обучение фотошоп</span></div>
+									<div class="order-item__cost price_item"><span class="price__number">2999.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+									<div class="order-item__drop"></div>
+									<a href="javascript:void(0);" class="cart-menu__bay-button">Купить</a>
+								</li>
+								
+								<li class="cart-menu__goods-item order-item">
+									<div class="order-item__img">
+										<img src="../images/pages/catalog/book2-4.jpg" title="Мое любимое животное">
+									</div>						
+									<div class="order-item__name"><span>Мое любимое животное</span></div>
+									<div class="order-item__cost price_item"><span class="price__number">1100.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+									<div class="order-item__drop"></div>
+									<a href="javascript:void(0);" class="cart-menu__bay-button">Купить</a>
+								</li>
+								
+								<li class="cart-menu__goods-item order-item">
+									<div class="order-item__img">
+										<img src="../images/pages/catalog/book3-1.jpg" title="лечебная физкультура">
+									</div>						
+									<div class="order-item__name"><span>лечебная физкультура</span></div>
+									<div class="order-item__cost price_item"><span class="price__number">1999.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+									<div class="order-item__drop"></div>
+									<a href="javascript:void(0);" class="cart-menu__bay-button">Купить</a>
+								</li>
+								
+								<li class="cart-menu__goods-item order-item">
+									<div class="order-item__img">
+										<img src="../images/pages/catalog/book3-2.jpg" title="Рисование. Полное руководство">
+									</div>						
+									<div class="order-item__name"><span>Рисование. Полное руководство</span></div>
+									<div class="order-item__cost price_item"><span class="price__number">2100.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+									<div class="order-item__drop"></div>
+									<a href="javascript:void(0);" class="cart-menu__bay-button">Купить</a>
+								</li>
+							</ol>
+							<a href="store-cart.html" class="cart-menu__cart-button">В корзину</a>
+							<a href="store-cart.html" class="btn cart-menu__order-button">
+								<p class="cart-menu__results">Купить за <span class="cart-menu__amount price_items"><span class="price__number">16587</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">РУБ.</span></span></p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /cart -->
+			</li>
+			<li class="user-menu__item">
+				<a href="store-bookmarks.html" title="Закладки" class="user-menu__bookmarks">Закладки</a>
+			</li>						
+		</ul>
+	</div>
+	<div class="logged-in">
+		<ul class="menu-login-cart">
+			<li class="user-menu__item">
+				<a href="profile.html" class="user-menu__profile"><span class="user-menu__name">user@mail.com</span></a>
+			</li>
+			<li class="user-menu__item">
+				<!-- cart -->	
+				<div class="cart-menu dropdown" style="">
+					<a id="cart_dropdown__trigger" href="javascript:void(0);" data-target="cart" class="with-icon dropdown__trigger icon__cart">Корзина<sup class="circles-menu__num">10</sup></a>
+					<div id="cart_dropdown__content" data-target="cart" class="cart-menu dropdown__content hidden">
+						<div class="cart-menu__body">
+							<ol class="b-cart-menu__goods">
+								<li class="cart-menu__goods-item order-item">
+									<div class="order-item__img">
+										<img src="../images/pages/catalog/book1.jpg" title="Гигантский транспорт">
+									</div>						
+									<div class="order-item__name"><span>Гигантский транспорт</span></div>
+									<div class="order-item__cost price_item"><span class="price__number">2400.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+									<div class="order-item__drop"></div>
+									<a href="javascript:void(0);" class="cart-menu__bay-button">Купить</a>
+								</li>
+								
+								<li class="cart-menu__goods-item order-item">
+									<div class="order-item__img">
+										<img src="../images/pages/catalog/book2.jpg" title="психология отношений">
+									</div>						
+									<div class="order-item__name"><span>психология отношений</span></div>
+									<div class="order-item__cost price_item"><span class="price__number">1999.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+									<div class="order-item__drop"></div>
+									<a href="javascript:void(0);" class="cart-menu__bay-button">Купить</a>
+								</li>
+								
+								<li class="cart-menu__goods-item order-item">
+									<div class="order-item__img">
+										<img src="../images/pages/catalog/book2-2.jpg" title="Playstation Network (PSN) 50 регион - USA [Цифровая Версия]">
+									</div>						
+									<div class="order-item__name"><span>Playstation Network (PSN) 50 регион - USA [Цифровая Версия]</span></div>
+									<div class="order-item__cost price_item"><span class="price__number">3990.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+									<div class="order-item__drop"></div>
+									<a href="javascript:void(0);" class="cart-menu__bay-button">Купить</a>
+								</li>
+								
+								<li class="cart-menu__goods-item order-item">
+									<div class="order-item__img">
+										<img src="../images/pages/catalog/book2-3.jpg" title="обучение фотошоп">
+									</div>						
+									<div class="order-item__name"><span>обучение фотошоп</span></div>
+									<div class="order-item__cost price_item"><span class="price__number">2999.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+									<div class="order-item__drop"></div>
+									<a href="javascript:void(0);" class="cart-menu__bay-button">Купить</a>
+								</li>
+								
+								<li class="cart-menu__goods-item order-item">
+									<div class="order-item__img">
+										<img src="../images/pages/catalog/book2-4.jpg" title="Мое любимое животное">
+									</div>						
+									<div class="order-item__name"><span>Мое любимое животное</span></div>
+									<div class="order-item__cost price_item"><span class="price__number">1100.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+									<div class="order-item__drop"></div>
+									<a href="javascript:void(0);" class="cart-menu__bay-button">Купить</a>
+								</li>
+								
+								<li class="cart-menu__goods-item order-item">
+									<div class="order-item__img">
+										<img src="../images/pages/catalog/book3-1.jpg" title="лечебная физкультура">
+									</div>						
+									<div class="order-item__name"><span>лечебная физкультура</span></div>
+									<div class="order-item__cost price_item"><span class="price__number">1999.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+									<div class="order-item__drop"></div>
+									<a href="javascript:void(0);" class="cart-menu__bay-button">Купить</a>
+								</li>
+								
+								<li class="cart-menu__goods-item order-item">
+									<div class="order-item__img">
+										<img src="../images/pages/catalog/book3-2.jpg" title="Рисование. Полное руководство">
+									</div>						
+									<div class="order-item__name"><span>Рисование. Полное руководство</span></div>
+									<div class="order-item__cost price_item"><span class="price__number">2100.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+									<div class="order-item__drop"></div>
+									<a href="javascript:void(0);" class="cart-menu__bay-button">Купить</a>
+								</li>
+							</ol>
+							<a href="profile-cart.html" class="cart-menu__cart-button">В корзину</a>
+							<a href="profile-cart.html" class="btn cart-menu__order-button">
+								<p class="cart-menu__results">Купить за <span class="cart-menu__amount price_items"><span class="price__number">16587</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">РУБ.</span></span></p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /cart -->
+			</li>
+			<li class="user-menu__item">
+				<a href="javascript:void(0);" data-target="purchases" class="user-menu__purchases dropdown__trigger">Мои покупки</a>
+				<div id="purchases_dropdown__content" data-target="purchases" class="purchases-menu dropdown__content hidden">
+					<div class="purchases-menu__body">
+						<ol class="purchases-menu__goods">
+							<li class="purchases-menu__goods-item order-item">
+								<div class="purchases-item__img">
+									<img src="../images/pages/catalog/book1.jpg" title="Playstation Network (PSN) 50 регион - USA [Цифровая Версия]">
+								</div>						
+								<div class="purchases-item__name"><span>Playstation Network (PSN) 50 регион - USA [Цифровая Версия]</span></div>
+								<a href="javascript:void(0);" class="purchases-menu__download-button">Скачать</a>
+							</li>
+							<li class="purchases-menu__goods-item order-item">
+								<div class="purchases-item__img">
+									<img src="../images/pages/catalog/book2.jpg" title="Книга quotЯ - отец: принципы воспитания личностиquot (версия 2.0)">
+								</div>						
+								<div class="purchases-item__name"><span>Книга quotЯ - отец: принципы воспитания личностиquot (версия 2.0)</span></div>
+								<a href="javascript:void(0);" class="purchases-menu__download-button">Скачать</a>
+							</li>
+							<li class="purchases-menu__goods-item order-item">
+								<div class="purchases-item__img">
+									<img src="../images/pages/catalog/book2-2.jpg" title="Гигантский транспорт">
+								</div>						
+								<div class="purchases-item__name"><span>Гигантский транспорт</span></div>
+								<a href="javascript:void(0);" class="purchases-menu__download-button">Скачать</a>
+							</li>
+							<li class="purchases-menu__goods-item order-item">
+								<div class="purchases-item__img">
+									<img src="../images/pages/catalog/book2-3.jpg" title="Мое любимое животное">
+								</div>						
+								<div class="purchases-item__name"><span>Мое любимое животное</span></div>
+								<a href="javascript:void(0);" class="purchases-menu__download-button">Скачать</a>
+							</li>
+							<li class="purchases-menu__goods-item order-item">
+								<div class="purchases-item__img">
+									<img src="../images/pages/catalog/book2-4.jpg" title="психология отношений">
+								</div>						
+								<div class="purchases-item__name"><span>психология отношений</span></div>
+								<a href="javascript:void(0);" class="purchases-menu__download-button">Скачать</a>
+							</li>
+							<li class="purchases-menu__goods-item order-item">
+								<div class="purchases-item__img">
+									<img src="../images/pages/catalog/book3-1.jpg" title="обучение фотошоп">
+								</div>						
+								<div class="purchases-item__name"><span>обучение фотошоп</span></div>
+								<a href="javascript:void(0);" class="purchases-menu__download-button">Скачать</a>
+							</li>
+							<li class="purchases-menu__goods-item order-item">
+								<div class="purchases-item__img">
+									<img src="../images/pages/catalog/book3-2.jpg" data-bind="" title="лечебная физкультура">
+								</div>						
+								<div class="purchases-item__name"><span data-bind="">лечебная физкультура</span></div>
+								<a href="javascript:void(0);" class="purchases-menu__download-button">Скачать</a>
+							</li>
+						</ol>
+						<a href="profile-purchases.html" class="purchases-menu__purchases-button">показать все мои покупки</a>
+					</div>
+				</div>	
+			</li>	
+			<li class="user-menu__item">
+				<a href="profile-bookmarks.html" title="Закладки" class="user-menu__bookmarks">Закладки</a>
+			</li>						
+		</ul>
+	</div>	
+</div>
+<!-- /user menu and cart -->
