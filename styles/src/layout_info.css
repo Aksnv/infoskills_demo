@@ -1457,6 +1457,9 @@ p.user-menu__name{
 
 .product-info--certificate-is {
   float: left;
+  width: 460px;
+  padding-top: 15px;
+  padding-left: 40px;
 }
 
 .product-info__img{
@@ -1534,7 +1537,8 @@ p.user-menu__name{
 
 .product-certificate--is {
   float: left;
-  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-bottom: 45px;
 }
 
 .product-certificate--is .certificate {
@@ -1635,7 +1639,7 @@ p.user-menu__name{
 }
 
 .product-certificate--is .certificate__content a:hover {
-  color: #ffa800!important;
+  text-decoration: none;
 }
 
 .product-certificate--is .certificate__social {

@@ -181,6 +181,10 @@
 		width: 36.5%;
 	}	
 
+	.product-info--certificate-is .product-info__info {
+		width: 100%;
+	}	
+
 	.product-desc, .product-rec, .product-reviews {
 		width: 59.5%;
 	}	
