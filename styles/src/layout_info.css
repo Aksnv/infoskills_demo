@@ -1460,6 +1460,7 @@ p.user-menu__name{
   width: 460px;
   padding-top: 15px;
   padding-left: 40px;
+  background-color: #fff!important;
 }
 
 .product-info__img{
@@ -1755,12 +1756,14 @@ p.user-menu__name{
 }
 
 .product-sell__discont-form{
+  overflow: hidden;
 	margin-top: 10px;
 	padding:0;
 }
 
 .product-sell__discont-input{
-	width: 254px;
+  float: left;
+	width: 252px;
 	height: 42px;
 	padding: 5px;
  	display: inline-block;
@@ -1772,6 +1775,7 @@ p.user-menu__name{
 }
 
 .product-sell__discont-btn{
+  float: right;
 	width: 120px;
 	height: 42px;
 	padding: 0;
@@ -1796,6 +1800,7 @@ p.user-menu__name{
 /* ------ Product description ------ */
 
 .product-desc{
+  clear: both;
 	margin-top: 50px;
     width: 63.5%;
 }

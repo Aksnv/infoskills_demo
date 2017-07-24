@@ -23,6 +23,10 @@
 	.product-info__info {
 		width: 53.5%;
 	}
+
+	.product-info--certificate-is .product-info__info {
+		width: 100%;
+	}	
 	
 }
 
@@ -85,6 +89,10 @@
 	.product-info__info {
 		width: 46.5%;
 	}
+
+	.product-info--certificate-is .product-info__info {
+		width: 100%;
+	}	
 	
 }
 
