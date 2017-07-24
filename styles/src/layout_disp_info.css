@@ -276,11 +276,29 @@
 		width: 74%;
 	}	
 
+	.product-info--certificate-is .product-info__info {
+		width: 100%;
+	}	
+
 	.product-sell{
 		position: relative;
 		top: initial;
 		right: initial;
 		margin-top: 40px;
+	}
+
+	.product-sell--certificate-is {
+		position: relative;
+		margin-top: 5px;
+		margin-bottom: 45px;
+	}
+
+	.product-info--certificate-is {
+		position: absolute;
+		top: 0;
+		left: 460px;
+		padding-top: 5px;
+    padding-left: 30px;
 	}
 
 	.product-sell.sticky {
