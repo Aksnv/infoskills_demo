@@ -436,6 +436,15 @@
 		margin-top: 40px;
 	}
 
+	.product-sell--certificate-is {
+		margin-top: 5px;
+	}
+
+	.product-info--certificate-is {
+		height: 300px;
+		padding-left: 0;
+	}
+
 	.product-sell.sticky {
 		top: initial;
 	}
@@ -778,6 +787,10 @@
 		margin-top: 40px;
 	}	
 
+	.product-info--certificate-is .product-info__info {
+		margin-top: 0;
+	}
+
 	.product-info__img-mob{
 		display: inline-block;
 		margin-left: 5px;
@@ -824,12 +837,24 @@
 		display: block;
 	}
 	
-	.product-desc, .product-rec, .product-reviews  {
+	.product-desc, .product-rec, .product-reviews {
 		width: 100%;
 	}	
 
-	.product-desc__img{
-		display: none;
+	/* .product-desc__img {
+		display: none; 
+	} */
+
+	.product-desc--certificate-is .product-desc__img {
+		position: absolute;
+		top: 140px;
+    left: 330px;
+		width: 80px;
+	}
+
+	.product-desc--certificate-is .product-desc__img a {
+		margin-left: 0;
+		margin-bottom: 8px;
 	}
 
 	.product-reviews__head-filter {
@@ -837,6 +862,14 @@
 		margin-top: 20px;
 		display: block;
 	}	
+
+	.product-certificate--is .certificate__content {
+		margin-left: 40px;
+	}
+
+	.product-certificate--is .certificate__social {
+		margin-bottom: 20px;
+	}
 
 /* Cart */
 	.cart-head{
@@ -1182,11 +1215,22 @@
 		width: 65%;
 	}	
 
+	.product-info--certificate-is {
+		position: absolute;
+		top: -145px;
+    left: 0;
+    padding-left: 40px;
+	}
+
 	.product-sell{
 		position: relative;
 		top: initial;
 		right: initial;
 		margin-top: 40px;
+	}
+
+	.product-sell--certificate-is {
+		margin-top: 108px;
 	}
 
 	.product-sell.sticky {
@@ -1698,12 +1742,10 @@
 
 /* ------ Product certificate ------ */
 
-/* Certificate 750px styles */
-
 @media screen and (max-width: 1023px) {
 
   .product-certificate--is .certificate {
-    width: 710px;
+    width: 700px;
     margin: 0 auto;
     padding-bottom: 33px;
   }
@@ -1718,30 +1760,33 @@
   }
 
   .product-certificate--is .certificate__top {
-    padding-top: 35px;
-    padding-bottom: 45px;
+    padding-top: 70px;
+    padding-bottom: 54px;
   }
 
   .product-certificate--is .certificate__top b {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .product-certificate--is .certificate__image, 
   .product-certificate--is .certificate__content {
-    float: none;
+    /* float: none; */
+    float: left;
   }
 
   .product-certificate--is .certificate__image {
-    width: 100%;
+    /* width: 100%; */
+    width: 220px;
     text-align: center;
-    margin-left: 11px;
+    margin-left: 41px;
+    margin-right: 27px;
     margin-bottom: 33px;
   }
 
   .product-certificate--is .certificate__content {
-    width: auto;
-    margin-left: 100px;
-    margin-left: 100px;
+    /* width: auto; */
+    width: 310px;
+    /* margin-left: 80px; */
   }
 
   .product-certificate--is .certificate__bottom {
@@ -1750,31 +1795,37 @@
 
 }
 
-/* Certificate 360px styles */
+@media screen and (max-width: 759px) {
+
+	.product-certificate--is .certificate {
+		width: 460px;
+	}
+
+}
 
 @media screen and (max-width: 749px) {
 
-  .product-certificate--is .certificate {
+  /* .product-certificate--is .certificate {
     width: 360px;
-  }
+  } */
 
-  .product-certificate--is .certificate-inner {
+  /* .product-certificate--is .certificate-inner {
     width: 84%;
-  }
+  } */
 
   .product-certificate--is .certificate__top {
-    padding-top: 24px;
-    padding-bottom: 42px;
+    padding-top: 70px;
+    padding-bottom: 54px;
   }
 
   .product-certificate--is .certificate__top b {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .product-certificate--is .certificate__image {
-    width: 260px;
-    margin: 0 auto;
-    padding-left: 10px;
+    width: 220px;
+    /* margin: 0 auto;
+    padding-left: 10px; */
   }
 
   .product-certificate--is .certificate__image img {
@@ -1782,18 +1833,19 @@
   }
 
   .product-certificate--is .certificate__content {
-    margin-left: 27px;
-    padding-top: 17px;
+    margin-left: 40px;
+    padding-top: 3px;
   }
 
   .product-certificate--is .certificate__content a {
     display: block;
-    font-size: 14px;
+    /* font-size: 14px; */
   }
 
   .product-certificate--is .certificate-inner h1 {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34px;
     margin-bottom: 10px;
   }
 
