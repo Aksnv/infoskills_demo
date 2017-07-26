@@ -7,7 +7,7 @@
 
 @media screen and (min-width: 1720px) {
 	.section_theme, .container_theme, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
-	.promoBlocks{
+	.promoBlocks, .section_content-menu{
 		width: 1660px;
 	}
 	
@@ -32,7 +32,7 @@
 
 @media screen and (min-width: 1480px) and (max-width: 1719px) {
 	.section_theme, .container_theme, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
-	.promoBlocks{
+	.promoBlocks, .section_content-menu{
 		width: 1420px;
 	}
 
@@ -159,7 +159,7 @@
 
 @media screen and (min-width: 1240px) and (max-width: 1479px) {
 	.section_theme, .container_theme, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
-	.promoBlocks{
+	.promoBlocks, .section_content-menu{
 		width: 1180px;
 	}
 
@@ -201,7 +201,7 @@
 
 @media screen and (min-width: 1000px) and (max-width: 1239px) {
 	.section_theme, .container_theme, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
-	.promoBlocks{
+	.promoBlocks, .section_content-menu{
 		width: 940px;
 	}
 
@@ -333,7 +333,7 @@
 
 @media screen and (min-width: 760px) and (max-width: 999px) {
 	.section_theme, .container_theme, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
-	.promoBlocks{
+	.promoBlocks, .section_content-menu{
 		width: 700px;
 	}
 
@@ -534,7 +534,8 @@
 		overflow-y: auto;
 	}	
 
-	.menu-click-dropdown .section_theme{
+	.menu-click-dropdown .section_theme,
+	.menu-click-dropdown .section_content-menu{
 		width: 100%;
 	}
 	
@@ -1154,7 +1155,7 @@
 
 @media screen and (min-width: 520px) and (max-width: 759px) {
 	.section_theme, .container_theme, .menu-login-cart, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
-	.promoBlocks, .footer_theme .container_theme > div{
+	.promoBlocks, .section_content-menu, .footer_theme .container_theme > div{
 		width: 460px;
 	}
 
@@ -1314,7 +1315,7 @@
 
 @media screen and (max-width: 519px) {
 	.section_theme, .container_theme, .menu-login-cart, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
-	.promoBlocks, .footer_theme .container_theme > div{
+	.promoBlocks, .section_content-menu, .footer_theme .container_theme > div{
 		width: 300px;
 	}
 

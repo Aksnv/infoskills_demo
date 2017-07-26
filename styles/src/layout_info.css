@@ -25,7 +25,7 @@ img:focus {
     display: none; 
 }
 
-.section_theme, .container_theme{
+.section_theme, .section_content-menu, .container_theme{
 	margin: 0 auto;
 	/*padding: 0 4%;
 	position: relative;*/
@@ -215,6 +215,7 @@ img:focus {
 .menu-click-dropdown{
 	text-align: left;
 	padding: 31px 0;
+  padding-bottom: 0;
 	position: absolute;
 	top: 110px;
 	left: 0;
@@ -304,6 +305,28 @@ img:focus {
 	text-transform: none;
 	display: inline-block;
 	margin-right:22px;
+}
+
+.content-menu_wrapper {
+  margin-top: 31px;
+  background-color: #484848;
+}
+
+.section_content-menu li,
+.content-menu_button {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.content-menu_button {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  color: white;
 }
 
 /* ------ hide menu and show menu ------ */
