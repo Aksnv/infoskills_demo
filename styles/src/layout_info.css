@@ -946,6 +946,42 @@ p.user-menu__name{
 	padding: 20px;
 }
 
+/* ------------- Content menu ---------------- */
+
+.content-menu_theme {
+  padding-top: 18px;
+}
+
+.content-menu_theme li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.content-menu_theme .content-menu_button {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 27px;
+  text-transform: none;
+  margin-right: 0;
+  padding-left: 13px;
+  padding-right: 13px;
+  color: #333;
+}
+
+.content-menu_theme .content-menu_button span {
+  border-bottom: 1px dotted #666;
+}
+
+.content-menu_theme .content-menu_button:hover span,
+.content-menu_theme .content-menu_button--active span {
+  border-bottom: none;
+}
+
+.content-menu_theme .content-menu_button--active {
+  font-weight: 700;
+  background-color: #e9e9e7;
+}
+
 
 /* ------------- Second banner ------------- */
 
