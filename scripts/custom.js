@@ -68,3 +68,14 @@ $(".add-review-form__reset").click(function() {
 	$(".add-review-form").toggleClass("add-review-form--open");
 	$(".add-review-button").show();
 });
+
+// Content page -> Help -> Show answer
+
+$(".main-content_help-question").click(function() {
+	if ($(this).children(".main-content_help-answer").css("display") == "block") {
+		$(this).children(".main-content_help-answer").hide();
+	} else {
+		$(this).children(".main-content_help-answer").show();
+	}
+	return false;
+});

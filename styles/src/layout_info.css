@@ -969,10 +969,6 @@ p.user-menu__name{
   color: #333;
 }
 
-.content-menu_theme li:first-child .content-menu_button {
-  padding-left: 0;
-}
-
 .content-menu_theme .content-menu_button span {
   border-bottom: 1px dotted #666;
 }
@@ -1012,8 +1008,75 @@ p.user-menu__name{
   margin-bottom: 34px;
 }
 
+.main-content_theme article > h2 {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.main-content_theme p {
+  max-width: 700px;  
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.main-content_theme ul {
+  margin-bottom: 20px;
+}
+
+.main-content_theme li {
+  list-style-type: disc;
+  line-height: 15px;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.main-content_theme strong {
+  font-weight: 700;
+  color: black;
+}
+
+.main-content_theme a {
+  color: #09c;
+  text-decoration: underline;
+}
+
+.main-content_theme img {
+  margin-bottom: 30px;
+}
+
 .main-content_block {
   float: left;
+}
+
+/* ------------ Content page - Help ----------------- */
+
+.main-content_help-question {
+  max-width: 700px;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.main-content_help-question a {
+  text-decoration: none;
+  margin-bottom: 5px;
+  border-bottom: 1px dotted #09c;
+}
+
+.main-content_help .main-content_help-answer {
+  max-width: 675px;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-left: 20px;
+  border-left: 1px solid #09c;
 }
 
 /* ------------ Content page - Contacts ----------------- */
@@ -1027,19 +1090,7 @@ p.user-menu__name{
 }
 
 .main-content_contacts-block p {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #666;
-}
-
-.main-content_contacts-block strong {
-  color: #000;
-}
-
-.main-content_contacts-block a {
-  color: #09c;
-  text-decoration: underline;
+  margin-bottom: 0;
 }
 
 .main-content_contacts-map {
