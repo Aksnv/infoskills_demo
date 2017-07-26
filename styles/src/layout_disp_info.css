@@ -608,6 +608,31 @@
 		display: block;
 	}
 
+	.content-menu_wrapper {
+		background-color: transparent;
+	}
+
+	.menu-click-dropdown .section_content-menu {
+		width: 91%;
+	}
+
+	.section_content-menu {
+		padding-top: 20px;
+		padding-left: 5px;
+		border-top: 1px solid #ccc;
+	}
+
+	.section_content-menu li {
+		display: block;
+	}
+
+	.content-menu_button {
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 30px;
+		text-transform: none;
+	}
+
 	/* Search */
 	
 	.search_theme{

@@ -32,6 +32,10 @@
 		color: #ccc;
 	}
 
+	a.content-menu_button {
+		color: #ccc;
+	}
+
 	/* Search */
 	
 	.search_click_slide > input + label{
