@@ -950,6 +950,7 @@ p.user-menu__name{
 
 .content-menu_theme {
   padding-top: 18px;
+  margin-bottom: 47px;
 }
 
 .content-menu_theme li {
@@ -966,6 +967,10 @@ p.user-menu__name{
   padding-left: 13px;
   padding-right: 13px;
   color: #333;
+}
+
+.content-menu_theme li:first-child .content-menu_button {
+  padding-left: 0;
 }
 
 .content-menu_theme .content-menu_button span {
@@ -997,6 +1002,52 @@ p.user-menu__name{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+}
+
+
+/* ------------ Content page ----------------- */
+
+.main-content_theme {
+  overflow: hidden;
+  margin-bottom: 34px;
+}
+
+.main-content_block {
+  float: left;
+}
+
+/* ------------ Content page - Contacts ----------------- */
+
+.main-content_block--left {
+  width: 300px;
+}
+
+.main-content_contacts-block {
+  margin-bottom: 20px;
+}
+
+.main-content_contacts-block p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666;
+}
+
+.main-content_contacts-block strong {
+  color: #000;
+}
+
+.main-content_contacts-block a {
+  color: #09c;
+  text-decoration: underline;
+}
+
+.main-content_contacts-map {
+  margin-bottom: 79px;
+}
+
+.main-content_contacts-map iframe {
+  width: 100%;
 }
 
 
@@ -2484,6 +2535,7 @@ p.user-menu__name{
 /* ---------------  --------------- Footer ---------------  --------------- */
 
 .footer_theme{
+  clear: both;
 	margin-top: 30px;
 	overflow: hidden;	
 }
