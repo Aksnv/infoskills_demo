@@ -312,9 +312,18 @@ img:focus {
 }
 
 .content-menu_wrapper {
-  margin-top: 31px;
+  margin-top: 32px;
   background-color: #484848;
 }
+
+.header_theme.sticky .content-menu_wrapper {
+  margin-top: 36px;
+  border-bottom: 3px solid rgba(0,0,0,0.2);
+}
+
+/* .section_content-menu {
+  text-align: left;
+} */
 
 .section_content-menu li,
 .content-menu_button {
@@ -331,6 +340,14 @@ img:focus {
   text-transform: uppercase;
   margin-right: 20px;
   color: white;
+}
+
+.section_content-menu .content-menu_button {
+  color: #fff;
+}
+
+.section_content-menu .content-menu_button:hover {
+  color: #0099cc;
 }
 
 /* ------ hide menu and show menu ------ */
@@ -814,7 +831,8 @@ p.user-menu__name{
 /* -------------  ------------- Main content -------------  ------------- */
 
 .store_theme{
-	padding-top: 110px;
+	/* padding-top: 110px; */
+  padding-top: 139px;
 }
 
 /* ------------- Slider ------------- */
