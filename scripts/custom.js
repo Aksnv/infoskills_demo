@@ -79,3 +79,12 @@ $(".main-content_help-question").click(function() {
 	}
 	return false;
 });
+
+
+// Store preview gallery
+
+$(".img-fon img").click(function() {
+	var itemImage = $(this).clone();
+	$(".product-info__img-fon img").remove();
+	$(".product-info__img-fon").append(itemImage);
+});
