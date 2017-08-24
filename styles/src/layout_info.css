@@ -564,7 +564,7 @@ img:focus {
 
 .advanced-search__form::before {
   position: absolute;
-  top: 339px;
+  top: 341px;
   left: 0;
   content: "";
   display: block;
@@ -630,7 +630,8 @@ img:focus {
   padding-right: 26px;
 }
 
-.advanced-search__form select:focus {
+.advanced-search__form select:focus,
+.advanced-search__form input:focus {
   outline-width: 2px;
   outline-color: #00c4e0;
   outline-style: solid;
@@ -692,6 +693,57 @@ img:focus {
   cursor: pointer;
 }
 
+.advanced-search__price-range {
+  width: 323px;
+  height: 2px;
+  margin-left: 56px;
+  margin-top: 6px;
+  background-color: white;
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+  border-radius: 0;
+}
+
+.ui-widget-header {
+  background: #09c;
+}
+
+.ui-slider .ui-slider-handle {
+  width: 14px;
+  height: 15px;
+}
+
+.ui-state-default, 
+.ui-widget-content .ui-state-default {
+  background-color: transparent;
+  background-image: url("../../images/sprites.png");
+  background-position: -128px -25px;
+  border: none;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: 2px;
+}
+
+.search-results:first-child {
+  margin-top: 35px;
+}
+
+.search-results h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+}
+
+.search-results .product-info__bookmarks-button {
+  color: #0099cc;
+  font-size: 13px;
+  text-decoration: underline;
+  margin-top: 9px;
+  margin-left: 0;
+}
 
 /* ------------- Logo ------------- */
 
@@ -2732,7 +2784,7 @@ p.user-menu__name{
 
 .bookmarks-container{
   clear: both;
-	margin-top: 20px;
+	margin-top: 37px;
 }
 
 .catalog-item__del-button{

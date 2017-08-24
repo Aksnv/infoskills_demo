@@ -34,8 +34,10 @@
   <script src="../scripts/libs/nwmatcher.js"></script>
   <script src="../scripts/libs/ie8canvas.js"></script>
   <![endif]-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="../scripts/libs/jquery-3.2.1.min.js"></script>
+  <script src="../scripts/libs/jquery-ui.js"></script>
   <link href="../styles/src/reset.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/libs/jquery-ui.css">
   <link href="../styles/src/layout_info.css" rel="stylesheet">
   <link href="../styles/src/layout_disp_info.css" rel="stylesheet"> 
   <link id="theme" href="../themes/default/src/theme_info.css" rel="stylesheet">
@@ -409,7 +411,11 @@
                   <input type="text" name="advanced-search__exclude-words" placeholder="Исключить слова">
                 </li>
                 <li class="advanced-search__range">
-                  <p>Цена <input type="text" name="advanced-search__min-price"> &mdash; <input type="text" name="advanced-search__max-price"><input type="range" name="advanced-search__price-range" start="100" max="99999" step="1"></p>
+                  <p>Цена 
+                    <input type="text" name="advanced-search__min-price" id="advanced-search__min-price" readonly> &mdash; 
+                    <input type="number" name="advanced-search__max-price" id="advanced-search__max-price" readonly>
+                  </p>
+                  <div class="advanced-search__price-range"></div>
                 </li>
                 <li>
                   <input type="submit" name="advanced-search__submit" value="Искать">
@@ -419,286 +425,300 @@
           </div>
         </div>
 
-        <!-- bookmarks-store -->      
-        <div class="bookmarks-container">
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/book1.jpg" title="Гигантский транспорт"></span>
-                <span class="catalog-item__img-title">Гигантский транспорт</span>
-              </a>
+        <div class="search-results">
+          <h3>&laquo;<span>менеджмент</span>&raquo; в разделе <span>Книги</span></h3> 
+
+          <!-- bookmarks-store -->     
+          <div class="bookmarks-container">
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/book1.jpg" title="Гигантский транспорт"></span>
+                  <span class="catalog-item__img-title">Гигантский транспорт</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Гигантский транспорт</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">2400.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
             </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Гигантский транспорт</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">2400.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/book2.jpg" title="Больше денег"></span>
+                  <span class="catalog-item__img-title">Гигантский транспорт очень длинное название книги оченьдлинноеназваниекнигиоченьдлинноеназваниекниги</span>           
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Гигантский транспорт очень длинное название книги оченьдлинноеназваниекнигиоченьдлинноеназваниекниги</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">44444444200.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
             </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/book2.jpg" title="Больше денег"></span>
-                <span class="catalog-item__img-title">Гигантский транспорт очень длинное название книги оченьдлинноеназваниекнигиоченьдлинноеназваниекниги</span>           
-              </a>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/skype.jpg" title="Skype"></span>
+                  <span class="catalog-item__img-title">Гигантскийтранспорточеньдлинноеназваниекнигиоченьдлинноеназваниекнигиоченьдлинноеназваниекниги</span>           
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Гигантскийтранспорточеньдлинноеназваниекнигиоченьдлинноеназваниекнигиоченьдлинноеназваниекниги</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">2000000000000.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
             </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Гигантский транспорт очень длинное название книги оченьдлинноеназваниекнигиоченьдлинноеназваниекниги</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">44444444200.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">          
+                  <span class="catalog-item__img-title">Без картинки товар</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Без картинки товар</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">1.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
             </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/skype.jpg" title="Skype"></span>
-                <span class="catalog-item__img-title">Гигантскийтранспорточеньдлинноеназваниекнигиоченьдлинноеназваниекнигиоченьдлинноеназваниекниги</span>           
-              </a>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/book2-2.jpg" title="Разработка требований к программному обеспечению"></span>
+                  <span class="catalog-item__img-title">Разработка требований к программному обеспечению</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Разработка требований к программному обеспечению</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">541.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
             </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Гигантскийтранспорточеньдлинноеназваниекнигиоченьдлинноеназваниекнигиоченьдлинноеназваниекниги</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">2000000000000.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/book2-3.jpg" title="Стратегия"></span>
+                  <span class="catalog-item__img-title">Стратегия</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Стратегия</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">1347.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
             </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">          
-                <span class="catalog-item__img-title">Без картинки товар</span>
-              </a>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/book2-4.jpg" title="Копирйтинг. Как не съесть собаку"></span>
+                  <span class="catalog-item__img-title">Копирйтинг. Как не съесть собаку</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Копирйтинг. Как не съесть собаку</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">1347.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
             </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Без картинки товар</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">1.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">          
+                  <span class="catalog-item__img-title">Без картинки товар номер 2</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Без картинки товар номер 2</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">390.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
             </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/book2-2.jpg" title="Разработка требований к программному обеспечению"></span>
-                <span class="catalog-item__img-title">Разработка требований к программному обеспечению</span>
-              </a>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/visa.jpg" title="Visa"></span>
+                  <span class="catalog-item__img-title">Visa</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Visa</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">10347.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
             </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Разработка требований к программному обеспечению</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">541.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/book3-1.jpg" title="Психология влияния"></span>
+                  <span class="catalog-item__img-title">Психология влияния</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Психология влияния</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">8347.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
             </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/book2-3.jpg" title="Стратегия"></span>
-                <span class="catalog-item__img-title">Стратегия</span>
-              </a>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/book3-2.jpg" title="Номер 1"></span>
+                  <span class="catalog-item__img-title">Номер 1</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Номер 1</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">27.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
             </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Стратегия</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">1347.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/book3-3.jpg" title="Norton Internet Security"></span>
+                  <span class="catalog-item__img-title">Norton Internet Security</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Norton Internet Security</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">27.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
             </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/book2-4.jpg" title="Копирйтинг. Как не съесть собаку"></span>
-                <span class="catalog-item__img-title">Копирйтинг. Как не съесть собаку</span>
-              </a>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/book2-4.jpg" title="Копирайтинг. Как не съесть собаку"></span>
+                  <span class="catalog-item__img-title">Копирйтинг. Как не съесть собаку</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Копирайтинг. Как не съесть собаку</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">157.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
             </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Копирйтинг. Как не съесть собаку</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">1347.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">          
-                <span class="catalog-item__img-title">Без картинки товар номер 2</span>
-              </a>
-            </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Без картинки товар номер 2</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">390.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/visa.jpg" title="Visa"></span>
-                <span class="catalog-item__img-title">Visa</span>
-              </a>
-            </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Visa</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">10347.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/book3-1.jpg" title="Психология влияния"></span>
-                <span class="catalog-item__img-title">Психология влияния</span>
-              </a>
-            </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Психология влияния</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">8347.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/book3-2.jpg" title="Номер 1"></span>
-                <span class="catalog-item__img-title">Номер 1</span>
-              </a>
-            </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Номер 1</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">27.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/book3-3.jpg" title="Norton Internet Security"></span>
-                <span class="catalog-item__img-title">Norton Internet Security</span>
-              </a>
-            </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Norton Internet Security</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">27.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/book2-4.jpg" title="Копирйтинг. Как не съесть собаку"></span>
-                <span class="catalog-item__img-title">Копирйтинг. Как не съесть собаку</span>
-              </a>
-            </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Копирйтинг. Как не съесть собаку</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">157.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/visa.jpg" title="Visa"></span>
-                <span class="catalog-item__img-title">Visa</span>
-              </a>
-            </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Visa</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">492.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/book2-3.jpg" title="Стратегия"></span>
-                <span class="catalog-item__img-title">Стратегия</span>
-              </a>
-            </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Стратегия</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">550.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/visa.jpg" title="Visa"></span>
+                  <span class="catalog-item__img-title">Visa</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Visa</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">492.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
             </div>
           </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">          
-                <span class="catalog-item__img-title">Заглушка с названием еесли нет обложки</span>
-              </a>
-            </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Заглушка с названием еесли нет обложки</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">22390.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="catalog-item__img-title">Заглушка с названием еесли нет обложки 2</span>
-              </a>
-            </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Заглушка с названием еесли нет обложки 2</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">240.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/book5-4.jpg" title="Сначала скажите 'НЕТ'"></span>
-                <span class="catalog-item__img-title">Сначала скажите 'НЕТ'</span>
-              </a>
-            </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Сначала скажите 'НЕТ'</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">962.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/book5-5.jpg" title="Маркетинг без бюджета"></span>
-                <span class="catalog-item__img-title">Маркетинг без бюджета</span>
-              </a>
-            </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Маркетинг без бюджета</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">371.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item__img">
-              <a href="store-item.html">
-                <span class="img-fon"><img src="../images/pages/catalog/book1.jpg" title="Взлом маркентинга"></span>
-                <span class="catalog-item__img-title">Взлом маркентинга</span>
-              </a>
-            </div>
-            <div class="catalog-item__info">
-              <div class="catalog-item__name"><a href="store-item.html"><span>Взлом маркентинга</span></a></div>
-              <div class="catalog-item__cost price_item"><span class="price__number">3371.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
-              <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
-              <a href="javascript:void(0);" class="catalog-item__del-button i-del">Убрать</a>
-            </div>
-          </div>
+          <!-- /bookmark-store -->
         </div>
-        <!-- /bookmark-store -->
+
+        <div class="search-results">
+          <h3>&laquo;<span>менеджмент</span>&raquo; в разделе <span>Обучение</span></h3> 
+
+          <!-- bookmarks-store -->     
+          <div class="bookmarks-container">
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/book2-3.jpg" title="Стратегия"></span>
+                  <span class="catalog-item__img-title">Стратегия</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Стратегия</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">550.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">          
+                  <span class="catalog-item__img-title">Заглушка с названием еесли нет обложки</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Заглушка с названием еесли нет обложки</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">22390.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="catalog-item__img-title">Заглушка с названием еесли нет обложки 2</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Заглушка с названием еесли нет обложки 2</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">240.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/book5-4.jpg" title="Сначала скажите 'НЕТ'"></span>
+                  <span class="catalog-item__img-title">Сначала скажите 'НЕТ'</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Сначала скажите 'НЕТ'</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">962.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/book5-5.jpg" title="Маркетинг без бюджета"></span>
+                  <span class="catalog-item__img-title">Маркетинг без бюджета</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Маркетинг без бюджета</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">371.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <div class="catalog-item__img">
+                <a href="store-item.html">
+                  <span class="img-fon"><img src="../images/pages/catalog/book1.jpg" title="Взлом маркентинга"></span>
+                  <span class="catalog-item__img-title">Взлом маркентинга</span>
+                </a>
+              </div>
+              <div class="catalog-item__info">
+                <div class="catalog-item__name"><a href="store-item.html"><span>Взлом маркентинга</span></a></div>
+                <div class="catalog-item__cost price_item"><span class="price__number">3371.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
+                <a href="javascript:void(0);" class="btn catalog-item__bay-button">Купить</a>
+                <a href="javascript:void(0);" class="product-info__bookmarks-button i-book">В закладки</a>
+              </div>
+            </div>
+          </div>
+          <!-- /bookmark-store -->
+        </div>
+        
       </div>
       <!-- /content -->
     </div>

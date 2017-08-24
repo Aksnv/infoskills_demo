@@ -128,6 +128,7 @@ $(".advanced-search__top-button").click(function() {
 		$(".advanced-search__bottom").slideDown();
 		$(".advanced-search__form select").css("display", "inline-block");
 		$(".advanced-search__form select + div").css("display", "none");
+		$(".advanced-search__form input + label").css("display", "none");
 	} else {
 		$(this).addClass("advanced-search__top-button--close");
 		$(this).removeClass("advanced-search__top-button--open");
@@ -135,10 +136,30 @@ $(".advanced-search__top-button").click(function() {
 	}
 });
 
-$(".advanced-search__form input").keyup(function() {
-	setTimeout(hideLabel, 10);
-
-	function hideLabel() {
+function hideLabel() {
 		$(".advanced-search__form input + label").hide();
 	};
+
+$(".advanced-search__form input").keyup(function() {
+	setTimeout(hideLabel, 10);
 });
+
+// Advanced search slider range (jQuery UI)
+
+$( function() {
+    $( ".advanced-search__price-range" ).slider({
+      range: true,
+      min: 100,
+      max: 9999,
+      values: [ 100, 5000 ],
+      slide: function( event, ui ) {
+        $( "#advanced-search__min-price" ).val( ui.values[ 0 ] );
+        $( "#advanced-search__max-price" ).val( ui.values[ 1 ] );
+      }
+    });
+    $( "#advanced-search__min-price" ).val( $( ".advanced-search__price-range" ).slider( "values", 0 ) );
+    $( "#advanced-search__max-price" ).val( $( ".advanced-search__price-range" ).slider( "values", 1 ) );
+  } );
+
+// Custom select (jQuery UI)
+
