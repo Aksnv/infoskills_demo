@@ -1980,16 +1980,71 @@ p.user-menu__name{
 	display: none;
 }
 
+/* ------ Product about ------ */
+
+.product-about {
+  clear: both;
+  padding-top: 20px;
+}
+
+.product-about__menu li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 50px;
+}
+
+.product-about__menu-item {
+  font-size: 18px;
+  font-weight: 700;
+  color: #09c;
+  border-bottom: 1px dotted #09c;
+}
+
+.product-about__menu-item--active {
+  color: #000;
+  border-bottom: none;
+  cursor: default;
+}
+
+.product-desc,
+.product-delivery {
+  display: none;
+}
+
+/* ------ Product characteristics ------ */
+
+.product-characteristics {
+  margin-top: 45px;
+}
+
+.product-characteristics table {
+  color: #666;
+}
+
+.product-characteristics table tr > td:first-child {
+  width: 228px;
+  font-weight: 700;
+  color: #000;
+}
+
+.product-characteristics table td {
+  padding-bottom: 6px;
+}
+
 /* ------ Product description ------ */
 
 .product-desc{
   clear: both;
-	margin-top: 50px;
-    width: 63.5%;
+	margin-top: 45px;
+  width: 63.5%;
+}
+
+.product-desc p {
+  font-size: 14px;
 }
 
 .product-desc__img{
-	margin-top: 50px;	
+	margin-top: 45px;	
 }
 
 .product-desc__img a{
@@ -2016,6 +2071,19 @@ p.user-menu__name{
 
 .product-desc__desc{
 	margin-top: 30px;
+}
+
+/* ------ Product delivery ------ */
+
+.product-delivery {
+  width: 59.5%;
+  margin-top: 45px;
+}
+
+.product-delivery p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
 }
 
 /* ------ Product recommendations ------ */
