@@ -495,6 +495,203 @@ img:focus {
     animation:hide-width ease-in 0.3s; 
 }
 
+/* ------------- Advanced search ------------- */
+
+.advanced-search {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.advanced-search__top {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.advanced-search__top-results {
+  float: left;
+  font-size: 13px;
+  padding-top: 5px;
+  color: #666;
+}
+
+.advanced-search__top-results span {
+  font-weight: 700;
+}
+
+.advanced-search__top-button {
+  float: right;
+}
+
+.advanced-search__top-button a {
+  position: relative;
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #09c;
+  border-bottom: 1px dotted #09c;
+}
+
+.advanced-search__top-button a::before {
+  position: absolute;
+  top: 4px;
+  left: -24px;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 8px;
+  background-image: url("../../images/sprites.png");
+}
+
+.advanced-search__top-button--open a::before {
+  background-position: -175px -31px;
+}
+
+.advanced-search__top-button--close a::before {
+  background-position: -152px -31px;
+}
+
+.advanced-search__bottom {
+  display: none;
+  clear: both;
+}
+
+.advanced-search__form {
+  height: 257px;
+  padding-top: 39px;
+  padding-bottom: 30px;
+  background-color: #efece7;
+}
+
+.advanced-search__form::before {
+  position: absolute;
+  top: 339px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 257px;
+  background-color: #efece7;
+  z-index: -1;
+}
+
+.advanced-search__form li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 16px;
+  margin-bottom: 20px;
+}
+
+.advanced-search__form li:nth-child(3n + 3),
+.advanced-search__form li:last-child {
+  margin-right: 0;
+}
+
+.advanced-search__form select,
+.advanced-search__form input {
+  width: 380px;
+  height: 42px;
+  background-color: white;
+  border: 1px solid #d0d4d8;
+}
+
+.advanced-search__form li > label {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.advanced-search__form li > label::before {
+  position: absolute;
+  top: 18px;
+  right: 14px;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 8px;
+  background-image: url("../../images/sprites.png");
+  background-position: -152px -31px;
+  pointer-events: none;
+}
+
+.advanced-search__form li > label::after {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 38px;
+  background-color: #fff;
+  pointer-events: none;
+}
+
+.advanced-search__form select {
+  padding-left: 10px;
+  padding-right: 26px;
+}
+
+.advanced-search__form select:focus {
+  outline-width: 2px;
+  outline-color: #00c4e0;
+  outline-style: solid;
+}
+
+.advanced-search__form .floatlabel-wrapper {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.advanced-search__form input {
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.advanced-search__form input[name="advanced-search__min-price"],
+.advanced-search__form input[name="advanced-search__max-price"] {
+  display: inline-block;
+  vertical-align: top;
+  width: 128px;
+  height: 42px;
+}
+
+.advanced-search__form input[name="advanced-search__min-price"] {
+  margin-left: 20px;
+  margin-right: 23px;
+}
+
+.advanced-search__form input[name="advanced-search__max-price"] {
+  margin-left: 25px;
+  margin-right: 2px;
+}
+
+.advanced-search__range {
+  position: relative;
+}
+
+.advanced-search__range p {
+  line-height: 42px;
+}
+
+.advanced-search__form input[type="range"] {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 323px;
+}
+
+.advanced-search__form input[type="submit"] {
+  width: 780px;
+  height: 42px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  background-color: #00c4e0;
+  color: black;
+  cursor: pointer;
+}
+
 
 /* ------------- Logo ------------- */
 
@@ -2534,6 +2731,7 @@ p.user-menu__name{
 /* ---------------  Bookmarks  --------------- */
 
 .bookmarks-container{
+  clear: both;
 	margin-top: 20px;
 }
 

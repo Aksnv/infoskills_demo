@@ -117,3 +117,28 @@ $(".product-about__menu-item").click(function() {
 		$(".product-delivery").show();
 	}
 });
+
+
+// Advanced search
+
+$(".advanced-search__top-button").click(function() {
+	if ($(this).hasClass("advanced-search__top-button--close")) {
+		$(this).addClass("advanced-search__top-button--open");
+		$(this).removeClass("advanced-search__top-button--close");
+		$(".advanced-search__bottom").slideDown();
+		$(".advanced-search__form select").css("display", "inline-block");
+		$(".advanced-search__form select + div").css("display", "none");
+	} else {
+		$(this).addClass("advanced-search__top-button--close");
+		$(this).removeClass("advanced-search__top-button--open");
+		$(".advanced-search__bottom").slideUp();
+	}
+});
+
+$(".advanced-search__form input").keyup(function() {
+	setTimeout(hideLabel, 10);
+
+	function hideLabel() {
+		$(".advanced-search__form input + label").hide();
+	};
+});

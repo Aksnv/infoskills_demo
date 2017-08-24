@@ -365,7 +365,7 @@
             <div class="advanced-search__top-results">
               <p>Найдено <span>148</span> совпадений</p>
             </div>
-            <div class="advanced-search__top-button">
+            <div class="advanced-search__top-button advanced-search__top-button--close">
               <a href="#">Расширенный поиск</a>
             </div>
           </div>
@@ -373,33 +373,43 @@
             <form name="advanced-search__form" method="" action="" class="advanced-search__form">
               <ul>
                 <li>
-                  <select>
-                    <option>Все категории</option>
-                  </select>
+                  <label>
+                    <select>
+                      <option>Все категории</option>
+                      <option>Книги</option>
+                      <option>Сертификаты</option>
+                    </select>
+                  </label>
                 </li>
                 <li>
-                  <select>
-                    <option>Тип товара</option>
-                  </select>
+                  <label>
+                    <select>
+                      <option>Любой тип товара</option>
+                    </select>
+                  </label>
                 </li>
                 <li>
-                  <select>
-                    <option>Любой продавец</option>
-                  </select>
+                  <label>
+                    <select>
+                      <option>Любой продавец</option>
+                    </select>
+                  </label>
                 </li>
                 <li>
-                  <select>
-                    <option>Любое из слов</option>
-                  </select>
+                  <label>
+                    <select>
+                      <option>Любое из слов</option>
+                    </select>
+                  </label>
                 </li>
                 <li>
-                  <input type="text" name="advanced-search__key-words">
+                  <input type="text" name="advanced-search__key-words" placeholder="Ключевые слова">
                 </li>
                 <li>
-                  <input type="text" name="advanced-search__exclude-words">
+                  <input type="text" name="advanced-search__exclude-words" placeholder="Исключить слова">
                 </li>
-                <li>
-                  <p>Цена <input type="number" name="advanced-search__min-price"> - <input type="number" name="advanced-search__max-price"><input type="range" name="advanced-search__price-range" min="100" max="99999" step="1"></p>
+                <li class="advanced-search__range">
+                  <p>Цена <input type="text" name="advanced-search__min-price"> &mdash; <input type="text" name="advanced-search__max-price"><input type="range" name="advanced-search__price-range" start="100" max="99999" step="1"></p>
                 </li>
                 <li>
                   <input type="submit" name="advanced-search__submit" value="Искать">
@@ -408,7 +418,6 @@
             </form>
           </div>
         </div>
-
 
         <!-- bookmarks-store -->      
         <div class="bookmarks-container">
