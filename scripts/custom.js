@@ -161,5 +161,3 @@ $( function() {
     $( "#advanced-search__max-price" ).val( $( ".advanced-search__price-range" ).slider( "values", 1 ) );
   } );
 
-// Custom select (jQuery UI)
-

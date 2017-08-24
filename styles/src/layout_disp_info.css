@@ -2007,3 +2007,141 @@
 }
 
 /* ------------ END - Content page ----------------- */
+
+/* ------------ Advanced search ----------------- */
+
+@media screen and (max-width: 1239px) {
+
+	.advanced-search__form select, 
+	.advanced-search__form input {
+		width: 300px;
+	}
+
+	.advanced-search__form input[type="submit"] {
+		width: 540px;
+	}
+
+}
+
+@media screen and (max-width: 999px) {
+
+	.advanced-search__form select, 
+	.advanced-search__form input {
+		width: 220px;
+	}
+
+	.advanced-search__form input[type="submit"] {
+		width: 300px;
+	}
+
+}
+
+@media screen and (max-width: 759px) {
+
+	.advanced-search__form,
+	.advanced-search__form::before {
+		height: 380px;
+	}
+
+	.advanced-search__top {
+		margin-bottom: 35px;
+	}
+
+	.advanced-search__form li:nth-child(3n + 3) {
+		margin-right: 16px;
+	}
+
+	.advanced-search__form li:nth-child(2n + 2), 
+	.advanced-search__form li:last-child {
+		margin-right: 0px;
+	}
+
+	.advanced-search__form select, 
+	.advanced-search__form input {
+		width: 220px;
+	}
+
+	.advanced-search__range {
+		margin-left: 38px;
+	}
+
+	.advanced-search__form input[type="submit"] {
+		width: 460px;
+		margin-top: 20px;
+	}
+
+}
+
+@media screen and (max-width: 519px) {
+
+	.advanced-search__top-results {
+		float: none;
+	}
+
+	.advanced-search__top {
+		position: relative;
+		overflow: visible;
+		margin-bottom: 60px;
+	}
+
+	.search-results {
+		margin-top: 50px;
+	}
+
+	.advanced-search__top-button {
+		position: absolute;
+		top: 35px;
+		left: 24px;
+	}
+
+	.advanced-search__form, 
+	.advanced-search__form::before {
+		height: 570px;
+	}
+
+	.advanced-search__form {
+		padding-top: 30px;
+	}
+
+	.advanced-search__form::before {
+		top: 426px;
+	}
+
+	.advanced-search__form select, 
+	.advanced-search__form input {
+		width: 300px;
+	}
+
+	.advanced-search__form input[type="submit"] {
+		width: 300px;
+	}
+
+	.advanced-search__range {
+		margin-left: 0;
+	}
+
+	.advanced-search__form li.advanced-search__range {
+		margin-right: 0;
+	}
+
+	.advanced-search__form input[name="advanced-search__min-price"], 
+	.advanced-search__form input[name="advanced-search__max-price"] {
+		width: 94px;
+	}
+
+	.advanced-search__form input[name="advanced-search__min-price"] {
+		margin-right: 20px;
+	}
+
+	.advanced-search__form input[name="advanced-search__max-price"] {
+		margin-left: 18px;
+		margin-right: 0;
+	}
+
+	.advanced-search__price-range {
+		width: 288px;
+		margin-left: 10px;
+	}
+
+
+}

@@ -727,6 +727,10 @@ img:focus {
   top: 2px;
 }
 
+.search-results {
+  clear: both;
+}
+
 .search-results:first-child {
   margin-top: 35px;
 }
