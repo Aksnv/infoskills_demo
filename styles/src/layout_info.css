@@ -2237,6 +2237,10 @@ p.user-menu__name{
 
 .product-about {
   clear: both;
+  padding-top: 40px;
+}
+
+.product-certificate--is ~ .product-about {
   padding-top: 20px;
 }
 
@@ -2251,6 +2255,7 @@ p.user-menu__name{
   font-weight: 700;
   color: #09c;
   border-bottom: 1px dotted #09c;
+  cursor: pointer;
 }
 
 .product-about__menu-item--active {
