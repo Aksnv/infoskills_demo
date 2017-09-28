@@ -1,0 +1,364 @@
+/* Global styles */
+
+abbr, address, article, aside, audio, b, blockquote, 
+body, canvas, caption, cite, code, dd, del, details, 
+dfn, div, dl, dt, em, fieldset, figcaption, figure, 
+footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, 
+html, i, iframe, img, ins, kbd, label, legend, li, mark, 
+menu, nav, object, ol, p, pre, q, samp, section, small, 
+span, strong, sub, summary, sup, table, tbody, td, tfoot, 
+th, thead, time, tr, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
+
+article, aside, details, figcaption, figure, footer, 
+header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+html {
+  display: block;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased!important;
+  min-width: 515px;
+  font-weight: 400;
+  background: #fff;
+  font-size: 14px;
+  text-align: left;
+  color: #656565;
+  -webkit-font-smoothing: subpixel-antialiased!important;
+  -webkit-backface-visibility: hidden;
+}
+
+body, html {
+  height: 100%;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
+  text-decoration: none;
+}
+
+.container_theme {
+  margin: 0 auto;
+}
+
+:after, :before, input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  padding-right: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  color: #09c;
+  background: #09c;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Footer */
+
+.footer_theme {
+  clear: both;
+  margin-top: 30px;
+  overflow: hidden;
+  color: #666;
+}
+
+.footer_theme a {
+  color: #09c;
+}
+
+.footer_theme a > span{
+  color: #666;
+}
+
+.footer_theme .container_theme > div {
+  padding: 30px 0 60px;
+  overflow: hidden;
+  border-top: 2px solid #efece7;
+}
+
+.footer_sm {
+  float: right;
+  width: 220px;
+}
+
+.footer_contact {
+  float: left;
+  width: 33%;
+}
+
+.footer_contact a:hover,
+.footer_contact a:focus{
+  text-decoration: underline;
+}
+
+.footer_menu {
+  float: left;
+  max-width: 410px;
+}
+
+.footer_menu a{
+  color: #666;
+}
+
+.footer_menu a:hover,
+.footer_menu a:focus{
+  color: #0099cc;
+}
+
+.footer_pokupo {
+  margin-top: 30px;
+  clear: both;
+  overflow: hidden;
+  text-align: right;
+}
+
+.i-pokupo:before {
+  width: 31px;
+  height: 16px;
+  content: "";
+  margin-right: 9px;
+  display: inline-block;
+  vertical-align: top;
+  background-size: contain;
+  background-image: url("../../../images/logo/logo__pokupo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat; 
+}
+
+/* Back to top */
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 1%;
+  z-index: 50;
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.back-to-top:after {
+  width: 24px;
+  height: 13px;
+  content: "";
+  display: inline-block;
+  margin-left: 5px;
+  background: transparent url("images/sprites.png") -168px -10px no-repeat;
+}
+
+
+/* Various displays styles */
+
+@media screen and (min-width: 1720px) {
+
+  .container_theme {
+    width: 1660px;
+  }
+
+  .with-banner .container_theme{
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 1480px) and (max-width: 1719px) {
+
+  .container_theme {
+    width: 1420px;
+  }
+
+  .with-banner .container_theme{
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 1479px) and (min-width: 1240px) {
+
+  .container_theme {
+    width: 1180px;
+  }
+
+  .with-banner .container_theme{
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1239px) {
+
+  .container_theme {
+    width: 940px;
+  }
+
+  .with-banner .container_theme{
+    width: 100%;
+  }
+
+  .footer_contact {
+    width: 30%;
+  }
+
+}
+
+@media screen and (min-width: 760px) and (max-width: 999px)  {
+
+  .container_theme {
+    width: 700px;
+  }
+
+  .with-banner .container_theme{
+    width: 100%;
+  }
+
+  .footer_menu {
+    max-width: 249px;
+  }
+
+}
+
+@media screen and (min-width: 520px) and (max-width: 759px) {
+
+  .container_theme, 
+  .container_theme > div,
+  .footer_theme .container_theme > div {
+    width: 460px;
+  }
+
+  .with-banner .container_theme, .footer_theme .container_theme{
+    width: 100%;
+  }
+
+  .footer_theme .container_theme > div{
+    margin: 0 auto;
+  }
+
+  .footer_sm {
+    width: 460px;
+  }
+
+  .footer_menu {
+    max-width: 260px;
+  }
+
+}
+
+@media screen and (max-width: 759px) {
+
+  .footer_sm {
+    float: none;
+    margin-bottom: 30px;
+  }
+
+  .footer_contact {
+    width: 160px;
+  }
+
+  .footer_menu {
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer_menu:after {
+    content: "";
+    clear: both;
+  }
+
+  .footer_pokupo{
+    text-align: left!important;
+  }
+
+  .back-to-top {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 92px;
+    right: 0;
+    padding-top: 13px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    background: #d8d6d2;
+  }
+  
+  .back-to-top:after {
+    width: 24px;
+    height: 13px;
+    content: "";
+    display: block;
+    right: 17%;
+    position: absolute;
+    top: 13px;
+  } 
+
+}
+
+@media screen and (max-width: 519px) {
+
+
+  .footer_theme .container_theme {
+    border-top: 2px solid #efece7;
+  } 
+
+  .footer_theme .container_theme > div{
+    width: 300px;
+    border-top: 0;
+    margin: 0 auto;
+  }
+
+  .footer_sm {
+    width: 300px;
+  }
+
+  .footer_menu {
+    max-width: 100px;
+  }
+
+  .container_theme, .footer_theme .container_theme > div {
+    width: 300px;
+  }
+
+  .with-banner .container_theme, .footer_theme .container_theme {
+    width: 100%;
+  }
+
+  .back-to-top {
+    top: 122px;
+  }  
+
+}
