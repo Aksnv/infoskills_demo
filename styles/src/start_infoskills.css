@@ -52,6 +52,10 @@ body, html {
   height: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   margin: 0;
   padding: 0;
@@ -63,6 +67,10 @@ a {
 
 .container_theme {
   margin: 0 auto;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
 }
 
 :after, :before, input[type=checkbox], input[type=radio] {
