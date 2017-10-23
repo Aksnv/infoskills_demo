@@ -1175,32 +1175,27 @@ p.user-menu__name{
 /* ------------- New slider ------------- */
 
 .slider_theme {
-  /* min-height: 480px; */
-  /* min-height: 330px; */
-  /* padding-top: 20px; */
-  /* background-color: #fff; */
-  background-color: #efece7;
+  background-color: #fff;
+}
+
+.slider_theme--infoskills {
+  background-color: #484848;
 }
 
 .slider--infoskills {
   position: relative;
-  /* width: 1180px; */
-  /* height: 540px; */
   margin: 0 auto;
   margin-bottom: 70px;
-  /* background-color: #fff; */
 }
 
 .slider--infoskills img {
   width: auto;
-  /* max-height: 540px;  */
   vertical-align: top;
 }
 
 .slider-arrows {
   position: absolute;
   top: 48%;
-  /* width: 100%; */
 }
 
 .slider-arrows button[disabled] {
@@ -1210,12 +1205,9 @@ p.user-menu__name{
 .slider-arrow {
   position: relative;
   display: block;
-  /* width: 12px;
-  height: 22px; */
   width: 24px;
   height: 44px;
   background-image: url("../../images/sprites.png");
-  /* background-position: -676px -40px; */
   border: none;
   outline: none;
   cursor: pointer;
@@ -1223,17 +1215,14 @@ p.user-menu__name{
 
 .slider-arrow--back {
   float: left;
-  /* left: 20px; */
   left: 0;
   background-position: -1671px -10px;
 }
 
 .slider-arrow--forward {
   float: right;
-  /* right: 20px; */
   right: 0;
   background-position: -1637px -10px;
-  /* transform: rotate(180deg); */
 }
 
 .slider-image {
@@ -1263,7 +1252,6 @@ p.user-menu__name{
   width: auto;
   height: 100%;
   max-height: 300px;
-  /* background-color: #fff; */
   text-align: center;
   background-size: cover;  
   background-repeat: no-repeat;
@@ -1272,7 +1260,6 @@ p.user-menu__name{
 
 .slider-pagination {
   position: absolute;
-  /* bottom: 20px; */
   bottom: -40px;
   left: calc(50% - 32px);
 }
@@ -1280,7 +1267,6 @@ p.user-menu__name{
 .slider-pagination li {
   display: inline-block;
   vertical-align: top;
-  /* margin-right: 10px; */
   margin-right: 14px;
 }
 
@@ -1291,18 +1277,13 @@ p.user-menu__name{
 .slider-pagination__item {
   position: relative;
   display: block;
-  /* width: 10px;
-  height: 10px; */
   width: 9px;
   height: 9px;
-  /* background-color: #fff; */
   background-color: #ccc;
-  /* border: 2px solid #ccc; */
   border-radius: 50%;
 }
 
 .slider-pagination__item--active {
-  /* border: 2px solid #cf453c; */
   background-color: #0099cc;
 }
 
