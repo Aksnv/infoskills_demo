@@ -27,6 +27,13 @@
 	.product-info--certificate-is .product-info__info {
 		width: 100%;
 	}	
+
+	/* ------------- New slider ------------- */
+
+	.slider-arrows {
+	  width: 1660px;
+	  left: calc(50% - 830px);
+	}
 	
 }
 
@@ -93,6 +100,13 @@
 	.product-info--certificate-is .product-info__info {
 		width: 100%;
 	}	
+
+	/* ------------- New slider ------------- */
+
+	.slider-arrows {
+	  width: 1420px;
+	  left: calc(50% - 710px);
+	}
 	
 }
 
@@ -196,6 +210,13 @@
 	.product-desc, .product-rec, .product-reviews {
 		width: 59.5%;
 	}	
+
+	/* ------------- New slider ------------- */
+
+	.slider-arrows {
+	  width: 1180px;
+	  left: calc(50% - 590px);
+	}
 
 }
 
@@ -341,12 +362,16 @@
 	}
 
 	.slider--infoskills {
-		width: 900px;
-		height: 412px;
+		/* width: 900px;
+		height: 412px; */
 	}
 
 	.slider--infoskills img {
-		max-height: 412px;
+		/* max-height: 412px; */
+	}
+
+	.slider-arrows {
+		display: none;
 	}
 
 }
@@ -504,12 +529,12 @@
 	/* --------------- New slider ----------------- */
 
 	.slider--infoskills {
-		width: 660px;
-		height: 303px;
+		/* width: 660px;
+		height: 303px; */
 	}
 
 	.slider--infoskills img {
-		max-height: 303px;
+		/* max-height: 303px; */
 	}
 
 }
@@ -1233,16 +1258,16 @@
 	/* --------------- New slider ----------------- */
 
 	.slider_theme {
-		padding-top: 12px;
+		/* padding-top: 12px; */
 	}
 
 	.slider--infoskills {
-		width: 455px;
-		height: 586px;
+		/* width: 455px;
+		height: 586px; */
 	}
 
 	.slider--infoskills img {
-		max-height: 586px;
+		/* max-height: 586px; */
     margin: auto;
 	}
 
@@ -1440,7 +1465,8 @@
 	}
 
   .store_theme {
-    padding-top: 169px;
+    /* padding-top: 169px; */
+    padding-top: 190px;
   }
 
   .back-to-top {
@@ -1801,22 +1827,22 @@
 	/* --------------- New slider ----------------- */
 
 	.slider_theme {
-		width: 320px;
+		/* width: 320px; */
 		margin: 0 auto;
-		padding-top: 10px;
+		/* padding-top: 10px; */
 	}
 
 	.slider--infoskills {
-		width: 300px;
-		height: 386px;
+		/* width: 300px;
+		height: 386px; */
 	}
 
 	.slider--infoskills img {
-		max-height: 386px;
+		/* max-height: 386px; */
 	}
 
 	.slider-image a {
-		max-height: 386px;
+		/* max-height: 386px; */
 	}
 
 	.slider-image img {
