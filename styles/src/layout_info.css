@@ -1190,6 +1190,7 @@ p.user-menu__name{
 
 .slider--infoskills img {
   width: auto;
+  max-height: 300px;
   vertical-align: top;
 }
 
