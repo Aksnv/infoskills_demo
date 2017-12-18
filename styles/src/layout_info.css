@@ -2782,6 +2782,90 @@ p.user-menu__name{
 	display: none;
 }
 
+.store-select--infoskills {
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: 33px;
+}
+
+.store-select--infoskills label {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-right: 25px;
+  color: #28282c;
+}
+
+.store-select--infoskills .jq-selectbox {
+  width: 380px;
+  height: 42px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.store-select--infoskills .jq-selectbox select {
+  width: 380px;
+}
+
+.store-select--infoskills .jq-selectbox__select::after {
+  position: absolute;
+  top: 17px;
+  right: 13px;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 8px;
+  background-image: url("../../images/sprites.png");
+  background-position: -152px -31px
+}
+
+.store-select--infoskills .jq-selectbox.opened .jq-selectbox__select::after {
+  transform: rotate(180deg);
+}
+
+.store-select--infoskills .jq-selectbox__select-text {
+  font-size: 14px;
+  line-height: 40px;
+  padding-left: 13px;
+  padding-right: 50px;
+  color: #28282c;
+}
+
+.store-select--infoskills .jq-selectbox.opened .jq-selectbox__trigger {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  display: block;
+  width: 42px;
+  height: 40px;
+}
+
+.store-select--infoskills .jq-selectbox__dropdown {
+  top: 36px!important;
+}
+
+.store-select--infoskills .jq-selectbox__dropdown ul {
+  width: 380px;
+  max-height: 155px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.store-select--infoskills .jq-selectbox__dropdown li {
+  font-size: 14px;
+  line-height: 48px;
+  padding-left: 10px;
+  padding-right: 50px;
+  background-color: #f7f5f3;
+  color: #28282c;
+}
+
+.store-select--infoskills .jq-selectbox__dropdown li:hover {
+  background-color: #efece7;
+}
+
 /* --------------- Cart --------------- */
 
 .cart-container{

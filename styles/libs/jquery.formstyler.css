@@ -1,0 +1,120 @@
+.jq-selectbox {
+	position: relative;
+	display: inline-block;
+	width: 465px;
+  height: 54px;
+  font-size: 18px;
+  line-height: 54px;
+  color: black;
+  background-color: #ededed;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.jq-selectbox.focused {
+	background-color: #fff;
+  border: 3px solid #ff5a00;
+  outline: none;
+}
+
+.jq-selectbox:after {
+	position: absolute;
+  top: 23px;
+  right: 18px;
+  content: "";
+  display: block;
+  width: 17px;
+  height: 10px;
+  background-image: url("../images/sprite.png");
+  background-position: -271px -237px;
+  transform: rotate(180deg);
+  pointer-events: none; 
+}
+
+.jq-selectbox.focused:after {
+	transform: rotate(180deg);
+}
+
+.jq-selectbox.focused.dropdown:after {
+	transform: rotate(0deg);
+}
+
+.jq-selectbox select {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+
+	width: 450px;
+}
+
+.jq-selectbox li {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	
+	min-height: 51px;
+	line-height: 49px;
+	padding-left: 15px;
+	border-bottom: 2px solid #efece7;
+}
+
+.jq-selectbox li:hover {
+	background-color: #efece7;
+}
+
+.jq-selectbox {
+	z-index: 10;
+}
+
+.jq-selectbox__select {
+	position: relative;
+}
+
+.jq-selectbox__select-text {
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	padding-left: 15px;
+	padding-right: 40px;
+}
+
+.jq-selectbox__dropdown {
+	position: absolute;
+}
+
+.jq-selectbox__search input {
+	-webkit-appearance: textfield;
+}
+
+.jq-selectbox__search input::-webkit-search-cancel-button,
+.jq-selectbox__search input::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+.jq-selectbox__dropdown ul {
+	position: relative;
+	overflow: auto;
+	overflow-x: hidden;
+	list-style: none;
+	-webkit-overflow-scrolling: touch;
+
+	width: 465px;
+	max-height: 213px;
+	margin-top: 4px;
+	margin-right: 0;
+	padding-left: 0;
+	margin-bottom: 0;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

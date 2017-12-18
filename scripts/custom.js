@@ -289,3 +289,14 @@ function sliderArrows(i) {
 setInterval(sliderSwitch, 6000);
 
 // END - New slider
+
+
+/* jQuery Form Styler activation */
+
+(function($) {
+$(function() {
+
+  $('select').styler();
+    
+});
+})(jQuery);

@@ -1770,6 +1770,27 @@
 		margin-right: auto;		
 	}
 
+	.store-select--infoskills,
+	.store-select--infoskills label {
+		display: block;
+		width: 300px;
+	}
+
+	.store-select--infoskills {
+		margin: auto;
+		margin-top: 28px;
+	}
+
+	.store-select--infoskills label {
+		line-height: 32px;
+	}
+
+	.store-select--infoskills .jq-selectbox,
+	.store-select--infoskills .jq-selectbox select,
+	.store-select--infoskills .jq-selectbox__dropdown ul {
+	  width: 300px;
+	}
+
 
 	
 /* Footer */	
