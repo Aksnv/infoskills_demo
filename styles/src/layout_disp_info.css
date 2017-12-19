@@ -1967,6 +1967,14 @@
 		width: 460px;
 	}
 
+	.product-certificate--is .certificate__image {
+    width: 220px;
+    float: none;
+    margin: 0 auto;
+    /* margin: 0 auto;
+    padding-left: 10px; */
+  }
+
 }
 
 @media screen and (max-width: 749px) {
@@ -2052,6 +2060,11 @@
 	}
 
 	.product-certificate--is .certificate__image {
+		/* width: 137px; */
+		width: 220px;
+	}
+
+	.product-certificate--is .certificate__image img {
 		width: 137px;
 	}
 

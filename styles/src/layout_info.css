@@ -2179,6 +2179,7 @@ p.user-menu__name{
 }
 
 .product-certificate--is .certificate__image {
+  position: relative;
   width: 220px;
   min-height: 1px;
   margin-left: 41px;
