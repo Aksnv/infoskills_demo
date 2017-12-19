@@ -2185,6 +2185,27 @@ p.user-menu__name{
   margin-right: 27px;
 }
 
+.product-certificate--is .certificate__image--mob {
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.product-certificate--is .certificate__image--mob a {
+  width: 60px;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.product-certificate--is .certificate__image--mob a:first-child{
+  margin-left: 0;
+}
+
+.product-certificate--is .certificate__image--mob img{
+  display: block;
+}
+
 .product-certificate--is .certificate__content {
   width: 310px;
   padding-top: 3px;
