@@ -7,7 +7,7 @@
 
 @media screen and (min-width: 1720px) {
 	.section_theme, .container_theme, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
-	.promoBlocks, .section_content-menu{
+	.promoBlocks, .section_content-menu, .news_theme{
 		width: 1660px;
 	}
 	
@@ -34,12 +34,23 @@
 	  width: 1660px;
 	  left: calc(50% - 830px);
 	}
+
+	/* ------------- News ------------- */
+
+	.news_theme h2::before,
+	.news_theme h2::after {
+		width: 45%;
+	}
+
+	.infoskills-news__block:nth-child(7n+7) {
+	  margin-right: 0;
+	}
 	
 }
 
 @media screen and (min-width: 1480px) and (max-width: 1719px) {
 	.section_theme, .container_theme, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
-	.promoBlocks, .section_content-menu{
+	.promoBlocks, .section_content-menu, .news_theme{
 		width: 1420px;
 	}
 
@@ -107,6 +118,21 @@
 	  width: 1420px;
 	  left: calc(50% - 710px);
 	}
+
+	/* ------------- News ------------- */
+
+	.news_theme h2::before,
+	.news_theme h2::after {
+		width: 42%;
+	}
+
+	.infoskills-news__block:nth-child(7n+7) {
+	  margin-right: 13px;
+	}
+
+	.infoskills-news__block:nth-child(6n+6) {
+	  margin-right: 0;
+	}
 	
 }
 
@@ -173,7 +199,7 @@
 
 @media screen and (min-width: 1240px) and (max-width: 1479px) {
 	.section_theme, .container_theme, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
-	.promoBlocks, .section_content-menu{
+	.promoBlocks, .section_content-menu, .news_theme{
 		width: 1180px;
 	}
 
@@ -218,11 +244,26 @@
 	  left: calc(50% - 590px);
 	}
 
+	/* ------------- News ------------- */
+
+	.news_theme h2::before,
+	.news_theme h2::after {
+		width: 42%;
+	}
+
+	.infoskills-news__block:nth-child(6n+6) {
+	  margin-right: 13px;
+	}
+
+	.infoskills-news__block:nth-child(5n+5) {
+	  margin-right: 0;
+	}
+
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1239px) {
 	.section_theme, .container_theme, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
-	.promoBlocks, .section_content-menu{
+	.promoBlocks, .section_content-menu, .news_theme{
 		width: 940px;
 	}
 
@@ -349,6 +390,21 @@
 	.footer_contact {
 		width: 30%;
 	}	
+
+	/* ------------- News ------------- */
+
+	.news_theme h2::before,
+	.news_theme h2::after {
+		width: 40%;
+	}
+
+	.infoskills-news__block:nth-child(5n+5) {
+	  margin-right: 13px;
+	}
+
+	.infoskills-news__block:nth-child(4n+4) {
+	  margin-right: 0;
+	}
 	
 }
 
@@ -369,7 +425,7 @@
 
 @media screen and (min-width: 760px) and (max-width: 999px) {
 	.section_theme, .container_theme, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
-	.promoBlocks, .section_content-menu{
+	.promoBlocks, .section_content-menu, .news_theme{
 		width: 700px;
 	}
 
@@ -512,6 +568,21 @@
 	.footer_menu {
 		max-width: 249px;
 	}	
+
+	/* ------------- News ------------- */
+
+	.news_theme h2::before,
+	.news_theme h2::after {
+		width: 38%;
+	}
+
+	.infoskills-news__block:nth-child(4n+4) {
+	  margin-right: 13px;
+	}
+
+	.infoskills-news__block:nth-child(3n+3) {
+	  margin-right: 0;
+	}
 }
 
 
@@ -1258,7 +1329,7 @@
 
 @media screen and (min-width: 520px) and (max-width: 759px) {
 	.section_theme, .container_theme, .menu-login-cart, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
-	.promoBlocks, .section_content-menu, .footer_theme .container_theme > div{
+	.promoBlocks, .section_content-menu, .footer_theme .container_theme > div, .news_theme{
 		width: 460px;
 	}
 
@@ -1365,6 +1436,21 @@
 	.footer_menu-list {
 		width: 130px;
 	}
+
+	/* ------------- News ------------- */
+
+	.news_theme h2::before,
+	.news_theme h2::after {
+		width: 33%;
+	}
+
+	.infoskills-news__block:nth-child(n) {
+	  margin-right: 12px;
+	}
+
+	.infoskills-news__block:nth-child(2n+2) {
+	  margin-right: 0;
+	}
 	
 }
 
@@ -1422,7 +1508,7 @@
 
 @media screen and (max-width: 519px) {
 	.section_theme, .container_theme, .menu-login-cart, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
-	.promoBlocks, .section_content-menu, .footer_theme .container_theme > div{
+	.promoBlocks, .section_content-menu, .footer_theme .container_theme > div, .news_theme{
 		width: 300px;
 	}
 
@@ -1823,6 +1909,17 @@
 
 	.slider-arrows {
 		top: 70%;
+	}
+
+	/* ------------- News ------------- */
+
+	.news_theme h2::before,
+	.news_theme h2::after {
+		width: 25%;
+	}
+
+	.infoskills-news {
+		text-align: center;
 	}
 	
 }
