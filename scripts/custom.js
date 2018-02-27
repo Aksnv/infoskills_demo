@@ -1,3 +1,17 @@
+// Content menu padding
+
+$(document).ready(function() {
+  if (+$(".section_content-menu").css("height").split("px")[0] <= 50) {
+    $(".store_theme").css("paddingTop", "159px");
+  } else if (+$(".section_content-menu").css("height").split("px")[0] <= 60) {
+    $(".store_theme").css("paddingTop", "169px");
+  } else if (+$(".section_content-menu").css("height").split("px")[0] <= 120) {
+    $(".store_theme").css("paddingTop", "209px");
+  } else if (+$(".section_content-menu").css("height").split("px")[0] <= 150) {
+    $(".store_theme").css("paddingTop", "259px");
+  }
+});
+
 //	Scroll to top
 
 $(window).scroll(function(){
@@ -300,3 +314,5 @@ $(function() {
     
 });
 })(jQuery);
+
+
