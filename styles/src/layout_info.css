@@ -4687,17 +4687,28 @@ p.user-menu__name{
 
 /* Корзина (бонусы) */
 
+@media screen and (max-width: 1479px) {
+
+  .user-menu__bonuses {
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+
+}
+
 .user-menu__bonuses::before {
   display: block;
-  width: 21px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   background-image: url("../../images/sprites.png");
-  background-position: -336px -39px;
+  background-position: -1872px -31px;
 }
 
 .user-menu__bonuses:hover::before,
 .user-menu__bonuses.active::before {
-  background-position: -360px -39px;
+  background-position: -1872px -56px;
 }
 
 .user-menu__bonuses-registered::before {
@@ -4705,12 +4716,12 @@ p.user-menu__name{
   width: 22px;
   height: 17px;
   background-image: url("../../images/sprites.png");
-  background-position: -388px -40px;
+  background-position: -1842px -32px;
 }
 
 .user-menu__bonuses-registered:hover::before,
 .user-menu__bonuses-registered.active::before {
-  background-position: -416px -40px;
+  background-position: -1842px -56px;
 }
 
 .cart-footer {
@@ -4727,19 +4738,23 @@ p.user-menu__name{
 
 .cart-footer .cart-footer__bonus {
   display: block;
-  margin-top: 13px;
-  margin-bottom: 26px;
+  margin-top: 10px;
+  margin-bottom: 13px;
 }
 
 .cart-footer__bonus {
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .cart-footer__bonus a {
   color: #09c;
   text-decoration: underline;
+}
+
+.cart-footer__bonus a:hover {
+  text-decoration: none;
 }
 
 .cart-footer__bay-button {
