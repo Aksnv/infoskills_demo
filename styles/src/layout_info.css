@@ -4696,6 +4696,12 @@ p.user-menu__name{
     display: inline-block;
   }
 
+  .user-menu__bonuses-registered {
+    overflow: visible;
+    width: auto;
+    line-height: 20px;
+  }
+
 }
 
 .user-menu__bonuses::before {
@@ -4730,10 +4736,15 @@ p.user-menu__name{
 
 .cart-footer--bonuses,
 .cart-footer--bonuses .cart-footer__total,
-.cart-footer--bonuses .cart-footer__price {
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 18px;
+.cart-footer--bonuses .cart-footer__price,
+.cart-footer--bonuses .cart-footer__price .price__rubl {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.cart-footer--bonuses .cart-footer__price .price__rubl {
+  font-weight: 700;
 }
 
 .cart-footer .cart-footer__bonus {
@@ -4771,6 +4782,7 @@ p.user-menu__name{
 .cart-footer .cart-footer__discount strong,
 .cart-footer .cart-footer__bonus-price strong {
   font-weight: 900;
+  margin-left: 10px;
 }
 
 .cart-footer .cart-footer__discount,
@@ -4783,15 +4795,16 @@ p.user-menu__name{
 }
 
 .cart-footer .cart-footer__bonus-price {
-  font-size: 18px;
-  line-height: 18px;
-  margin-bottom: 42px;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 23px;
 }
 
 .cart-footer__bay-button--with-bonuses,
 .cart-footer__bay-button--without-bonuses {
-  width: 220px;
-  line-height: 38px;
+  width: 240px;
+  line-height: 42px;
+  margin-left: 0;
   padding-top: 0;
 }
 
