@@ -4270,12 +4270,20 @@ p.user-menu__name{
 /* Начисление/списание бонусов */
 
 .openbonus-popup--dark.openbonus-popup--2 .popup__top {
-  background-image: url("../../images/pages/openbonus/bg--dark-red.png");
-  background-color: #7e2721;
+  background-image: url("../../images/pages/openbonus/bg--pink.png");
+  background-color: #cf453c;
+}
+
+.openbonus-popup--dark.openbonus-popup--2 .popup__top h1 {
+  color: #fff;
+}
+
+.openbonus-popup--dark.openbonus-popup--2 .popup__top h1::after {
+  background-position: -2728px -11px;
 }
 
 .openbonus-popup--dark.openbonus-popup--2 .popup__top::after {
-  background-color: #7e2721;
+  background-color: #cf453c;
 }
 
 .openbonus-popup--3 .popup__bottom {
