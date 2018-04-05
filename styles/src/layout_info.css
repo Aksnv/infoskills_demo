@@ -3716,6 +3716,7 @@ p.user-menu__name{
 
 .fade.in {
     display: block;
+    overflow: auto;
 }
 
 .popup {
@@ -3951,6 +3952,7 @@ p.user-menu__name{
 
 .openbonus-popup {
   height: auto;
+  max-height: 100%;
   padding: 0;
 }
 
@@ -4085,8 +4087,8 @@ p.user-menu__name{
   position: absolute;
   /* position: fixed; */
   top: 5%;
-  left: calc(50% - 310px);
-  width: 620px;
+  left: calc(50% - 270px);
+  width: 540px;
   background-color: white;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
   z-index: 101;
@@ -4095,8 +4097,8 @@ p.user-menu__name{
 .openbonus-popup--2 .popup__top {
   position: relative;
   height: 187px;
-  padding-top: 100px;
-  background-image: url("../../images/pages/openbonus/bg--red.png");
+  padding-top: 134px;
+  background-image: url("../../images/pages/openbonus/bg--blue.png");
   background-color: #cf453c;
 }
 
@@ -4108,7 +4110,7 @@ p.user-menu__name{
   display: block;
   width: 15px;
   height: 15px;
-  background-color: #cf453c;
+  background-color: #00c4e0;
   transform: rotate(45deg);
 }
 
@@ -4118,53 +4120,40 @@ p.user-menu__name{
 
 .openbonus-popup--2 .popup__top h1 {
   position: relative;
-  font-family: 'Georgia', sans-serif;
   font-size: 18px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
-  color: white;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000;
 }
 
 .openbonus-popup--2 .popup__top h1::after {
   position: absolute;
-  top: -70px;
-  left: calc(50% - 30px);
+  top: -112px;
+  left: calc(50% - 48px);
   content: "";
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 95px;
+  height: 95px;
   background-image: url("../../images/sprites.png");
-  background-position: -1904px -8px;
-}
-
-.openbonus-popup--2 .popup__top h1 > strong {
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 42px;
-  text-transform: uppercase;
-  font-style: normal;
+  background-position: -2626px -7px;
 }
 
 .openbonus-popup--2 .popup__bottom {
-  padding-top: 57px;
-  padding-left:50px;
-  padding-right:50px;
+  padding-top: 37px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 41px;
 }
 
 .openbonus-popup--2 .popup__bottom label {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 9px;
-  padding-left: 20px;
-  color: #000;
+  margin-bottom: 7px;
+  padding-left: 30px;
+  color: #28282c;
 }
 
 .openbonus-popup--2 .popup__bottom label > span {
@@ -4173,26 +4162,26 @@ p.user-menu__name{
 
 .openbonus-popup--2 .popup__bottom input[type="text"] {
   box-sizing: border-box;
-  width: 480px;
+  width: 380px;
   height: 42px;
   font-size: 14px;
   line-height: 40px;
-  margin-bottom: 37px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: transparent;
+  margin-bottom: 17px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: white;
   color: #28282c;
-  border: 1px solid #ccc;
+  border: 1px solid #d0d4d8;
 }
 
 .openbonus-popup--2 .popup__bottom input[type="text"]:focus {
-  border: 1px solid #ffb800;
+  border: 1px solid #00c4e0;
   outline: none;
 }
 
 .openbonus-popup--2 .choose-gender {
   position: relative;
-  top: 6px;
+  top: 19px;
   padding-bottom: 22px;
 }
 
@@ -4204,22 +4193,22 @@ p.user-menu__name{
 
 .openbonus-popup--2 .choose-gender label {
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   text-transform: none;
-  padding-left: 47px;
-  color: #000;
+  padding-left: 32px;
+  color: #28282c;
   cursor: pointer;
 }
 
 .openbonus-popup--2 .choose-gender label.gender--female {
-  padding-left: 75px;
+  padding-left: 96px;
 }
 
 .openbonus-popup--2 .choose-gender label::before {
   position: absolute;
-  top: 3px;
-  left: 15px;
+  top: 2px;
+  left: -7px;
   content: "";
   display: block;
   width: 12px;
@@ -4230,13 +4219,13 @@ p.user-menu__name{
 }
 
 .openbonus-popup--2 .choose-gender label.gender--female::before {
-  left: 41px;
+  left: 58px;
 }
 
 .openbonus-popup--2 .choose-gender label::after {
   position: absolute;
-  top: -4px;
-  left: 8px;
+  top: -5px;
+  left: -14px;
   content: "";
   display: block;
   width: 26px;
@@ -4246,7 +4235,7 @@ p.user-menu__name{
 }
 
 .openbonus-popup--2 .choose-gender label.gender--female::after {
-  left: 34px;
+  left: 51px;
 }
 
 .openbonus-popup--2 input[type="radio"] {
@@ -4258,16 +4247,16 @@ p.user-menu__name{
 }
 
 .openbonus-popup--2 input[type="radio"]:checked + label::after {
-  background-color: #ffb800;
-  border: 1px solid #ffb800;
+  background-color: #00c4e0;
+  border: 1px solid #00c4e0;
 }
 
 .openbonus-popup--2 .submit {
   position: relative;
   display: block;
-  height: 50px;
-  font-size: 17px;
-  line-height: 50px;
+  height: 42px;
+  font-size: 14px!important;
+  line-height: 42px;
   text-decoration: none;
   margin: 0 auto;
   margin-top: 24px;
@@ -4275,12 +4264,7 @@ p.user-menu__name{
   padding: 0;
   color: #fff;
   border: none;
-  border-radius: 3px;
   cursor: pointer;
-}
-
-.openbonus-popup--2 .submit:hover {
-  background-color: #e5a500;
 }
 
 /* Начисление/списание бонусов */
