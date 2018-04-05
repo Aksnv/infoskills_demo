@@ -4300,19 +4300,19 @@ p.user-menu__name{
 /* Начисление/списание бонусов успешно завершено */
 
 .openbonus-popup--5 .popup__bottom {
-  padding-top: 137px;
-  padding-bottom: 115px;
+  padding-top: 122px;
+  padding-bottom: 120px;
 }
 
 .openbonus-popup--5 .popup__bottom strong {
   display: block;
-  font-size: 25px;
-  font-weight: 900;
-  line-height: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 12px;
-  color: #cf453c;
+  margin-bottom: 9px;
+  color: #000;
 }
 
 .openbonus-popup--5 .popup__bottom--write-off strong {
@@ -4320,7 +4320,7 @@ p.user-menu__name{
 }
 
 .openbonus-popup--5 p {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   margin-top: 0;
