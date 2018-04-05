@@ -3947,6 +3947,876 @@ p.user-menu__name{
 
 /* END - Read fragment popup */
 
+/* Openbonus */
+
+.openbonus-popup {
+  height: auto;
+  padding: 0;
+}
+
+/* Персональная бонусная карта */
+
+.openbonus-popup--1 {
+  position: fixed;
+  top: calc(50% - 274px);
+  left: calc(50% - 270px);
+  width: 540px;
+  min-height: 548px;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  z-index: 101;
+}
+
+.openbonus-popup--1 .popup__top {
+  position: relative;
+  height: 187px;
+  background-image: url("../../images/pages/openbonus/bg--blue.png");
+  background-color: #cf453c;
+}
+
+.openbonus-popup--1 .popup__top::before {
+  position: absolute;
+  left: calc(50% - 164px);
+  top: -51px;
+  content: "";
+  display: block;
+  width: 298px;
+  height: 215px;
+  background-image: url("../../images/pages/openbonus/bonus-card.png");
+}
+
+.openbonus-popup--1 .popup__top::after {
+  position: absolute;
+  left: calc(50% - 8px);
+  bottom: -7px;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #00c4e0;
+  transform: rotate(45deg);
+}
+
+.popup__close-button--top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  background-image: none;
+  background-color: transparent;
+  color: #a2a2a2;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.popup__close-button--top::before {
+  position: absolute;
+  top: 10px;
+  left: -11px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url("../../images/sprites.png");
+  background-position: -1898px -35px;
+}
+
+.openbonus-popup--1 .popup__bottom {
+  text-align: center;
+  padding-top: 68px;
+  padding-bottom: 30px;
+}
+
+.openbonus-popup--1 .popup__bottom p {
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+  opacity: 0.8;
+}
+
+.openbonus-popup--1 .popup__bottom p:first-child {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  color: #000;
+}
+
+.openbonus-popup--1 .popup__button {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 42px;
+  line-height: 42px;
+  text-decoration: none;
+  margin-top: 46px;
+  margin-bottom: 10px;
+  padding: 0;
+  color: #fff;
+}
+
+.openbonus-popup--1 .btn.popup__button {
+  font-size: 14px;
+}
+
+.openbonus-popup--1 .popup__button:hover {
+  background-color: #e5a500;
+}
+
+.popup__close-button--bottom {
+  font-size: 14px!important;
+  font-weight: 700;
+  line-height: 38px;
+  margin: 0 auto;
+}
+
+.popup__close-button--bottom:hover {
+  line-height: 42px;
+}
+
+/* Получение бонусной карты */
+
+.openbonus-popup--2 {
+  position: absolute;
+  /* position: fixed; */
+  top: 5%;
+  left: calc(50% - 310px);
+  width: 620px;
+  background-color: white;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+  z-index: 101;
+}
+
+.openbonus-popup--2 .popup__top {
+  position: relative;
+  height: 187px;
+  padding-top: 100px;
+  background-image: url("../../images/pages/openbonus/bg--red.png");
+  background-color: #cf453c;
+}
+
+.openbonus-popup--2 .popup__top::after {
+  position: absolute;
+  left: calc(50% - 8px);
+  bottom: -7px;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #cf453c;
+  transform: rotate(45deg);
+}
+
+.openbonus-popup--2 .popup__top--write-off {
+  background-color: #e0b10e;
+}
+
+.openbonus-popup--2 .popup__top h1 {
+  position: relative;
+  font-family: 'Georgia', sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: white;
+}
+
+.openbonus-popup--2 .popup__top h1::after {
+  position: absolute;
+  top: -70px;
+  left: calc(50% - 30px);
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../images/sprites.png");
+  background-position: -1904px -8px;
+}
+
+.openbonus-popup--2 .popup__top h1 > strong {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.openbonus-popup--2 .popup__bottom {
+  padding-top: 57px;
+  padding-left:50px;
+  padding-right:50px;
+  padding-bottom: 41px;
+}
+
+.openbonus-popup--2 .popup__bottom label {
+  display: block;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+  padding-left: 20px;
+  color: #000;
+}
+
+.openbonus-popup--2 .popup__bottom label > span {
+  color: #ed1c24;
+}
+
+.openbonus-popup--2 .popup__bottom input[type="text"] {
+  box-sizing: border-box;
+  width: 480px;
+  height: 42px;
+  font-size: 14px;
+  line-height: 40px;
+  margin-bottom: 37px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: transparent;
+  color: #28282c;
+  border: 1px solid #ccc;
+}
+
+.openbonus-popup--2 .popup__bottom input[type="text"]:focus {
+  border: 1px solid #ffb800;
+  outline: none;
+}
+
+.openbonus-popup--2 .choose-gender {
+  position: relative;
+  top: 6px;
+  padding-bottom: 22px;
+}
+
+.openbonus-popup--2 .choose-gender label,
+.openbonus-popup--2 .choose-gender input {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.openbonus-popup--2 .choose-gender label {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 47px;
+  color: #000;
+  cursor: pointer;
+}
+
+.openbonus-popup--2 .choose-gender label.gender--female {
+  padding-left: 75px;
+}
+
+.openbonus-popup--2 .choose-gender label::before {
+  position: absolute;
+  top: 3px;
+  left: 15px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.openbonus-popup--2 .choose-gender label.gender--female::before {
+  left: 41px;
+}
+
+.openbonus-popup--2 .choose-gender label::after {
+  position: absolute;
+  top: -4px;
+  left: 8px;
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #e3e3e3;
+  border-radius: 50%;
+}
+
+.openbonus-popup--2 .choose-gender label.gender--female::after {
+  left: 34px;
+}
+
+.openbonus-popup--2 input[type="radio"] {
+  display: none;
+}
+
+.openbonus-popup--2 input[type="radio"]:checked + label {
+  color: #000;
+}
+
+.openbonus-popup--2 input[type="radio"]:checked + label::after {
+  background-color: #ffb800;
+  border: 1px solid #ffb800;
+}
+
+.openbonus-popup--2 .submit {
+  position: relative;
+  display: block;
+  height: 50px;
+  font-size: 17px;
+  line-height: 50px;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  padding: 0;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.openbonus-popup--2 .submit:hover {
+  background-color: #e5a500;
+}
+
+/* Начисление/списание бонусов */
+
+.openbonus-popup--dark.openbonus-popup--2 .popup__top {
+  background-image: url("../../images/pages/openbonus/bg--dark-red.png");
+  background-color: #7e2721;
+}
+
+.openbonus-popup--dark.openbonus-popup--2 .popup__top::after {
+  background-color: #7e2721;
+}
+
+.openbonus-popup--3 .popup__bottom {
+  padding-top: 75px;
+  padding-bottom: 42px;
+}
+
+.openbonus-popup--3 p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 32px;
+  color: black;
+  opacity: 0.8;
+}
+
+.openbonus-popup--3 .submit {
+  margin-top: 0;
+}
+
+/* Начисление/списание бонусов успешно завершено */
+
+.openbonus-popup--5 .popup__bottom {
+  padding-top: 137px;
+  padding-bottom: 115px;
+}
+
+.openbonus-popup--5 .popup__bottom strong {
+  display: block;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #cf453c;
+}
+
+.openbonus-popup--5 .popup__bottom--write-off strong {
+  color: #cf453c;
+}
+
+.openbonus-popup--5 p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 0;
+  color: #333;
+}
+
+/* Бонусная программа (нет карты) */
+
+.bonus-programm {
+  overflow: hidden;
+}
+
+.bonus-programm__image,
+.bonus-programm__content {
+  float: left;
+  margin-bottom: 40px;
+}
+
+.bonus-programm__image {
+  position: relative;
+  width: 408px;
+}
+
+.bonus-programm__image img {
+  position: relative;
+  left: -8px;
+}
+
+.bonus-programm__content {
+  width: 660px;
+  padding-top: 64px;
+  padding-left: 42px;
+  color: #000;
+}
+
+.bonus-programm__content h3 {
+  font-size: 18px;
+  margin-bottom: 23px;
+  padding-left: 0;
+}
+
+.bonus-programm__content p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #2b2121;
+}
+
+.bonus-programm__button {
+  clear: both;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 50px;
+  text-decoration: none;
+  margin-top: -10px;
+  margin-left: 86px;
+  margin-bottom: 20px;
+  padding-top: 0;
+  border-radius: 3px;
+}
+
+/* Бонусная программа (есть карта) */
+
+.bonus-programm--login .bonus-programm__image {
+  width: 429px;
+}
+
+.bonus-programm--login img {
+  top: -10px;
+  left: -17px;
+}
+
+.bonus-programm__image p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff; 
+}
+
+.bonus-programm__card-number {
+  position: absolute;
+  top: 54px;
+  left: 31px;
+}
+
+.bonus-programm__available-bonuses {
+  position: absolute;
+  top: 92px;
+  left: 31px;
+}
+
+.bonus-programm__available-bonuses > span:first-child {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: none;
+  margin-bottom: 7px;
+}
+
+.bonus-programm--login .bonus-programm__content {
+  padding-top: 64px;
+  padding-left: 21px;
+}
+
+.bonus-programm--login .bonus-programm__content h2 {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.bonus-programm--login .bonus-programm__content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 44px;
+  color: #666;
+}
+
+.bonus-programm--login .bonus-programm__content strong {
+  font-size: 15px;
+  font-weight: 900;
+  color: #000;
+}
+
+.bonus-programm--login .bonus-programm__content button {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  height: 51px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 47px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding-top: 0;
+  padding-left: 32px;
+  background-image: none;
+  background-color: transparent;
+  color: #999;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.bonus-programm--login .bonus-programm__content button::before {
+  position: absolute;
+  top: 16px;
+  left: 51px;
+  content: "";
+  display: block;
+  width: 17px;
+  height: 14px;
+  background-image: url(../../images/sprites.png);
+  background-position: -734px -10px;
+}
+
+.bonus-programm--login .bonus-programm__content button:hover::before {
+  background-position: -1624px -10px;
+}
+
+.bonus-programm--personal .bonus-programm__image, 
+.bonus-programm--personal .bonus-programm__content {
+  margin-bottom: 0;
+}
+
+.bonus-programm__personal {
+  display: none;
+}
+
+.bonus-programm__personal--visible {
+  display: block;
+  clear: both;
+  padding-top: 6px;
+}
+
+.bonus-programm--login .bonus-card__form {
+  overflow: hidden;
+}
+
+.bonus-programm--login .bonus-card__form h2 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 25px;
+  padding-left: 17px;
+}
+
+.bonus-programm--login .bonus-card__form--left,
+.bonus-programm--login .bonus-card__form--right {
+  float: left;
+}
+
+.bonus-programm--login .bonus-card__form--left {
+  margin-right: 90px;
+}
+
+.bonus-programm--login .bonus-card__form--right {
+  width: 500px;
+}
+
+.bonus-programm--login .bonus-card__form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.bonus-programm--login .bonus-card__form label > span {
+  color: #ed1c24;
+}
+
+.bonus-programm--login .bonus-card__form input[type="text"] {
+  box-sizing: border-box;
+  width: 480px;
+  max-width: 480px;
+  height: 42px;
+  font-size: 14px;
+  line-height: 40px;
+  margin-bottom: 37px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.bonus-programm--login .bonus-card__form input[type="text"]:focus {
+  border: 1px solid #cf453c;
+  outline: none;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label,
+.bonus-programm--login .bonus-card__form .choose-gender input {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 46px;
+  color: #000;
+  cursor: pointer;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label.gender--female {
+  padding-left: 76px;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label::before {
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label.gender--female::before {
+  left: 37px;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label::after {
+  position: absolute;
+  top: -3px;
+  left: 1px;
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #e3e3e3;
+  border-radius: 50%;
+}
+
+.bonus-programm--login .bonus-card__form .choose-gender label.gender--female::after {
+  left: 30px;
+}
+
+.bonus-programm--login .bonus-card__form input[type="radio"] {
+  display: none;
+}
+
+.bonus-programm--login .bonus-card__form input[type="radio"]:checked + label {
+  color: #000;
+}
+
+.bonus-programm--login .bonus-card__form input[type="radio"]:checked + label::after {
+  background-color: #ffb800;
+  border: 1px solid #ffb800;
+}
+
+.bonus-programm--login .bonus-card__form .submit,
+.bonus-programm--login .bonus-card__form .reset {
+  position: relative;
+  top: -10px;
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 48px;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-bottom: 18px;
+  padding-top: 0;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.bonus-programm--login .bonus-card__form .submit {
+  background-color: #ffd33a;
+  box-shadow: 0 1px 0 #ba9101;
+}
+
+.bonus-programm--login .bonus-card__form .reset {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: none;
+  margin-right: 39px;
+  background-color: #ebebed;
+  color: #000;
+  box-shadow: 0 1px 0 #cacaca;
+}
+
+.bonus-programm--login .bonus-card__form .submit:hover {
+  background-color: #ffb33a;
+}
+
+.bonus-programm--login .bonus-card__form .reset:hover {
+  background-color: #dbdbdd;
+  color: #000;
+  border: 1px solid #dbdbdd;
+}
+
+/* Корзина (бонусы) */
+
+.user-menu__bonuses::before {
+  display: block;
+  width: 21px;
+  height: 20px;
+  background-image: url("../../images/sprites.png");
+  background-position: -336px -39px;
+}
+
+.user-menu__bonuses:hover::before,
+.user-menu__bonuses.active::before {
+  background-position: -360px -39px;
+}
+
+.user-menu__bonuses-registered::before {
+  display: block;
+  width: 22px;
+  height: 17px;
+  background-image: url("../../images/sprites.png");
+  background-position: -388px -40px;
+}
+
+.user-menu__bonuses-registered:hover::before,
+.user-menu__bonuses-registered.active::before {
+  background-position: -416px -40px;
+}
+
+.cart-footer {
+  padding-right: 0;
+}
+
+.cart-footer--bonuses,
+.cart-footer--bonuses .cart-footer__total,
+.cart-footer--bonuses .cart-footer__price {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.cart-footer .cart-footer__bonus {
+  display: block;
+  margin-top: 13px;
+  margin-bottom: 26px;
+}
+
+.cart-footer__bonus {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.cart-footer__bonus a {
+  color: #09c;
+  text-decoration: underline;
+}
+
+.cart-footer__bay-button {
+  position: relative;
+  display: inline-block;
+  margin-top: 13px;
+}
+
+.cart-footer--bonuses .cart-footer__total {
+  margin-bottom: 12px;
+}
+
+.cart-footer--bonuses .cart-footer__price,
+.cart-footer .cart-footer__discount strong,
+.cart-footer .cart-footer__bonus-price strong {
+  font-weight: 900;
+}
+
+.cart-footer .cart-footer__discount,
+.cart-footer .cart-footer__bonus-price {
+  display: block;
+}
+
+.cart-footer .cart-footer__discount {
+  margin-bottom: 20px;
+}
+
+.cart-footer .cart-footer__bonus-price {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 42px;
+}
+
+.cart-footer__bay-button--with-bonuses,
+.cart-footer__bay-button--without-bonuses {
+  width: 220px;
+  line-height: 38px;
+  padding-top: 0;
+}
+
+.cart-footer__bay-button--with-bonuses {
+  margin-right: 7px;
+}
+
+/* Оформление заказа (бонусы) */
+
+.pmt-sum {
+  margin-top: 12px!important;
+}
+
+.pmt-sum span {
+  margin-bottom: 11px!important;
+}
+
+.pmt-sum span:last-child {
+  font-weight: 900!important;
+}
+
+.pmt-sum--bonus-price span {
+  margin-bottom: 3px!important;
+}
+
+.pmt-sum--bonus-price span:last-child {
+  font-size: 30px!important;
+  margin-bottom: 20px!important;
+}
+
+/* END - Openbonus */
+
 
 /* Animation fade*/
 @-moz-keyframes fade {
