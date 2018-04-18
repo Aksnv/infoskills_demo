@@ -5575,13 +5575,13 @@ h1 + .pmt-sum {
   background-position: -1618px -62px;
 }
 
-
 .infoskills-popup.messages-popup {
   position: absolute;
-  /* position: fixed; */
   top: 5%;
-  left: calc(50% - 265px);
-  width: 530px;
+  left: calc(50% - 270px);
+  width: 540px;
+  max-height: 100%;
+  padding: 0;
   background-color: white;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
   z-index: 101;
@@ -5589,50 +5589,63 @@ h1 + .pmt-sum {
 
 .infoskills-popup.messages-popup .popup__top {
   position: relative;
-  height: 180px;
-  padding-top: 134px;
-  background-color: #28a42c;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  height: 187px;
+  padding-top: 136px;
+  background-image: url(../../images/pages/openbonus/bg--blue.png);
 }
 
+.infoskills-popup.messages-popup .popup__top::after {
+  position: absolute;
+  left: calc(50% - 8px);
+  bottom: -7px;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #00c4e0;
+  transform: rotate(45deg);
+}
+    
 .infoskills-popup.messages-popup .popup__top--write-off {
   background-color: #e0b10e;
 }
 
 .infoskills-popup.messages-popup .popup__top h1 {
   position: relative;
-  font-family: "Museo Sans Cyrl900";
   font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
   line-height: 20px;
   text-align: center;
-  color: white;
+  color: #000;
 }
 
 .infoskills-popup.messages-popup .popup__top h1::after {
   position: absolute;
-  top: -108px;
+  top: -114px;
   left: calc(50% - 47px);
   content: "";
   display: block;
   width: 108px;
   height: 96px;
   background-image: url("../../images/sprites.png");
-  background-position: -259px -328px;
+  background-position: -2956px -13px;
 }
 
 .infoskills-popup.messages-popup .popup__bottom {
-  padding-top: 57px;
-  padding-left:50px;
-  padding-right:50px;
+  padding-top: 38px;
+  padding-left: 48px;
+  padding-right: 48px;
   padding-bottom: 41px;
 }
 
 .infoskills-popup.messages-popup .popup__bottom label {
   display: block;
-  font-family: "Museo Sans Cyrl900";
-  font-size: 14px;
-  margin-bottom: 6px;
+  font-size: 15px;
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 8px;
+  padding-left: 32px;
   color: #000;
 }
 
@@ -5642,24 +5655,23 @@ h1 + .pmt-sum {
 
 .infoskills-popup.messages-popup .popup__bottom input[type="text"],
 .infoskills-popup.messages-popup .popup__bottom textarea {
-  width: 430px;
-  height: 50px;
-  font-family: "Museo Sans Cyrl300";
+  width: 344px;
+  height: 38px;
   font-size: 14px;
-  line-height: 48px;
-  margin-bottom: 28px;
+  line-height: 36px;
+  margin-bottom: 17px;
   padding-left: 17px;
   padding-right: 17px;
   background-color: transparent;
   color: #28282c;
   border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 .infoskills-popup.messages-popup .popup__bottom textarea {
-  height: 150px;
+  height: 89px;
+  font-family: 'PT Sans', sans-serif;
   line-height: 16px;
-  margin-bottom: 45px;
+  margin-bottom: 28px;
   padding-top: 16px;
   padding-bottom: 16px;
   resize: none;
@@ -5667,7 +5679,7 @@ h1 + .pmt-sum {
 
 .infoskills-popup.messages-popup .popup__bottom input[type="text"]:focus,
 .infoskills-popup.messages-popup .popup__bottom textarea:focus {
-  border: 1px solid #2e8231;
+  border: 1px solid #0099cc;
   outline: none;
 }
 
@@ -5677,8 +5689,8 @@ h1 + .pmt-sum {
 
 .infoskills-popup.messages-popup .popup__bottom label[for="message-email"] {
   position: relative;
-  font-family: "Museo Sans Cyrl300";
   font-size: 14px;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 45px;
   padding-left: 25px;
@@ -5687,8 +5699,8 @@ h1 + .pmt-sum {
 
 .infoskills-popup.messages-popup .popup__bottom label[for="message-email"]::before {
   position: absolute;
-  top: -1px;
-  left: 121px;
+  top: 0;
+  left: 134px;
   content: "";
   display: block;
   width: 14px;
@@ -5697,43 +5709,32 @@ h1 + .pmt-sum {
 }
 
 .infoskills-popup.messages-popup .popup__bottom input[type="checkbox"]:checked + label[for="message-email"]::before {
-  background-color: #ffd33a;
-  border: 1px solid #ffd33a;
+  background-color: #0099cc;
+  border: 1px solid #0099cc;
 }
 
 .infoskills-popup.messages-popup .popup__bottom input[type="checkbox"]:checked + label[for="message-email"]::after {
   position: absolute;
   top: 4px;
-  left: 125px;
+  left: 124px;
   content: "";
   display: block;
   width: 9px;
   height: 6px;
   background-image: url(../../images/sprites.png);
-  background-position: -142px -88px;
+  background-position: -1618px -62px;
 }
 
 .infoskills-popup.messages-popup .submit {
   position: relative;
   display: block;
-  width: 430px;
-  height: 50px;
-  font-family: "Museo Sans Cyrl300";
-  font-size: 18px;
-  line-height: 50px;
   text-decoration: none;
   margin: 0 auto;
   margin-top: 32px;
   margin-bottom: 20px;
-  padding: 0 70px;
   color: #000;
   border: none;
-  border-radius: 30px;
   cursor: pointer;
-}
-
-.infoskills-popup.messages-popup .submit:hover {
-  background-color: #ffa800;
 }
 
 .infoskills-popup.messages-popup--2 .popup__top {
