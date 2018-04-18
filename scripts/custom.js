@@ -320,6 +320,61 @@ $(".bonus-programm--login .bonus-card__form .reset").click(function () {
 });
 
 
+/* Infoskills messages - Select all */
+
+$(".infoskills-messages__header-button--select-all").click(function() {
+  if ($(this).hasClass("infoskills-messages__header-button--checked")) {
+    $(this).removeClass("infoskills-messages__header-button--checked");
+    for (var i = 0; i < $(".infoskills-messages__item-flag input").length; i++) {
+      $($(".infoskills-messages__item-flag input")[i]).removeAttr("checked");
+    }
+  } else {
+    $(this).addClass("infoskills-messages__header-button--checked");
+    for (var i = 0; i < $(".infoskills-messages__item-flag input").length; i++) {
+      $($(".infoskills-messages__item-flag input")[i]).attr("checked", "checked");
+    }
+  }
+});
+
+
+/* Infoskills messages - Mark as read */
+
+$(".infoskills-message__item-mark label").click(function() {
+  if ($(this).hasClass("marked")) {
+    $(this).text("Отметить как не прочитанное");
+    $(this).removeClass("marked");
+  } else {
+    $(this).text("Отметить как прочитанное");
+    $(this).addClass("marked");
+  }
+});
+
+
+/* Infoskills messages - Show/close messages */
+
+$(".infoskills-message__item").click(function() {
+  $(this).toggleClass("infoskills-message__item--open");
+  $(".infoskills-message__show-all-button").removeClass("infoskills-message__show-all-button--close");
+  $(".infoskills-message__show-all-button").text("Свернуть все");
+});
+
+$(".infoskills-message__show-all-button").click(function() {
+  if ($(this).hasClass("infoskills-message__show-all-button--close")) {
+    for (var i = 0; i < $(".infoskills-message__item").length; i++) {
+      $($(".infoskills-message__item")[i]).addClass("infoskills-message__item--open");
+    }
+    $(this).removeClass("infoskills-message__show-all-button--close");
+    $(this).text("Свернуть все");
+  } else {
+    for (var i = 0; i < $(".infoskills-message__item").length; i++) {
+      $($(".infoskills-message__item")[i]).removeClass("infoskills-message__item--open");
+    }
+    $(this).addClass("infoskills-message__show-all-button--close");
+    $(this).text("Развернуть все");
+  }
+});
+
+
 /* jQuery Form Styler activation */
 
 (function($) {

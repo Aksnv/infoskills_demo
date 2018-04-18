@@ -2932,13 +2932,13 @@ p.user-menu__name{
 
 .profile-menu__item{
 	display: inline-block;
-	width: 240px;
+	width: 233px;
 	height: 42px;
 }
 
 .profile-menu__item a{
 	display: inline-block;
-	width: 240px;
+	width: 233px;
 	height: 42px;
 	padding: 5px 0 15px 0;
  -webkit-box-sizing: border-box;
@@ -4824,6 +4824,941 @@ h1 + .pmt-sum {
 }
 
 /* END - Openbonus */
+
+/* Сообщения */
+
+@media screen and (max-width: 1479px) {
+
+  .user-menu__messages {
+    overflow: hidden;
+    width: 17px;
+    height: 14px;
+    display: inline-block;
+  }
+
+  a.user-menu__messages {
+    width: 40px;
+  }
+
+  a.user-menu__messages sup {
+    position: absolute;
+    top: 0;
+    left: 23px;
+  }
+
+}
+
+.user-menu__messages::before {
+  display: block;
+  width: 17px;
+  height: 14px;
+  background-image: url("../../images/sprites.png");
+  background-position: -1818px -33px;
+}
+
+.user-menu__messages:hover::before,
+.user-menu__messages.active::before {
+  background-position: -1818px -33px;
+}
+
+.profile-menu__item-messages::before {
+  width: 20px;
+  height: 17px;
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-image: url("../../images/sprites.png");
+  background-position: -1814px -55px;
+}
+
+.infoskills-messages {
+  margin-bottom: 48px;
+  padding-top: 20px;
+}
+
+.infoskills-messages__header {
+  overflow: hidden;
+  margin-bottom: 27px;
+  padding-top: 40px;
+}
+
+.infoskills-messages__header h1 {
+  float: left;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #000;
+}
+
+.infoskills-messages__header-button {
+  float: left;
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 34px;
+  padding-left: 59px;
+  background-image: none;
+  border: none;
+  color: #333;
+}
+
+.infoskills-messages__header-button:hover {
+  color: #0099cc;
+}
+
+.infoskills-messages__header-button::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../../images/sprites.png");
+}
+
+.infoskills-messages__header-button--select-all::before {
+  top: 10px;
+  left: 35px;
+  width: 14px;
+  height: 14px;
+  background-image: none;
+  border: 1px solid #ccc;
+}
+
+.infoskills-messages__header-button--checked::before {
+  background-color: #0099cc;
+  border: 1px solid #0099cc;
+}
+
+.infoskills-messages__header-button--checked::after {
+  position: absolute;
+  top: 14px;
+  left: 38px;
+  content: "";
+  display: block;
+  width: 9px;
+  height: 6px;
+  background-image: url(../../images/sprites.png);
+  background-position: -1618px -62px;
+}
+
+.infoskills-messages__header-button--mark-as-read,
+.infoskills-messages__header-button--delete-all {
+  padding-left: 45px;
+}
+
+.infoskills-messages__header-button--mark-as-read::before {
+  top: 9px;
+  left: 19px;
+  width: 16px;
+  height: 16px;
+  background-color: #ccc8c2;
+  background-image: none;
+  border-radius: 50%;
+}
+
+.infoskills-messages__header-button--delete-all::before {
+  top: 9px;
+  left: 19px;
+  width: 15px;
+  height: 16px;
+  background-position: -1963px -32px;
+}
+
+.infoskills-messages__header-button--new-message {
+  float: right;
+  top: -5px;
+  width: 224px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  padding-left: 30px;
+  background-color: #ebebed;
+  color: black;
+}
+
+.infoskills-messages__header-button--new-message::before {
+  top: 12px;
+  left: 20px;
+  width: 20px;
+  height: 15px;
+  background-position: -109px -360px;
+}
+
+.infoskills-messages__content {
+  clear: both;
+}
+
+.infoskills-messages__item {
+  margin-bottom: 0;
+  padding-top: 17px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #efece7;
+  border-radius: 5px;
+}
+
+.infoskills-messages__item ul {
+  display: table;
+}
+
+.infoskills-messages__item li {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.infoskills-messages__item li.infoskills-messages__item-flag {
+  vertical-align: top;
+}
+
+.infoskills-messages__item-flag {
+  width: 58px;
+}
+
+.infoskills-messages__item-flag input[type="checkbox"] {
+  display: none;
+}
+
+.infoskills-messages__item-flag label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 22px;
+  border: 1px solid #ccc;
+}
+
+.infoskills-messages__item-flag input[type="checkbox"]:checked + label,
+.infoskills-messages__item-flag input[checked="checked"] + label {
+  position: relative;
+  background-color: #0099cc;
+  border: none;
+}
+
+.infoskills-messages__item-flag input[type="checkbox"]:checked + label::before,
+.infoskills-messages__item-flag input[checked="checked"] + label::before {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  content: "";
+  display: block;
+  width: 9px;
+  height: 6px;
+  background-image: url(../../images/sprites.png);
+  background-position: -1618px -62px;
+}
+
+.item-information__name {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.item-information__date {
+  position: relative;
+  display: inline-block;
+  padding-left: 6px;
+  font-size: 13px;
+  color: #999;
+}
+
+.infoskills-messages__item-information {
+  width: 992px;
+}
+
+.infoskills-messages__item-information h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.infoskills-messages__item-information h2 > a {
+  text-decoration: none;
+  color: #09c;
+}
+
+.infoskills-messages__item-information h2 > a:hover {
+  text-decoration: underline;
+}
+
+.infoskills-messages__item-information h2 > span {
+  font-size: 13px;
+  font-weight: 300;
+  color: #999;
+}
+
+.infoskills-messages__item-information h2 > sup {
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 1px;
+  padding-top: 0;
+  color: #fff;
+}
+
+.item-information__text {
+  font-size: 15px;
+  line-height: 20px;
+  color: #666;
+}
+
+.infoskills-messages__item-delete {
+  width: 130px;
+  padding-left: 85px;
+}
+
+.infoskills-messages__item-delete button {
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 17px;
+  background-image: url("../../images/sprites.png");
+  background-position: -1940px -32px;
+  border: none;
+}
+
+.infoskills-messages__item-delete button:hover {
+  background-position: -1920px -33px;
+}
+
+.infoskills-messages__item-delete button:hover::before {
+  position: absolute;
+  top: 33px;
+  left: -101px;
+  content: "Удалить сообщение";
+  display: block;
+  min-width: 130px;
+  height: 30px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 7px;
+  background-color: #ebebed;
+  color: #28282c;
+  border-radius: 5px;
+}
+
+.infoskills-messages__item-delete button:hover::after {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #ebebed;
+  transform: rotate(45deg);
+}
+
+.infoskills-messages__button-back {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.infoskills-messages__button-back a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 25px;
+  color: #333;
+}
+
+.infoskills-messages__button-back a:hover {
+  color: #ffbc00;
+}
+
+.infoskills-messages__button-back a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 13px;
+  background-image: url("../../images/sprites.png");
+  background-position: -217px -336px;
+}
+
+.infoskills-messages__button-back a:hover::before {
+  background-position: -216px -359px;
+}
+
+.infoskills-message__header {
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.infoskills-message__header button {
+  float: right;
+}
+
+.infoskills-message__header h2,
+.infoskills-message__form h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.infoskills-message__header h2 > span {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 17px;
+  color: #999;
+}
+
+.infoskills-message__header h2 > sup {
+  font-family: "Museo Sans Cyrl100";
+  font-size: 11px;
+  color: white;
+}
+
+.infoskills-message__delete-button {
+  position: relative;
+  top: 6px;
+  display: block;
+  width: 15px;
+  height: 17px;
+  background-image: url("../../images/sprites.png");
+  background-position: -176px -337px;
+}
+
+.infoskills-message__delete-button:hover {
+  background-position: -157px -336px;
+}
+
+.infoskills-message__delete-button:hover::before {
+  position: absolute;
+  top: 33px;
+  left: -101px;
+  content: "Удалить сообщения";
+  display: block;
+  min-width: 130px;
+  height: 30px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 7px;
+  background-color: #ebebed;
+  color: #28282c;
+  border-radius: 5px;
+}
+
+.infoskills-message__delete-button:hover::after {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #ebebed;
+  transform: rotate(45deg);
+}
+
+.infoskills-message__show-all-button {
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 32px;
+  margin-right: 28px;
+  background-image: none;
+  color: #666;
+}
+
+.infoskills-message__show-all-button::before {
+  position: absolute;
+  top: 13px;
+  left: -16px;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 5px;
+  background-image: url("../../images/sprites.png");
+  background-position: -234px -336px;
+}
+
+.infoskills-message__show-all-button--close::before {
+  transform: rotate(180deg);
+}
+
+.infoskills-message__show-all-button:hover {
+  color: #ffbc00;
+}
+
+.infoskills-message__show-all-button:hover::before {
+  background-position: -246px -336px;
+}
+
+.infoskills-message__item,
+.infoskills-message__form {
+  margin-bottom: 10px;
+  padding-top: 17px;
+  padding-left: 18px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.infoskills-message__item {
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.infoskills-message__item--open {
+  padding-bottom: 20px;
+  cursor: default;
+}
+
+.infoskills-message__item--user {
+  padding-left: 67px;
+}
+
+.infoskills-message__item ul {
+  display: table;
+}
+
+.infoskills-message__item li {
+  display: table-cell;
+}
+
+.infoskills-message__item article {
+  margin-right: 0;
+}
+
+.infoskills-message__item--open article {
+  width: 800px;
+  margin-right: 232px;
+}
+
+.infoskills-message__item--open.infoskills-message__item--user article {
+  margin-right: 183px;
+}
+
+.infoskills-message__item .item-information__name {
+  margin-bottom: 11px;
+}
+
+.item-information__new {
+  font-size: 11px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-left: 15px;
+  padding: 5px 10px;
+  background-color: #cf453c;
+  color: white;
+  border-radius: 15px;
+}
+
+.infoskills-message__item--open header,
+.infoskills-message__item--open p {
+  display: block;
+}
+
+.infoskills-message__item--open header {
+  padding-top: 0;
+}
+
+.infoskills-message__item--open .item-information__text {
+  width: 100%;
+  padding-left: 0;
+}
+
+.infoskills-message__item--open .item-information__text::before {
+  display: none;
+}
+
+.infoskills-message__item header,
+.infoskills-message__item p {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.infoskills-message__item header {
+  padding-top: 1px;
+}
+
+.infoskills-message__item .item-information__text {
+  position: relative;
+  width: 785px;
+  height: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 23px;
+}
+
+.infoskills-message__item .item-information__text::before {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  content: "-";
+  display: block;
+}
+
+.infoskills-message__item--open .item-information__text {
+  width: 100%;
+  height: auto;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  padding-left: 0;
+}
+
+.infoskills-message__item .infoskills-message__item-mark {
+  display: none;
+}
+
+.infoskills-message__item--open .infoskills-message__item-mark {
+  display: table-cell;
+  width: 102px;
+  vertical-align: middle;
+}
+
+.infoskills-message__item-mark input[type="checkbox"] {
+  display: none;
+}
+
+.infoskills-message__item-mark label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.infoskills-message__item-mark label::before {
+  position: absolute;
+  top: 9px;
+  left: -25px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 3px solid #ccc8c2;
+  border-radius: 50%;
+}
+
+.infoskills-message__item-mark input[type="checkbox"]:checked + label::before {
+  background-color: #ccc8c2;
+}
+
+.infoskills-message__form {
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  padding-left: 30px;
+  padding-bottom: 26px;
+}
+
+.message__form--left,
+.message__form--right {
+  float: left;
+}
+
+.message__form--left {
+  margin-right: 20px;
+}
+
+.infoskills-message__form h2 {
+  margin-bottom: 20px;
+}
+
+.infoskills-message__form textarea {
+  width: 660px;
+  height: 126px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  padding: 10px;
+  background-color: white;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.infoskills-popup__form textarea::-webkit-input-placeholder {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  color: #28282c;
+}
+
+.infoskills-popup__form textarea:-ms-input-placeholder {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  color: #28282c;
+}
+
+.infoskills-popup__form textarea::-ms-input-placeholder {
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  color: #28282c;
+}
+
+.infoskills-message__form textarea:focus {
+  border: 1px solid #2e8231;
+  outline: none;
+}
+
+.infoskills-message__form input[type="submit"],
+.infoskills-message__form input[type="reset"] {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 50px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.infoskills-message__form input[type="reset"] {
+  width: 200px;
+  margin-left: 17px;
+  background-color: #ebebed;
+  box-shadow: 0 1px 0 #cacaca;
+}
+
+.infoskills-message__form input[type="reset"]:hover {
+  background-color: #dbdbdd;
+}
+
+.infoskills-message__form-email {
+  position: relative;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  margin-top: 40px;
+  padding-left: 40px;
+  color: #28282c;
+}
+
+.infoskills-message__form-email label[for="message-email"]::before {
+  position: absolute;
+  top: -1px;
+  left: 15px;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc;
+}
+
+.infoskills-message__form-email input[type="checkbox"] {
+  display: none;
+}
+
+.infoskills-message__form-email input[type="checkbox"]:checked + label[for="message-email"]::before {
+  background-color: #ffd33a;
+  border: 1px solid #ffd33a;
+}
+
+.infoskills-message__form-email input[type="checkbox"]:checked + label[for="message-email"]::after {
+  position: absolute;
+  top: 4px;
+  left: 19px;
+  content: "";
+  display: block;
+  width: 9px;
+  height: 6px;
+  background-image: url(../../images/sprites.png);
+  background-position: -142px -88px;
+}
+
+
+.infoskills-popup.messages-popup {
+  position: absolute;
+  /* position: fixed; */
+  top: 5%;
+  left: calc(50% - 265px);
+  width: 530px;
+  background-color: white;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+  z-index: 101;
+}
+
+.infoskills-popup.messages-popup .popup__top {
+  position: relative;
+  height: 180px;
+  padding-top: 134px;
+  background-color: #28a42c;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.infoskills-popup.messages-popup .popup__top--write-off {
+  background-color: #e0b10e;
+}
+
+.infoskills-popup.messages-popup .popup__top h1 {
+  position: relative;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+}
+
+.infoskills-popup.messages-popup .popup__top h1::after {
+  position: absolute;
+  top: -108px;
+  left: calc(50% - 47px);
+  content: "";
+  display: block;
+  width: 108px;
+  height: 96px;
+  background-image: url("../../images/sprites.png");
+  background-position: -259px -328px;
+}
+
+.infoskills-popup.messages-popup .popup__bottom {
+  padding-top: 57px;
+  padding-left:50px;
+  padding-right:50px;
+  padding-bottom: 41px;
+}
+
+.infoskills-popup.messages-popup .popup__bottom label {
+  display: block;
+  font-family: "Museo Sans Cyrl900";
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.infoskills-popup.messages-popup .popup__bottom label > span {
+  color: #ed1c24;
+}
+
+.infoskills-popup.messages-popup .popup__bottom input[type="text"],
+.infoskills-popup.messages-popup .popup__bottom textarea {
+  width: 430px;
+  height: 50px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  line-height: 48px;
+  margin-bottom: 28px;
+  padding-left: 17px;
+  padding-right: 17px;
+  background-color: transparent;
+  color: #28282c;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.infoskills-popup.messages-popup .popup__bottom textarea {
+  height: 150px;
+  line-height: 16px;
+  margin-bottom: 45px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  resize: none;
+}
+
+.infoskills-popup.messages-popup .popup__bottom input[type="text"]:focus,
+.infoskills-popup.messages-popup .popup__bottom textarea:focus {
+  border: 1px solid #2e8231;
+  outline: none;
+}
+
+.infoskills-popup.messages-popup .popup__bottom input[type="checkbox"] {
+  display: none;
+}
+
+.infoskills-popup.messages-popup .popup__bottom label[for="message-email"] {
+  position: relative;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 45px;
+  padding-left: 25px;
+  color: #28282c;
+}
+
+.infoskills-popup.messages-popup .popup__bottom label[for="message-email"]::before {
+  position: absolute;
+  top: -1px;
+  left: 121px;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc;
+}
+
+.infoskills-popup.messages-popup .popup__bottom input[type="checkbox"]:checked + label[for="message-email"]::before {
+  background-color: #ffd33a;
+  border: 1px solid #ffd33a;
+}
+
+.infoskills-popup.messages-popup .popup__bottom input[type="checkbox"]:checked + label[for="message-email"]::after {
+  position: absolute;
+  top: 4px;
+  left: 125px;
+  content: "";
+  display: block;
+  width: 9px;
+  height: 6px;
+  background-image: url(../../images/sprites.png);
+  background-position: -142px -88px;
+}
+
+.infoskills-popup.messages-popup .submit {
+  position: relative;
+  display: block;
+  width: 430px;
+  height: 50px;
+  font-family: "Museo Sans Cyrl300";
+  font-size: 18px;
+  line-height: 50px;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 20px;
+  padding: 0 70px;
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.infoskills-popup.messages-popup .submit:hover {
+  background-color: #ffa800;
+}
+
+.infoskills-popup.messages-popup--2 .popup__top {
+  background-color: #fff;
+}
+
+.infoskills-popup.messages-popup--2 .popup__top h1::after {
+  top: -32px;
+  background-position: -107px -378px;
+}
+
+.infoskills-popup.messages-popup--2 strong {
+    display: block;
+    font-family: "Museo Sans Cyrl900";
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #28a42c;
+}
+
+.infoskills-popup.messages-popup--2 p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 43px;
+    color: black;
+}
+
+.infoskills-popup.messages-popup--2 .popup__bottom {
+  padding-bottom: 58px;
+}
+
+
+/* END - Сообщения */
 
 
 /* Animation fade*/

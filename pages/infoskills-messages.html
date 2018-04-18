@@ -224,6 +224,9 @@
         <div class="logged-in">
           <ul class="menu-login-cart">
             <li class="user-menu__item">
+              <a href="#" class="user-menu__messages">Сообщения<sup class="circles-menu__num">36</sup></a>
+            </li>
+            <li class="user-menu__item">
               <a href="profile.html" class="user-menu__profile"><span class="user-menu__name">user@mail.com</span></a>
             </li>
             <li class="user-menu__item">
@@ -411,7 +414,7 @@
       <!-- breadcrumbs -->  
             <div class="breadcrumbs_theme">
         <a href="store.html" class="home">Главная</a>
-        <a href="profile.html" class="current">Личный кабинет</a>
+        <a href="profile.html" class="current">Сообщения</a>
       </div>
       <!-- /breadcrumbs -->
       <!-- content -->
@@ -436,36 +439,101 @@
                 <a href="profile-bookmarks.html" class="profile-menu__item-bookmarks">закладки</a>            
               </li>
               <li class="profile-menu__item">
-                <a href="profile.html"  class="profile-menu__item-info active">личная информация</a>                
-              </li>           
+                <a href="profile.html"  class="profile-menu__item-info">личная информация</a>                
+              </li> 
+              <li class="profile-menu__item">
+                <a href="#"  class="profile-menu__item-messages active">сообщения</a>                
+              </li>          
             </ul>
           </div>
           <!-- /profile menu -->
-          <!-- profile header -->
-          <div class="profile-header">
-            <h1 class="profile-header__item">Личный кабинет</h1>
+            
+          <div class="infoskills-messages">
+            <div class="infoskills-messages__header">
+              <button class="btn black infoskills-messages__header-button infoskills-messages__header-button--new-message">Новое сообщение</button>
+              <h1>Сообщения<sup class="circles-menu__num">36</sup></h1>
+              <button class="infoskills-messages__header-button infoskills-messages__header-button--select-all">Выбрать все</button>
+              <button class="infoskills-messages__header-button infoskills-messages__header-button--mark-as-read">Отметить прочитанное</button>
+              <button class="infoskills-messages__header-button infoskills-messages__header-button--delete-all">Удалить выбранные сообщения</button>
+            </div>
+            <div class="infoskills-messages__content">
+              <div class="infoskills-messages__item">
+                <ul>
+                  <li class="infoskills-messages__item-flag">
+                    <input type="checkbox" name="infoskills-messages__item-flag--1" id="infoskills-messages__item-flag--1">
+                    <label for="infoskills-messages__item-flag--1"></label>
+                  </li>
+                  <li class="infoskills-messages__item-information">
+                    <article>
+                      <header>
+                        <p><strong class="item-information__name">Команда Pokupo</strong> <span class="item-information__date">28 марта 2018 г.</span></p>
+                        <h2><a href="#">Обновление условий доставки и бонусной программы</a> <span>(1)</span> <sup class="circles-menu__num">3</sup></h2>
+                      </header>
+                      <p class="item-information__text">Руководствуясь периодическим законом, трехкомпонентное образование возбуждает восстановитель. Непосредственно из законов сохранения следует, что уравнение энергично. Радикал, как и везде в пределах наблюдаемой вселенной, проникает атом, минуя жидкое состояние.</p>
+                    </article>
+                  </li>
+                  <li class="infoskills-messages__item-delete">
+                    <button></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="infoskills-messages__item">
+                <ul>
+                  <li class="infoskills-messages__item-flag">
+                    <input type="checkbox" name="infoskills-messages__item-flag--2" id="infoskills-messages__item-flag--2">
+                    <label for="infoskills-messages__item-flag--2"></label>
+                  </li>
+                  <li class="infoskills-messages__item-information">
+                    <article>
+                      <header>
+                        <p><strong class="item-information__name">Команда Pokupo</strong> <span class="item-information__date">сегодня в 21:32</span></p>
+                        <h2><a href="infoskills-message.html">Плановые технические работы</a> <span>(4)</span> <sup class="circles-menu__num">2</sup></h2>
+                      </header>
+                      <p class="item-information__text">Уважаемые пользователи Pokupo!<br> Завтра, 28.03.2018, с 04:00 до 11:00 по московскому времени серверы портала будут остановлены для проведения плановых технических работ.</p>
+                    </article>
+                  </li>
+                  <li class="infoskills-messages__item-delete">
+                    <button></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="infoskills-messages__item">
+                <ul>
+                  <li class="infoskills-messages__item-flag">
+                    <input type="checkbox" name="infoskills-messages__item-flag--3" id="infoskills-messages__item-flag--3">
+                    <label for="infoskills-messages__item-flag--3"></label>
+                  </li>
+                  <li class="infoskills-messages__item-information">
+                    <article>
+                      <header>
+                        <p><strong class="item-information__name">Константин</strong> <span class="item-information__date">сегодня в 21:32</span></p>
+                        <h2><a href="#">Плановые технические работы</a> <span>(4)</span> </h2>
+                      </header>
+                      <p class="item-information__text">Скинь мне свои реквизиты</p>
+                    </article>
+                  </li>
+                  <li class="infoskills-messages__item-delete">
+                    <button></button>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <!-- /profile header -->          
-          <!-- profile info -->     
-          <div class="profile-info">
-            <div class="profile-info__name">
-              <span class="profile-info__name-label">Имя:</span><span class="profile-info__name-data">Игорь</span>
-            </div>
-            <div class="profile-info__email">
-              <span class="profile-info__email-label">Почта:</span><span class="profile-info__email-data">user@mail.com</span>
-            </div>
-            <div class="profile-info__tel">
-              <span class="profile-info__tel-label">Телефон:</span><span class="profile-info__tel-data">8-923-333-33-33</span>
-            </div>
-            <div class="profile-info__adress">
-              <span class="profile-info__adress-label">Адрес:</span><span class="profile-info__adress-data">г. Иркутск, ул. Забобонова, д.1, кв. 1</span>
-            </div>
-            <div class="profile-info__buttons">
-              <a href="profile-edit.html" class="i-change">Редактировать данные</a>
-              <a href="profile-password.html" class="i-pass">Сменить пароль</a>           
-            </div>          
+
+          <div class="pagination_theme">
+            <ul class="pagination_list">
+              <li class="pagination_list__item arrow-left"><a href="javascript:void(0);"></a></li>      
+              <li class="pagination_list__item active first"><a href="javascript:void(0);">1</a></li>
+              <li class="pagination_list__item"><a href="javascript:void(0);">2</a></li>
+              <li class="pagination_list__item"><a href="javascript:void(0);">3</a></li>
+              <li class="pagination_list__item"><a href="javascript:void(0);">4</a></li>
+              <li class="pagination_list__item"><a href="javascript:void(0);">5</a></li>
+              <li class="pagination_list__item dots">...</li>
+              <li class="pagination_list__item last"><a href="javascript:void(0);">124</a></li>                                       
+              <li class="pagination_list__item arrow-right"><a href="javascript:void(0);"></a></li>
+            </ul>
           </div>
-          <!-- /profile info -->  
+ 
         </div>
         <!-- profile -->
       </div>

@@ -1168,7 +1168,7 @@ a.product-info__question-button{
 }
 
 .profile-menu__item .active{
-	border-bottom: 2px solid #00c4e0;
+	border-bottom: 4px solid #00c4e0;
 }
 
 .profile-menu__item-purchases:before{
