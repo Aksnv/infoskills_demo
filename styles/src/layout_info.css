@@ -4970,7 +4970,8 @@ h1 + .pmt-sum {
   height: 40px;
   font-size: 18px;
   line-height: 40px;
-  padding-left: 30px;
+  /* padding-left: 30px; */
+  padding-left: 6px;
   background-color: #ebebed;
   color: black;
 }
@@ -5109,7 +5110,7 @@ h1 + .pmt-sum {
 .infoskills-messages__item-delete button {
   position: relative;
   display: block;
-  width: 15px;
+  width: 16px;
   height: 17px;
   background-image: url("../../images/sprites.png");
   background-position: -1940px -32px;
