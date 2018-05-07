@@ -52,6 +52,11 @@
 		width: 1470px;
 	}
 
+	.infoskills-message__item--open article,
+	.infoskills-message__item .item-information__text {
+		width: 1260px;
+	}
+
 	/* END - Messages */
 	
 }
@@ -146,6 +151,11 @@
 
 	.infoskills-messages__item-information {
 		width: 1230px;
+	}
+
+	.infoskills-message__item--open article,
+	.infoskills-message__item .item-information__text {
+		width: 1024px;
 	}
 
 	/* END - Messages */
@@ -462,6 +472,16 @@
 	.btn.infoskills-messages__header-button--new-message {
 		width: 224px;
 		padding-left: 6px;
+	}
+
+	.infoskills-message__item--open article {
+		width: 680px;
+		margin-right: 110px;
+	}
+
+	.infoskills-message__item--open.infoskills-message__item--user article {
+		width: 620px;
+		margin-right: 110px;
 	}
 
 	/* END - Messages */
@@ -2488,6 +2508,23 @@
 		width: 475px;
 	}
 
+	/* Messages */
+
+	.infoskills-message__item .item-information__text,
+	.infoskills-message__item--open article {
+		width: 505px;
+	}
+
+	.infoskills-message__item--open article {
+		margin-right: 76px;
+	}
+
+	.infoskills-message__item--open.infoskills-message__item--user article {
+		width: 412px;
+	}
+
+	/* END - Messages */
+
 }
 
 @media screen and (max-width: 759px) {
@@ -2547,6 +2584,60 @@
 	.advanced-search__form h3::after {
 		width: 238px;
 	}
+
+	/* Messages */
+
+	.infoskills-message__item .item-information__text, 
+	.infoskills-message__item--open article {
+		width: 360px;
+	}
+
+	.infoskills-message__item--open.infoskills-message__item--user article {
+		width: 266px;
+	}
+
+	.infoskills-message__item--open .infoskills-message__item-mark {
+		vertical-align: top;
+	}
+
+	.infoskills-message__item-mark label::before {
+		top: -9px;
+	}
+
+	.infoskills-message__item-mark label {
+		font-size: 0;
+	}
+
+	.infoskills-message__header {
+		position: relative;
+	}
+
+	.infoskills-message__header h2 {
+		width: 460px;
+	}
+
+	.infoskills-message__header button {
+		position: absolute;
+		right: 0;
+	}
+
+	.infoskills-message__delete-button {
+		top: -60px;
+	}
+
+	.infoskills-message__show-all-button {
+		top: -72px;
+	}
+
+	.infoskills-message__form {
+		width: 460px;
+	}
+
+	.infoskills-message__form textarea {
+		width: 380px;
+	}
+
+	/* END - Messages */
 
 }
 
@@ -2624,5 +2715,54 @@
 	.advanced-search__form h3::after {
 		display: none;
 	}
+
+	/* Messages */
+
+	.infoskills-messages__button-back {
+		width: 360px;
+		margin: 0 auto;
+		margin-top: 32px;
+		margin-bottom: 42px;
+	}
+
+	.infoskills-message {
+		width: 360px;
+		margin: 0 auto;
+	}
+
+	.infoskills-message__header {
+		padding-right: 0;
+	}
+
+	.infoskills-message__header h2 {
+		width: 360px;
+	}
+
+	.infoskills-message__item .item-information__text, 
+	.infoskills-message__item--open article {
+		width: 300px;
+	}
+
+	.infoskills-message__item--user {
+		padding-left: 50px;
+	}
+
+	.infoskills-message__item--open article {
+		margin-right: 40px;
+	}
+
+	.infoskills-message__item--open.infoskills-message__item--user article {
+		width: 202px;
+	}
+
+	.infoskills-message__form {
+		width: 360px;
+	}
+
+	.infoskills-message__form textarea {
+		width: 280px;
+	}
+
+	/* END - Messages */
 
 }
