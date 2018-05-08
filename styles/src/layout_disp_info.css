@@ -2763,6 +2763,19 @@
 		width: 300px;
 	}
 
+	.infoskills-message__item .item-information__text {
+		display: none;
+	}
+
+	.infoskills-message__item--open .item-information__text {
+		display: block;
+	}
+
+	.infoskills-message__show-all-button {
+		top: 50px;
+		margin-right: 0;
+	}
+
 	.infoskills-message__item--user {
 		padding-left: 50px;
 	}

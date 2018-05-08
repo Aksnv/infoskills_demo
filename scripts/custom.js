@@ -383,7 +383,7 @@ $(window).resize(function() {
     $(".btn.infoskills-messages__header-button--new-message").css("width", "80px");
   } else {
     $(".btn.infoskills-messages__header-button--new-message").text("Новое сообщение");
-    $(".btn.infoskills-messages__header-button--new-message").css("width", "160px");
+    $(".btn.infoskills-messages__header-button--new-message").css("width", "224px");
   }
 });
 
@@ -393,7 +393,7 @@ $(document).ready(function() {
     $(".btn.infoskills-messages__header-button--new-message").css("width", "80px");
   } else {
     $(".btn.infoskills-messages__header-button--new-message").text("Новое сообщение");
-    $(".btn.infoskills-messages__header-button--new-message").css("width", "160px");
+    $(".btn.infoskills-messages__header-button--new-message").css("width", "224px");
   }
 });
 
