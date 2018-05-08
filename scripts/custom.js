@@ -375,6 +375,29 @@ $(".infoskills-message__show-all-button").click(function() {
 });
 
 
+/* Infoskills messages - Content */
+
+$(window).resize(function() {
+  if ($(".container_theme").css("width") == "300px") {
+    $(".btn.infoskills-messages__header-button--new-message").text("Новое");
+    $(".btn.infoskills-messages__header-button--new-message").css("width", "80px");
+  } else {
+    $(".btn.infoskills-messages__header-button--new-message").text("Новое сообщение");
+    $(".btn.infoskills-messages__header-button--new-message").css("width", "160px");
+  }
+});
+
+$(document).ready(function() {
+  if ($(".container_theme").css("width") == "300px") {
+    $(".btn.infoskills-messages__header-button--new-message").text("Новое");
+    $(".btn.infoskills-messages__header-button--new-message").css("width", "80px");
+  } else {
+    $(".btn.infoskills-messages__header-button--new-message").text("Новое сообщение");
+    $(".btn.infoskills-messages__header-button--new-message").css("width", "160px");
+  }
+});
+
+
 /* jQuery Form Styler activation */
 
 (function($) {

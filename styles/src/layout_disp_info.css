@@ -1445,6 +1445,7 @@
 	}
 
 	.infoskills-messages__header h1 {
+		float: none;
 		margin-bottom: 12px;
 	}
 
@@ -2109,6 +2110,25 @@
 	.pagination_list__item a {
 		width: 37px;
 	}
+
+	.infoskills-messages__item li {
+		vertical-align: bottom;
+	}
+
+	.infoskills-messages__item-information {
+		position: relative;
+	}
+
+	.infoskills-messages__item-information h2 > sup {
+		position: absolute;
+		top: 0;
+		right: -50px;
+	}
+
+	.profile-menu__item-messages.active::before {
+		background-position: -1788px -55px;
+	}
+
 
 	/* END - Messages */
 	
