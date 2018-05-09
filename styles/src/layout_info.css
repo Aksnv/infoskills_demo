@@ -1,8 +1,8 @@
 /* Main layout styles */
 
-body {
-	min-width: 515px;
-}
+/* body {
+  min-width: 515px;
+} */
 
 
 img{
@@ -5717,7 +5717,7 @@ h1 + .pmt-sum {
 .infoskills-popup.messages-popup .popup__bottom input[type="checkbox"]:checked + label[for="message-email"]::after {
   position: absolute;
   top: 4px;
-  left: 124px;
+  left: 137px;
   content: "";
   display: block;
   width: 9px;
