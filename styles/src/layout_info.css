@@ -182,6 +182,30 @@ img:focus {
 	display: none;
 }
 
+.contact-information {
+  float: right;
+  text-align: right;
+  padding-top: 56px;
+  padding-right: 41px;
+}
+
+.header_theme.sticky .contact-information {
+  padding-top: 14px;
+}
+
+.contact-information p {
+  line-height: 16px;
+}
+
+.contact-information__phone {
+  font-size: 16px;
+}
+
+.contact-information a.contact-information__email {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #09c;
+}
 
 /* ------------- Menu click styles ------------- */
 .main-menu_theme{
