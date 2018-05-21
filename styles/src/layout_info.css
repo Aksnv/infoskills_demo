@@ -835,13 +835,13 @@ img:focus {
 
 /* ------------- Dropdown cart ------------- */
 
-#cartInfoWidgetId{
-	display: block;
-	position: absolute;
-	top: -2px;
-	left: 124px;
-	width: 111px;	
-}
+/* #cartInfoWidgetId{
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 124px;
+  width: 111px;  
+} */
 
 .cart-menu{
 	position: relative;
@@ -1005,9 +1005,9 @@ a#cart_dropdown__trigger:before{
 
 /* ------------- User menu ------------- */
 
-#userInformationWidgetId{
-	display: block;
-}
+/* #userInformationWidgetId{
+  display: block;
+} */
 
 .user-menu__item{
 	display: inline-block;
