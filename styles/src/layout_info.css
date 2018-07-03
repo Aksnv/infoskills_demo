@@ -341,6 +341,11 @@ img:focus {
 	margin-right:22px;
 }
 
+.item-quantity {
+  padding-left: 3px;
+  color: #7b7b7b;
+}
+
 .content-menu_wrapper {
   margin-top: 32px;
   background-color: #484848;
