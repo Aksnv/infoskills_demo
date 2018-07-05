@@ -3910,6 +3910,11 @@ p.user-menu__name{
   color: #666;
 }
 
+.read-fragment__article a.read-fragment__dl-fragment-link {
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .read-fragment__paginator {
   position: relative;
   margin-bottom: 10px;
