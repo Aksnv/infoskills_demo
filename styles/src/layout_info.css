@@ -190,7 +190,8 @@ img:focus {
 }
 
 .header_theme.sticky .contact-information {
-  padding-top: 14px;
+  /* padding-top: 14px; */
+  padding-top: 26px;
 }
 
 .contact-information p {
@@ -1635,7 +1636,8 @@ p.user-menu__name{
 }
 
 .catalog-item__name{
-	height: 30px;
+	/* height: 30px; */
+  height: 27px;
 	overflow: hidden;
 }
 
@@ -2596,6 +2598,11 @@ p.user-menu__name{
 .product-about {
   clear: both;
   padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.product-about p {
+  line-height: 20px;
 }
 
 .product-certificate--is ~ .product-about {
@@ -2705,7 +2712,7 @@ p.user-menu__name{
 /* ------ Product recommendations ------ */
 
 .product-rec{
-	margin-top: 50px;
+	/* margin-top: 50px; */
     width: 63.5%;
 	padding-top: 50px;
 }
