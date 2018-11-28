@@ -1394,6 +1394,7 @@ p.user-menu__name{
 }
 
 .menu-catalog .menu__item a{
+  position: relative;
 	display: block;
 	padding: 10px;
 }
@@ -1401,6 +1402,24 @@ p.user-menu__name{
 .menu-catalog.menu-catalog__main .menu__item a{
 	display: block;
 	padding: 20px;
+}
+
+.menu-catalog .menu__item a.arrow-to-top::before {
+  position: absolute;
+  top: 5px;
+  left: -1px;
+  content: "\2191";
+  font-size: 20px;
+  color: #333;
+}
+
+.menu-catalog .menu__item a.arrow-to-bottom::before {
+  position: absolute;
+  top: 5px;
+  left: -1px;
+  content: "\2193";
+  font-size: 20px;
+  color: #333;
 }
 
 /* ------------- Content menu ---------------- */
