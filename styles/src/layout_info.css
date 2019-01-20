@@ -2341,7 +2341,7 @@ p.user-menu__name{
   min-height: 628px;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-image: url("../../images/pages/certificate/certificate_is_bg.jpg");
+  background-image: url("../../images/certificate/certificate_is_bg.jpg");
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -2479,27 +2479,27 @@ p.user-menu__name{
 }
 
 .product-certificate--is .certificate__social-link--vk {
-  background-image: url("../../images/pages/certificate/vk.png");
+  background-image: url("../../images/certificate/vk.png");
 }
 
 .product-certificate--is .certificate__social-link--ok {
-  background-image: url("../../images/pages/certificate/ok.png");
+  background-image: url("../../images/certificate/ok.png");
 }
 
 .product-certificate--is .certificate__social-link--tw {
-  background-image: url("../../images/pages/certificate/tw.png");
+  background-image: url("../../images/certificate/tw.png");
 }
 
 .product-certificate--is .certificate__social-link--fb {
-  background-image: url("../../images/pages/certificate/fb.png");
+  background-image: url("../../images/certificate/fb.png");
 }
 
 .product-certificate--is .certificate__social-link--mm {
-  background-image: url("../../images/pages/certificate/mm.png");
+  background-image: url("../../images/certificate/mm.png");
 }
 
 .product-certificate--is .certificate__social-link--lj {
-  background-image: url("../../images/pages/certificate/lj.png");
+  background-image: url("../../images/certificate/lj.png");
 }
 
 /* ------ Product cost ------ */
@@ -4034,7 +4034,7 @@ p.user-menu__name{
 .openbonus-popup--1 .popup__top {
   position: relative;
   height: 187px;
-  background-image: url("../../images/pages/openbonus/bg--blue.png");
+  background-image: url("../../images/openbonus/bg--blue.png");
   background-color: #cf453c;
 }
 
@@ -4046,7 +4046,7 @@ p.user-menu__name{
   display: block;
   width: 298px;
   height: 215px;
-  background-image: url("../../images/pages/openbonus/bonus-card.png");
+  background-image: url("../../images/openbonus/bonus-card.png");
 }
 
 .openbonus-popup--1 .popup__top::after {
@@ -4162,7 +4162,7 @@ p.user-menu__name{
   position: relative;
   height: 187px;
   padding-top: 134px;
-  background-image: url("../../images/pages/openbonus/bg--blue.png");
+  background-image: url("../../images/openbonus/bg--blue.png");
   background-color: #cf453c;
 }
 
@@ -4334,7 +4334,7 @@ p.user-menu__name{
 /* Начисление/списание бонусов */
 
 .openbonus-popup--dark.openbonus-popup--2 .popup__top {
-  background-image: url("../../images/pages/openbonus/bg--pink.png");
+  background-image: url("../../images/openbonus/bg--pink.png");
   background-color: #cf453c;
 }
 
@@ -5656,7 +5656,7 @@ h1 + .pmt-sum {
   position: relative;
   height: 187px;
   padding-top: 136px;
-  background-image: url(../../images/pages/openbonus/bg--blue.png);
+  background-image: url(../../images/openbonus/bg--blue.png);
 }
 
 .infoskills-popup.messages-popup .popup__top::after {
