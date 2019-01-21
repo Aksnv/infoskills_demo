@@ -127,11 +127,15 @@ input[type="text"]:focus {
 
 /* Personal */
 
-.menu-login__login:before {
+.menu-login__login:before,
+.user-menu__profile:before {
   background: transparent url(../../../images/sprites.png) -244px -64px no-repeat;
 }
 
-.menu-login__login:hover:before, .menu-login__login:focus:before {
+.menu-login__login:hover:before, 
+.menu-login__login:focus:before,
+.user-menu__profile:hover:before, 
+.user-menu__profile:focus:before {
   background: transparent url(../../../images/sprites.png) -261px -65px no-repeat;
 }
 
@@ -195,6 +199,18 @@ a.cart-menu__cart-button:focus {
 
 .header_theme .cart-menu__order-button:hover {
   color: #ffffff;
+}
+
+.cart-item__bookmarks-button {
+  color: #444444;
+}
+
+.cart-footer__bay-button {
+  background-color: #fecc51;
+}
+
+.cart-footer__bay-button:hover {
+  background-color: #e4b749;
 }
 
 /* Bookmarks */
