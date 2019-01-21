@@ -223,6 +223,22 @@ a.cart-menu__cart-button:focus {
   background: transparent url(../../../images/sprites.png) -1734px -29px no-repeat;
 }
 
+.catalog-item__del-button {
+  color: #444444;
+}
+
+.i-del:before {
+  background: transparent url(../../../images/sprites.png) -1813px -79px no-repeat;
+}
+
+.i-del:hover {
+  color: #fecc51;
+}
+
+.i-del:hover:before {
+  background: transparent url(../../../images/sprites.png) -1814px -113px no-repeat;
+}
+
 /* Content menu */
 
 .section_content-menu .content-menu_button:hover {
