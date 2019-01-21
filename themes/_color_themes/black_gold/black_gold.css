@@ -3,6 +3,10 @@
 	background: #fecc51;	
 }
 
+input[type="text"]:focus {
+  outline-color: #fecc51;
+}
+
 /* Header */
 
 .header_theme {
@@ -198,6 +202,40 @@ a.cart-menu__cart-button:focus {
 /* Breadcrumbs */
 
 .breadcrumbs_theme a:hover, .breadcrumbs_theme a:focus {
+  color: #fecc51;
+}
+
+/* Slider */
+
+.slider-pagination__item--active {
+  background-color: #fecc51;
+}
+
+/* Pagination */
+
+.pagination_main a:hover {
+  color: #fecc51;
+}
+
+.pagination_main a:hover:before {
+  background: transparent url(../../../images/sprites.png) -203px -44px no-repeat;
+}
+
+/* Main */
+
+.menu-catalog.menu-catalog__main .menu__item a:hover {
+  color: #fecc51;
+}
+
+.menu-catalog.menu-catalog__main .menu__item a:hover > span {
+  border-bottom: 1px dotted #fecc51;
+}
+
+.menu-catalog.menu-catalog__main .menu__item a.active {
+  color: #666;
+}
+ 
+.catalog-main__item .catalog-item__name a:hover {
   color: #fecc51;
 }
 
