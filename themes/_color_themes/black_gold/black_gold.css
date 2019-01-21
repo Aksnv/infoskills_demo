@@ -111,6 +111,20 @@ input[type="text"]:focus {
   border-left: 0;
 }
 
+/* Contact information */
+
+.contact-information a.contact-information__email {
+  color: #fecc51;
+}
+
+.contact-information {
+  padding-top: 50px;
+}
+
+.header_theme.sticky .contact-information {
+  padding-top: 15px;
+}
+
 /* Personal */
 
 .menu-login__login:before {
@@ -342,6 +356,12 @@ a.cart-menu__cart-button:focus {
 .add-review-form__reset:hover {
   color: #666;
   text-decoration: none;
+}
+
+/* Certificate */
+
+.product-certificate--is .certificate__content a {
+  color: #fecc51;
 }
 
 /* Footer */
