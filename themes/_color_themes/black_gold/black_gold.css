@@ -305,3 +305,56 @@ a.cart-menu__cart-button:focus {
   color: #666;
   text-decoration: none;
 }
+
+/* Footer */
+
+.footer_pokupo a:hover,
+.footer_menu a:hover, 
+.footer_menu a:focus {
+  color: #fecc51;
+}
+
+.footer_contact a {
+  color: #666;
+}
+
+.footer_contact a.i-mail,
+.footer_contact a.i-skype,
+.footer_contact a.i-support {
+  text-decoration: underline;
+}
+
+.footer_contact a:hover, 
+.footer_contact a:focus {
+  color: #fecc51;
+  text-decoration: none;
+}
+
+.footer_contact a.i-mail:hover,
+.footer_contact a.i-skype:hover,
+.footer_contact a.i-support:hover,
+.footer_contact a.i-mail:focus,
+.footer_contact a.i-skype:focus,
+.footer_contact a.i-support:focus {
+  text-decoration: underline;
+}
+
+.footer_theme a:hover > span {
+  color: #fecc51;
+}
+
+.footer_pokupo a {
+  color: #444444;
+  text-decoration: underline;
+}
+
+
+/* Back-to-top */
+
+.back-to-top:hover {
+  color: #fecc51;
+}
+
+.back-to-top:hover:after {
+  background: transparent url(../../../images/sprites.png) -170px -45px no-repeat;
+}
