@@ -235,6 +235,16 @@ a.cart-menu__cart-button:focus {
   background: transparent url(../../../images/sprites.png) -203px -44px no-repeat;
 }
 
+.pagination_list__item a:hover,
+.pagination_list__item.active a:hover {
+  border: 1px solid #fecc51;
+}
+
+.pagination_list__item.arrow-left a:hover,
+.pagination_list__item.arrow-right a:hover {
+  border: none;
+}
+
 /* Main */
 
 .menu-catalog.menu-catalog__main .menu__item a:hover {
@@ -362,6 +372,28 @@ a.cart-menu__cart-button:focus {
 
 .product-certificate--is .certificate__content a {
   color: #fecc51;
+}
+
+/* Catalog */
+
+.menu-catalog .menu__item a:hover, 
+.menu-catalog .menu__item a:focus {
+  color: #fecc51;
+}
+
+.menu-catalog .menu__item a:hover > span,
+.menu-catalog .menu__item a:focus > span {
+  border-bottom: 1px dotted #fecc51;
+}
+
+.menu-catalog .menu__item a.active:hover,
+.menu-catalog .menu__item a.active:focus {
+  color: #333333;
+}
+
+.menu-catalog .menu__item a.active:hover > span,
+.menu-catalog .menu__item a.active:focus > span {
+  border-bottom: none;
 }
 
 /* Footer */
