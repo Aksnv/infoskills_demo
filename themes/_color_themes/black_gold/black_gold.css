@@ -236,6 +236,22 @@ input[type="text"]:focus {
   background: transparent url(../../../images/sprites.png) -1872px -10px no-repeat;
 }
 
+.i-open {
+  color: #444444;
+}
+
+.i-open:hover {
+  color: #fecc51;
+}
+
+.i-open:before {
+  background: transparent url(../../../images/sprites.png) -1830px -80px no-repeat;
+}
+
+.i-open:hover:before {
+  background: transparent url(../../../images/sprites.png) -1814px -113px no-repeat;
+}
+
 /* Cart */
 
 a#cart_dropdown__trigger:hover {
