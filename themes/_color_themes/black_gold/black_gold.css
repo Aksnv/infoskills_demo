@@ -464,6 +464,50 @@ a.cart-menu__cart-button:focus {
   border-bottom: none;
 }
 
+/* Order */
+
+.pkp-input:focus {
+  border: 1px solid #fecc51;
+}
+
+.pkp-payment-method__item:hover {
+  border: 1px solid #fecc51;
+}
+
+.pkp-payment-method__pay {
+  background-color: #fecc51;
+  border: 1px solid #fecc51;
+}
+
+.pkp-payment-method__item:hover .pkp-payment-method__pay {
+  background-color: #e4b749;
+  color: #ffffff;
+  border: 1px solid #e4b749;
+}
+
+.pkp-tooltip__trigger {
+  border: 1px solid #fecc51;
+  color: #fecc51;
+}
+
+.pkp-tooltip:hover .pkp-tooltip__trigger {
+  background-color: #fecc51;
+}
+
+.pkp-tooltip__content a {
+  color: #fecc51;
+}
+
+.pkp-btn_back {
+  color: #fecc51;
+  border: 2px solid #fecc51;
+}
+
+.pkp-btn_back:hover {
+  background-color: #e4b749;
+  border: 2px solid #e4b749;
+}
+
 /* Footer */
 
 .footer_pokupo a:hover,
