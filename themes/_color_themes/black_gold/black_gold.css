@@ -252,6 +252,52 @@ input[type="text"]:focus {
   background: transparent url(../../../images/sprites.png) -1814px -113px no-repeat;
 }
 
+.profile-info-edit__form input:focus {
+  outline: 2px solid #fecc51;
+}
+
+.profile-info-edit__form-sub {
+  background-color: #fecc51;
+}
+
+.profile-info-edit__form-sub:hover {
+  background-color: #e4b749;
+}
+
+.profile-info-edit__form-reset {
+  color: #fecc51;
+  border: 2px solid #fecc51;
+}
+
+.profile-info-edit__form-reset:hover {
+  background-color: #e4b749;
+  color: #ffffff;
+  border: 2px solid #e4b749;
+}
+
+.profile-info-password__form input:focus {
+  outline: 2px solid #fecc51;
+}
+
+.profile-info-password__form-sub {
+  background-color: #fecc51;
+}
+
+.profile-info-password__form-sub:hover {
+  background-color: #e4b749;
+}
+
+.profile-info-password__form-reset {
+  color: #fecc51;
+  border: 2px solid #fecc51;
+}
+
+.profile-info-password__form-reset:hover {
+  background-color: #e4b749;
+  color: #ffffff;
+  border: 2px solid #e4b749;
+}
+
 /* Cart */
 
 a#cart_dropdown__trigger:hover {
