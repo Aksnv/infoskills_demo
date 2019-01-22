@@ -605,18 +605,21 @@ img:focus {
   top: 0;
   content: "";
   display: block;
-  width: 100%;
+  /* width: 100%; */
+  width: 30px;
   height: 100%;
   background-color: #efece7;
   z-index: -1;
 }
 
 .advanced-search__form::before {
-  left: -100%;
+  /* left: -100%; */
+  left: -30px;
 }
 
 .advanced-search__form::after {
-  right: -100%;
+  /* right: -100%; */
+  right: -30px;
 }
 
 .advanced-search__form h3 {

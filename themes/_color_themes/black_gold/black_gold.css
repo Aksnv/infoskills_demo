@@ -111,6 +111,37 @@ input[type="text"]:focus {
   border-left: 0;
 }
 
+.search-results .product-info__bookmarks-button {
+  color: #444444;
+}
+
+.search-results .product-info__bookmarks-button:hover {
+  text-decoration: none;
+}
+
+.advanced-search__top-button a {
+  color: #444444;
+  border-bottom: 1px dotted #444444;
+}
+
+.advanced-search__form select:focus, 
+.advanced-search__form input:focus {
+  outline-color: #fecc51;
+}
+
+.advanced-search__form input[type="submit"] {
+  background-color: #fecc51;
+}
+
+.advanced-search__form input[type="submit"]:hover {
+  background-color: #e4b749;
+  color: #ffffff;
+}
+
+.ui-widget-header {
+  background: #fecc51;
+}
+
 /* Contact information */
 
 .contact-information a.contact-information__email {
@@ -191,6 +222,11 @@ a.cart-menu__cart-button:focus {
 
 .cart-menu__order-button {
   background-color: #fecc51;
+  color: #000000;
+}
+
+.header_theme a.cart-menu__order-button {
+  color: #000000;
 }
 
 .cart-menu__order-button:hover {
