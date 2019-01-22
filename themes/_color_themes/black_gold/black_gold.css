@@ -494,7 +494,8 @@ a.cart-menu__cart-button:focus {
   background-color: #fecc51;
 }
 
-.pkp-tooltip__content a {
+.pkp-tooltip__content a,
+.pmt-message__text a {
   color: #fecc51;
 }
 
@@ -506,6 +507,35 @@ a.cart-menu__cart-button:focus {
 .pkp-btn_back:hover {
   background-color: #e4b749;
   border: 2px solid #e4b749;
+}
+
+.pkp-btn_pay {
+  background-color: #fecc51;
+}
+
+.pkp-btn_pay:hover {
+  background-color: #e4b749;
+  cursor: pointer;
+}
+
+.pmt-message__label {
+  color: #000000;
+  cursor: pointer;
+}
+
+.pmt-message__label span {
+  border-bottom: 1px dotted #000000;
+}
+
+.pmt-message__label:after {
+  width: 13px;
+  height: 13px;
+  background: transparent url(../../../images/sprites.png) -961px -8px no-repeat;
+  transform: rotate(90deg);
+}
+
+.pmt-message__print {
+  cursor: pointer;
 }
 
 /* Footer */
