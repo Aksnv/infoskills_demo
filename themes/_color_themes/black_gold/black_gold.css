@@ -542,6 +542,20 @@ a.cart-menu__cart-button:focus {
   border-left: 1px solid #fecc51;
 }
 
+/* Content */
+
+.main-content_theme a {
+  color: #fecc51;
+}
+
+.main-content_help-question a {
+  border-bottom: 1px dotted #fecc51;
+}
+
+.main-content_help .main-content_help-answer {
+  border-left: 1px solid #fecc51;
+}
+
 /* Footer */
 
 .footer_pokupo a:hover,
@@ -584,7 +598,6 @@ a.cart-menu__cart-button:focus {
   text-decoration: underline;
 }
 
-
 /* Back-to-top */
 
 .back-to-top:hover {
@@ -593,4 +606,41 @@ a.cart-menu__cart-button:focus {
 
 .back-to-top:hover:after {
   background: transparent url(../../../images/sprites.png) -170px -45px no-repeat;
+}
+
+/* Popup */
+
+.popup__drop a:hover {
+  background-color: #e4b749;
+}
+
+.popup-content__form input.inline-input:focus {
+  outline: 2px solid #fecc51;
+}
+
+.popup-content__form__remember + a {
+  color: #fecc51;
+}
+
+.btn.black {
+  background-color: #fecc51;
+}
+
+.btn.black:hover {
+  background-color: #e4b749;
+}
+
+.btn.blue {
+  color: #fecc51;
+  border: 2px solid #fecc51;
+}
+
+.btn.blue:hover {
+  background-color: #e4b749;
+  border: 2px solid #e4b749;
+}
+
+.popup-content__form__remember .i-checkbox:checked + label:before {
+  background-color: #fecc51;
+  border: 1px solid #fecc51;
 }
