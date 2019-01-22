@@ -538,6 +538,10 @@ a.cart-menu__cart-button:focus {
   cursor: pointer;
 }
 
+.pmt-message__text {
+  border-left: 1px solid #fecc51;
+}
+
 /* Footer */
 
 .footer_pokupo a:hover,
