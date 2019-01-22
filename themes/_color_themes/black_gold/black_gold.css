@@ -27,6 +27,16 @@ input[type="text"]:focus {
   background: transparent url("../../../images/_color_themes/black_gold/logo/logo-s.png") center center no-repeat;
 }
 
+.user-menu__item:hover > a, 
+.user-menu__item:focus > a {
+  color: #ffffff;
+}
+
+.user-menu__item:hover > a:hover, 
+.user-menu__item:focus > a:focus {
+  color: #fecc51;
+}
+
 /* Menu */
 
 .btn-menu-click + label:before, .btn-menu-click:indeterminate + label:before {
@@ -170,6 +180,62 @@ input[type="text"]:focus {
   background: transparent url(../../../images/sprites.png) -261px -65px no-repeat;
 }
 
+.profile-menu__item .active {
+  border-bottom: 4px solid #fecc51;
+}
+
+.profile-head_name a {
+  color: #444444;
+  text-decoration: underline;
+}
+
+.profile-head_name a:hover {
+  text-decoration: none;
+}
+
+.profile-menu__item a:hover, 
+.profile-menu__item a:focus {
+  color: #fecc51;
+}
+
+.profile-menu__item-purchases:hover:before, 
+.profile-menu__item-purchases:focus:before {
+  background: transparent url(../../../images/sprites.png) -507px -60px no-repeat;
+}
+
+.profile-menu__item-cart:hover:before, 
+.profile-menu__item-cart:focus:before {
+  background: transparent url(../../../images/sprites.png) -475px -77px no-repeat;
+}
+
+.profile-menu__item-bookmarks:hover:before, 
+.profile-menu__item-bookmarks:focus:before {
+  background: transparent url(../../../images/sprites.png) -450px -55px no-repeat;
+}
+
+.profile-menu__item-info:hover:before, 
+.profile-menu__item-info:focus:before {
+  background: transparent url(../../../images/sprites.png) -425px -54px no-repeat;
+}
+
+.profile-info__buttons a {
+  color: #444444;
+  text-decoration: underline;
+}
+
+.profile-info__buttons a:hover {
+  color: #444444;
+  text-decoration: none;
+}
+
+.i-change:hover:before {
+  background: transparent url(../../../images/sprites.png) -1845px -10px no-repeat;
+}
+
+.i-pass:hover:before {
+  background: transparent url(../../../images/sprites.png) -1872px -10px no-repeat;
+}
+
 /* Cart */
 
 a#cart_dropdown__trigger:hover {
@@ -247,6 +313,16 @@ a.cart-menu__cart-button:focus {
 
 .cart-footer__bay-button:hover {
   background-color: #e4b749;
+}
+
+/* Purchases */
+
+.user-menu__purchases:before {
+  background: transparent url(../../../images/sprites.png) -287px -80px no-repeat;
+}
+
+.user-menu__purchases:hover:before {
+  background: transparent url(../../../images/sprites.png) -309px -27px no-repeat;
 }
 
 /* Bookmarks */
