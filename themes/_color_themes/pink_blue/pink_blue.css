@@ -45,26 +45,26 @@ input[type="text"]:focus {
 
 .btn-menu-click + label:hover:before, .btn-menu-click:indeterminate + label:hover:before, 
 .btn-menu-click + label:focus:before, .btn-menu-click:indeterminate + label:focus:before {
-  background: transparent url(../../../images/sprites.png) -8px -117px no-repeat;
+  background: transparent url(../../../images/sprites.png) -39px -139px no-repeat;
 }
 
 .btn-menu-click:checked + label {
-  color: #fecc51;
+  color: #7ec1df;
 }
 
 .btn-menu-click:checked + label:before {
   width: 12px;
   height: 12px;
   margin-top: 2px;
-  background: transparent url(../../../images/sprites.png) -808px -28px no-repeat;
+  background: transparent url(../../../images/sprites.png) -784px -48px no-repeat;
 } 
 
 .btn-menu-click:checked + label:hover:before, .btn-menu-click:checked + label:focus:before {
-  background: transparent url(../../../images/sprites.png) -808px -28px no-repeat;
+  background: transparent url(../../../images/sprites.png) -784px -48px no-repeat;
 }
 
 .menu-click-dropdown {
-  background: #444444;
+  background: #363636;
 }
 
 .menu-click-dropdown a:active, 
@@ -75,20 +75,20 @@ input[type="text"]:focus {
 .menu-click-dropdown li.active, 
 .menu-click-dropdown li:hover, 
 .menu-click-dropdown li:focus {
-  color: #fecc51;
+  color: #7ec1df;
 }
 
 .menu-click-dropdown li.menu__item:hover > a, 
 .menu-click-dropdown li.menu__item:focus > a,
 .menu-click-dropdown li ul.submenu a:hover, 
 .menu-click-dropdown li ul.submenu a:focus {
-  color: #fecc51;
+  color: #7ec1df;
 }
 
 /* Search */
 
 .menu-main-search label:hover, .menu-main-search label:focus {
-  color: #fecc51;
+  color: #7ec1df;
 }
 
 .btn-search-click + label:before {

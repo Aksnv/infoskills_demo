@@ -18,8 +18,17 @@ input[type="text"]:focus {
   color: #000000;
 }
 
+.header_theme a > span {
+  color: #ffffff;
+}
+
 .header_theme a:hover,
 .header_theme a:focus {
+  color: #00883c;
+}
+
+.header_theme a:hover > span,
+.header_theme a:focus > span {
   color: #00883c;
 }
 
@@ -40,31 +49,31 @@ input[type="text"]:focus {
 /* Menu */
 
 .btn-menu-click + label:before, .btn-menu-click:indeterminate + label:before {
-  background: transparent url(../../../images/sprites.png) -38px -117px no-repeat;
+  background: transparent url(../../../images/sprites.png) -11px -11px no-repeat;
 }
 
 .btn-menu-click + label:hover:before, .btn-menu-click:indeterminate + label:hover:before, 
 .btn-menu-click + label:focus:before, .btn-menu-click:indeterminate + label:focus:before {
-  background: transparent url(../../../images/sprites.png) -8px -117px no-repeat;
+  background: transparent url(../../../images/sprites.png) -8px -181px no-repeat;
 }
 
 .btn-menu-click:checked + label {
-  color: #fecc51;
+  color: #00883c;
 }
 
 .btn-menu-click:checked + label:before {
   width: 12px;
   height: 12px;
   margin-top: 2px;
-  background: transparent url(../../../images/sprites.png) -808px -28px no-repeat;
+  background: transparent url(../../../images/sprites.png) -833px -28px no-repeat;
 } 
 
 .btn-menu-click:checked + label:hover:before, .btn-menu-click:checked + label:focus:before {
-  background: transparent url(../../../images/sprites.png) -808px -28px no-repeat;
+  background: transparent url(../../../images/sprites.png) -833px -28px no-repeat;
 }
 
 .menu-click-dropdown {
-  background: #444444;
+  background: #363636;
 }
 
 .menu-click-dropdown a:active, 
@@ -75,20 +84,20 @@ input[type="text"]:focus {
 .menu-click-dropdown li.active, 
 .menu-click-dropdown li:hover, 
 .menu-click-dropdown li:focus {
-  color: #fecc51;
+  color: #00883c;
 }
 
 .menu-click-dropdown li.menu__item:hover > a, 
 .menu-click-dropdown li.menu__item:focus > a,
 .menu-click-dropdown li ul.submenu a:hover, 
 .menu-click-dropdown li ul.submenu a:focus {
-  color: #fecc51;
+  color: #00883c;
 }
 
 /* Search */
 
 .menu-main-search label:hover, .menu-main-search label:focus {
-  color: #fecc51;
+  color: #00883c;
 }
 
 .btn-search-click + label:before {
