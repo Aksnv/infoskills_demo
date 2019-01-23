@@ -384,7 +384,7 @@ a.cart-menu__cart-button:focus {
 }
 
 .user-menu__purchases:hover:before {
-  background: transparent url(../../../images/sprites.png) -309px -27px no-repeat;
+  background: transparent url(../../../images/sprites.png) -287px -64px no-repeat;
 }
 
 /* Bookmarks */
@@ -394,7 +394,7 @@ a.cart-menu__cart-button:focus {
 }
 
 .user-menu__bookmarks:hover:before, .user-menu__bookmarks:focus:before {
-  background: transparent url(../../../images/sprites.png) -1734px -29px no-repeat;
+  background: transparent url(../../../images/sprites.png) -1706px -64px no-repeat;
 }
 
 .catalog-item__del-button {
@@ -406,29 +406,29 @@ a.cart-menu__cart-button:focus {
 }
 
 .i-del:hover {
-  color: #fecc51;
+  color: #fc922c;
 }
 
 .i-del:hover:before {
-  background: transparent url(../../../images/sprites.png) -1814px -113px no-repeat;
+  background: transparent url(../../../images/sprites.png) -1815px -188px no-repeat;
 }
 
 /* Content menu */
 
 .section_content-menu .content-menu_button:hover {
-  color: #fecc51;
+  color: #fc922c;
 }
 
 /* Breadcrumbs */
 
 .breadcrumbs_theme a:hover, .breadcrumbs_theme a:focus {
-  color: #fecc51;
+  color: #fc922c;
 }
 
 /* Slider */
 
 .slider-pagination__item--active {
-  background-color: #fecc51;
+  background-color: #fc922c;
 }
 
 /* Pagination */
