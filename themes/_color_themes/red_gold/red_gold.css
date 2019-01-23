@@ -477,21 +477,21 @@ a.cart-menu__cart-button:focus {
 }
 
 .product-sell__bay-button {
-  background-color: #fecc51;
+  background-color: #fc922c;
 }
 
 .product-sell__bay-button:hover {
-  background-color: #e4b749;
+  background-color: #be7181;
 }
 
 .product-sell__cart-button {
-  color: #fecc51;
-  border: 2px solid #fecc51;
+  color: #fc922c;
+  border: 2px solid #fc922c;
 }
 
 .product-sell__cart-button:hover {
   color: #ffffff;
-  background-color: #e4b749;
+  background-color: #be7181;
   border: none;
 }
 
@@ -500,7 +500,7 @@ a.cart-menu__cart-button:focus {
 }
 
 .i-checkbox + label:before {
-  color: #fecc51;
+  color: #fc922c;
 }
 
 .product-info__rb a {
@@ -534,11 +534,11 @@ a.cart-menu__cart-button:focus {
 }
 
 .catalog-item__bay-button {
-  background-color: #fecc51;
+  background-color: #fc922c;
 }
 
 .catalog-item__bay-button:hover {
-  background-color: #e4b749;
+  background-color: #be7181;
 }
 
 .catalog-item__bookmarks-button {
@@ -550,23 +550,23 @@ a.cart-menu__cart-button:focus {
 }
 
 .add-review-button {
-  border: 2px solid #fecc51;
-  color: #fecc51;
+  border: 2px solid #fc922c;
+  color: #fc922c;
 }
 
 .add-review-button:hover {
   color: #ffffff;
-  background-color: #e4b749;
+  background-color: #be7181;
   border: none;
 }
 
 .add-review-form__submit {
-  border: 2px solid #fecc51;
-  background-color: #fecc51;
+  border: 2px solid #fc922c;
+  background-color: #fc922c;
 }
 
 .add-review-form__submit:hover {
-  background-color: #e4b749;
+  background-color: #be7181;
 }
 
 .add-review-form__reset:hover {
@@ -577,7 +577,7 @@ a.cart-menu__cart-button:focus {
 /* Certificate */
 
 .product-certificate--is .certificate__content a {
-  color: #fecc51;
+  color: #fc922c;
 }
 
 /* Catalog */
