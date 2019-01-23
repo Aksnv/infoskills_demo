@@ -96,11 +96,11 @@ input[type="text"]:focus {
 }
 
 .btn-search-click + label:hover:before, .btn-search-click + label:focus:before {
-  background: transparent url(../../../images/sprites.png) -72px -115px no-repeat;
+  background: transparent url(../../../images/sprites.png) -98px -162px no-repeat;
 }
 
 .search-click-slide-holder button.btn_search:hover, .search-click-slide-holder button.btn_search:focus {
-  background: transparent url(../../../images/sprites.png) -72px -115px no-repeat;
+  background: transparent url(../../../images/sprites.png) -98px -162px no-repeat;
 }
 
 .btn_close-click + label:hover:before, .btn_close-click + label:focus:before {
@@ -108,16 +108,16 @@ input[type="text"]:focus {
   margin-bottom: 6px;
   margin-left: 14px;
   margin-right: 6px;
-  background: transparent url(../../../images/sprites.png) -808px -28px no-repeat;
+  background: transparent url(../../../images/sprites.png) -856px -28px no-repeat;
 }
 
 .btn_close-click + label:hover + div > form > .search-click-slide-holder, 
 .btn_close-click + label:focus + div > form > .search-click-slide-holder {
-  border: 1px solid #fecc51;
+  border: 1px solid #fc922c;
 }
 
 .btn_close-click + label:hover, .btn_close-click + label:focus {
-  border: 1px solid #fecc51;
+  border: 1px solid #fc922c;
   border-left: 0;
 }
 
@@ -136,20 +136,20 @@ input[type="text"]:focus {
 
 .advanced-search__form select:focus, 
 .advanced-search__form input:focus {
-  outline-color: #fecc51;
+  outline-color: #fc922c;
 }
 
 .advanced-search__form input[type="submit"] {
-  background-color: #fecc51;
+  background-color: #fc922c;
 }
 
 .advanced-search__form input[type="submit"]:hover {
-  background-color: #e4b749;
+  background-color: #be7181;
   color: #ffffff;
 }
 
 .ui-widget-header {
-  background: #fecc51;
+  background: #fc922c;
 }
 
 /* Contact information */

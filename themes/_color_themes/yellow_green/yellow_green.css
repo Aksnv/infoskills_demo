@@ -101,15 +101,15 @@ input[type="text"]:focus {
 }
 
 .btn-search-click + label:before {
-  background: transparent url(../../../images/sprites.png) -2164px -10px no-repeat;
+  background: transparent url(../../../images/sprites.png) -80px -63px no-repeat;
 }
 
 .btn-search-click + label:hover:before, .btn-search-click + label:focus:before {
-  background: transparent url(../../../images/sprites.png) -72px -115px no-repeat;
+  background: transparent url(../../../images/sprites.png) -72px -163px no-repeat;
 }
 
 .search-click-slide-holder button.btn_search:hover, .search-click-slide-holder button.btn_search:focus {
-  background: transparent url(../../../images/sprites.png) -72px -115px no-repeat;
+  background: transparent url(../../../images/sprites.png) -72px -163px no-repeat;
 }
 
 .btn_close-click + label:hover:before, .btn_close-click + label:focus:before {
@@ -117,16 +117,16 @@ input[type="text"]:focus {
   margin-bottom: 6px;
   margin-left: 14px;
   margin-right: 6px;
-  background: transparent url(../../../images/sprites.png) -808px -28px no-repeat;
+  background: transparent url(../../../images/sprites.png) -833px -28px no-repeat;
 }
 
 .btn_close-click + label:hover + div > form > .search-click-slide-holder, 
 .btn_close-click + label:focus + div > form > .search-click-slide-holder {
-  border: 1px solid #fecc51;
+  border: 1px solid #00883c;
 }
 
 .btn_close-click + label:hover, .btn_close-click + label:focus {
-  border: 1px solid #fecc51;
+  border: 1px solid #00883c;
   border-left: 0;
 }
 
@@ -145,20 +145,20 @@ input[type="text"]:focus {
 
 .advanced-search__form select:focus, 
 .advanced-search__form input:focus {
-  outline-color: #fecc51;
+  outline-color: #00883c;
 }
 
 .advanced-search__form input[type="submit"] {
-  background-color: #fecc51;
+  background-color: #00883c;
 }
 
 .advanced-search__form input[type="submit"]:hover {
-  background-color: #e4b749;
+  background-color: #006d30;
   color: #ffffff;
 }
 
 .ui-widget-header {
-  background: #fecc51;
+  background: #00883c;
 }
 
 /* Contact information */
