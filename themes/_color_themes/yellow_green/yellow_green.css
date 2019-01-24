@@ -614,54 +614,54 @@ a.cart-menu__cart-button:focus {
 /* Order */
 
 .pkp-input:focus {
-  border: 1px solid #fecc51;
+  border: 1px solid #00883c;
 }
 
 .pkp-payment-method__item:hover {
-  border: 1px solid #fecc51;
+  border: 1px solid #00883c;
 }
 
 .pkp-payment-method__pay {
-  background-color: #fecc51;
-  border: 1px solid #fecc51;
+  background-color: #00883c;
+  border: 1px solid #00883c;
 }
 
 .pkp-payment-method__item:hover .pkp-payment-method__pay {
-  background-color: #e4b749;
+  background-color: #006d30;
   color: #ffffff;
-  border: 1px solid #e4b749;
+  border: 1px solid #006d30;
 }
 
 .pkp-tooltip__trigger {
-  border: 1px solid #fecc51;
-  color: #fecc51;
+  border: 1px solid #00883c;
+  color: #00883c;
 }
 
 .pkp-tooltip:hover .pkp-tooltip__trigger {
-  background-color: #fecc51;
+  background-color: #00883c;
 }
 
 .pkp-tooltip__content a,
 .pmt-message__text a {
-  color: #fecc51;
+  color: #00883c;
 }
 
 .pkp-btn_back {
-  color: #fecc51;
-  border: 2px solid #fecc51;
+  color: #00883c;
+  border: 2px solid #00883c;
 }
 
 .pkp-btn_back:hover {
-  background-color: #e4b749;
-  border: 2px solid #e4b749;
+  background-color: #006d30;
+  border: 2px solid #006d30;
 }
 
 .pkp-btn_pay {
-  background-color: #fecc51;
+  background-color: #00883c;
 }
 
 .pkp-btn_pay:hover {
-  background-color: #e4b749;
+  background-color: #006d30;
   cursor: pointer;
 }
 
@@ -686,21 +686,21 @@ a.cart-menu__cart-button:focus {
 }
 
 .pmt-message__text {
-  border-left: 1px solid #fecc51;
+  border-left: 1px solid #00883c;
 }
 
 /* Content */
 
 .main-content_theme a {
-  color: #fecc51;
+  color: #00883c;
 }
 
 .main-content_help-question a {
-  border-bottom: 1px dotted #fecc51;
+  border-bottom: 1px dotted #00883c;
 }
 
 .main-content_help .main-content_help-answer {
-  border-left: 1px solid #fecc51;
+  border-left: 1px solid #00883c;
 }
 
 /* Footer */
