@@ -141,6 +141,7 @@ input[type="text"]:focus {
 
 .advanced-search__form input[type="submit"] {
   background-color: #e31837;
+  color: #ffffff;
 }
 
 .advanced-search__form input[type="submit"]:hover {
@@ -258,6 +259,7 @@ input[type="text"]:focus {
 
 .profile-info-edit__form-sub {
   background-color: #e31837;
+  color: #ffffff;
 }
 
 .profile-info-edit__form-sub:hover {
@@ -281,6 +283,7 @@ input[type="text"]:focus {
 
 .profile-info-password__form-sub {
   background-color: #e31837;
+  color: #ffffff;
 }
 
 .profile-info-password__form-sub:hover {
@@ -354,7 +357,7 @@ a.cart-menu__cart-button:focus {
 }
 
 .header_theme a.cart-menu__order-button {
-  color: #000000;
+  color: #ffffff;
 }
 
 .cart-menu__order-button:hover {
@@ -371,6 +374,7 @@ a.cart-menu__cart-button:focus {
 
 .cart-footer__bay-button {
   background-color: #e31837;
+  color: #ffffff;
 }
 
 .cart-footer__bay-button:hover {
@@ -415,6 +419,10 @@ a.cart-menu__cart-button:focus {
 
 /* Content menu */
 
+.content-menu_wrapper {
+  background-color: #363636;
+}
+
 .section_content-menu .content-menu_button:hover {
   color: #e31837;
 }
@@ -438,7 +446,7 @@ a.cart-menu__cart-button:focus {
 }
 
 .pagination_main a:hover:before {
-  background: transparent url(../../../images/sprites.png) -203px -44px no-repeat;
+  background: transparent url(../../../images/sprites.png) -201px -148px no-repeat;
 }
 
 .pagination_list__item a:hover,
@@ -478,6 +486,7 @@ a.cart-menu__cart-button:focus {
 
 .product-sell__bay-button {
   background-color: #e31837;
+  color: #ffffff;
 }
 
 .product-sell__bay-button:hover {
@@ -496,7 +505,7 @@ a.cart-menu__cart-button:focus {
 }
 
 .i-cart-bl:before {
-  background: transparent url(../../../images/sprites.png) -362px -33px no-repeat;
+  background: transparent url(../../../images/sprites.png) -337px -79px no-repeat;
 }
 
 .i-checkbox + label:before {
@@ -535,6 +544,7 @@ a.cart-menu__cart-button:focus {
 
 .catalog-item__bay-button {
   background-color: #e31837;
+  color: #ffffff;
 }
 
 .catalog-item__bay-button:hover {
@@ -563,6 +573,7 @@ a.cart-menu__cart-button:focus {
 .add-review-form__submit {
   border: 2px solid #e31837;
   background-color: #e31837;
+  color: #ffffff;
 }
 
 .add-review-form__submit:hover {
@@ -589,6 +600,7 @@ a.cart-menu__cart-button:focus {
 
 .menu-catalog .menu__item a:hover > span,
 .menu-catalog .menu__item a:focus > span {
+  color: #e31837;
   border-bottom: 1px dotted #e31837;
 }
 
@@ -614,6 +626,7 @@ a.cart-menu__cart-button:focus {
 
 .pkp-payment-method__pay {
   background-color: #e31837;
+  color: #ffffff;
   border: 1px solid #e31837;
 }
 
@@ -649,6 +662,7 @@ a.cart-menu__cart-button:focus {
 
 .pkp-btn_pay {
   background-color: #e31837;
+  color: #ffffff;
 }
 
 .pkp-btn_pay:hover {
@@ -743,7 +757,7 @@ a.cart-menu__cart-button:focus {
 }
 
 .back-to-top:hover:after {
-  background: transparent url(../../../images/sprites.png) -171px -102px no-repeat;
+  background: transparent url(../../../images/sprites.png) -170px -101px no-repeat;
 }
 
 /* Popup */

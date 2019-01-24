@@ -415,6 +415,10 @@ a.cart-menu__cart-button:focus {
 
 /* Content menu */
 
+.content-menu_wrapper {
+  background-color: #484848;
+}
+
 .section_content-menu .content-menu_button:hover {
   color: #fecc51;
 }
@@ -589,6 +593,7 @@ a.cart-menu__cart-button:focus {
 
 .menu-catalog .menu__item a:hover > span,
 .menu-catalog .menu__item a:focus > span {
+  color: #fecc51;
   border-bottom: 1px dotted #fecc51;
 }
 

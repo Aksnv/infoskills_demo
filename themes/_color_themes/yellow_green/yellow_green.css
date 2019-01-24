@@ -101,7 +101,7 @@ input[type="text"]:focus {
 }
 
 .btn-search-click + label:before {
-  background: transparent url(../../../images/sprites.png) -80px -63px no-repeat;
+  background: transparent url(../../../images/sprites.png) -72px -10px no-repeat;
 }
 
 .btn-search-click + label:hover:before, .btn-search-click + label:focus:before {
@@ -150,6 +150,7 @@ input[type="text"]:focus {
 
 .advanced-search__form input[type="submit"] {
   background-color: #00883c;
+  color: #ffffff;
 }
 
 .advanced-search__form input[type="submit"]:hover {
@@ -179,7 +180,7 @@ input[type="text"]:focus {
 
 .menu-login__login:before,
 .user-menu__profile:before {
-  background: transparent url(../../../images/sprites.png) -244px -64px no-repeat;
+  background: transparent url(../../../images/sprites.png) -242px -10px no-repeat;
 }
 
 .menu-login__login:hover:before, 
@@ -258,7 +259,7 @@ input[type="text"]:focus {
 }
 
 .i-open:hover:before {
-  background: transparent url(../../../images/sprites.png) -1831px -205px no-repeat;
+  background: transparent url(../../../images/sprites.png) -1846px -189px no-repeat;
 }
 
 .profile-info-edit__form input:focus {
@@ -267,6 +268,7 @@ input[type="text"]:focus {
 
 .profile-info-edit__form-sub {
   background-color: #00883c;
+  color: #ffffff;
 }
 
 .profile-info-edit__form-sub:hover {
@@ -290,6 +292,7 @@ input[type="text"]:focus {
 
 .profile-info-password__form-sub {
   background-color: #00883c;
+  color: #ffffff;
 }
 
 .profile-info-password__form-sub:hover {
@@ -314,7 +317,7 @@ a#cart_dropdown__trigger:hover {
 }
 
 a#cart_dropdown__trigger:before {
-  background: transparent url(../../../images/sprites.png) -336px -33px no-repeat;
+  background: transparent url(../../../images/sprites.png) -333px -11px no-repeat;
 }
 
 a#cart_dropdown__trigger:hover:before,
@@ -363,7 +366,7 @@ a.cart-menu__cart-button:focus {
 }
 
 .header_theme a.cart-menu__order-button {
-  color: #000000;
+  color: #ffffff;
 }
 
 .cart-menu__order-button:hover {
@@ -380,6 +383,7 @@ a.cart-menu__cart-button:focus {
 
 .cart-footer__bay-button {
   background-color: #00883c;
+  color: #ffffff;
 }
 
 .cart-footer__bay-button:hover {
@@ -399,7 +403,7 @@ a.cart-menu__cart-button:focus {
 /* Bookmarks */
 
 .user-menu__bookmarks:before {
-  background: transparent url(../../../images/sprites.png) -1720px -46px no-repeat;
+  background: transparent url(../../../images/sprites.png) -1728px -11px no-repeat;
 }
 
 .user-menu__bookmarks:hover:before, .user-menu__bookmarks:focus:before {
@@ -419,10 +423,14 @@ a.cart-menu__cart-button:focus {
 }
 
 .i-del:hover:before {
-  background: transparent url(../../../images/sprites.png) -1815px -203px no-repeat;
+  background: transparent url(../../../images/sprites.png) -1801px -187px no-repeat;
 }
 
 /* Content menu */
+
+.content-menu_wrapper {
+  background-color: #484848;
+}
 
 .section_content-menu .content-menu_button:hover {
   color: #00883c;
@@ -447,7 +455,7 @@ a.cart-menu__cart-button:focus {
 }
 
 .pagination_main a:hover:before {
-  background: transparent url(../../../images/sprites.png) -203px -44px no-repeat;
+  background: transparent url(../../../images/sprites.png) -201px -184px no-repeat;
 }
 
 .pagination_list__item a:hover,
@@ -487,6 +495,7 @@ a.cart-menu__cart-button:focus {
 
 .product-sell__bay-button {
   background-color: #00883c;
+  color: #ffffff;
 }
 
 .product-sell__bay-button:hover {
@@ -505,7 +514,7 @@ a.cart-menu__cart-button:focus {
 }
 
 .i-cart-bl:before {
-  background: transparent url(../../../images/sprites.png) -362px -33px no-repeat;
+  background: transparent url(../../../images/sprites.png) -339px -101px no-repeat;
 }
 
 .i-checkbox + label:before {
@@ -544,6 +553,7 @@ a.cart-menu__cart-button:focus {
 
 .catalog-item__bay-button {
   background-color: #00883c;
+  color: #ffffff;
 }
 
 .catalog-item__bay-button:hover {
@@ -572,6 +582,7 @@ a.cart-menu__cart-button:focus {
 .add-review-form__submit {
   border: 2px solid #00883c;
   background-color: #00883c;
+  color: #ffffff;
 }
 
 .add-review-form__submit:hover {
@@ -598,6 +609,7 @@ a.cart-menu__cart-button:focus {
 
 .menu-catalog .menu__item a:hover > span,
 .menu-catalog .menu__item a:focus > span {
+  color: #00883c;
   border-bottom: 1px dotted #00883c;
 }
 
@@ -623,6 +635,7 @@ a.cart-menu__cart-button:focus {
 
 .pkp-payment-method__pay {
   background-color: #00883c;
+  color: #ffffff;
   border: 1px solid #00883c;
 }
 
@@ -752,7 +765,7 @@ a.cart-menu__cart-button:focus {
 }
 
 .back-to-top:hover:after {
-  background: transparent url(../../../images/sprites.png) -171px -140px no-repeat;
+  background: transparent url(../../../images/sprites.png) -170px -139px no-repeat;
 }
 
 /* Popup */
@@ -762,7 +775,7 @@ a.cart-menu__cart-button:focus {
 }
 
 .popup-content__form input.inline-input:focus {
-  outline: 2px solid #00883c;
+  outline: 2px solid #ffa800;
 }
 
 .popup-content__form__remember + a {
@@ -804,8 +817,8 @@ a.cart-menu__cart-button:focus {
 }
 
 .popup-content__form__remember .i-checkbox:checked + label:before {
-  background-color: #00883c;
-  border: 1px solid #00883c;
+  background-color: #ffa800;
+  border: 1px solid #ffa800;
 }
 
 .i-ok {
