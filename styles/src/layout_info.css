@@ -3987,7 +3987,7 @@ p.user-menu__name{
   display: block;
   width: 12px;
   height: 22px;
-  background-image: url("../../images/read-fragment_arrow.png");
+  background: transparent url(../../images/sprites.png) -267px -35px no-repeat;
 }
 
 .popup--read-fragment__left-arrow {
@@ -3995,7 +3995,7 @@ p.user-menu__name{
 }
 
 .popup--read-fragment__left-arrow:hover {
-  background-image: url("../../images/read-fragment_arrow-active.png");
+  background: transparent url(../../images/sprites.png) -247px -35px no-repeat;
   transform: rotate(180deg);
   cursor: pointer;
 }
@@ -4006,7 +4006,7 @@ p.user-menu__name{
 }
 
 .popup--read-fragment__right-arrow:hover {
-  background-image: url("../../images/read-fragment_arrow-active.png");
+  background: transparent url(../../images/sprites.png) -247px -35px no-repeat;
   transform: rotate(360deg);
   cursor: pointer;
 }
