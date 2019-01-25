@@ -978,6 +978,27 @@ a.cart-menu__cart-button:focus {
 
 @media screen and (max-width: 519px) {
 
+  /* Main */
+
+  .catalog-main__item .catalog-item__bookmarks-button {
+    color: #fecc51;
+    border: 2px solid #fecc51;
+  }
+
+  .catalog-main__item .catalog-item__bookmarks-button:hover {
+    background-color: #e4b749;
+    color: #ffffff;
+    border: 2px solid #e4b749;
+  }
+
+  .catalog-main__item .catalog-item__bookmarks-button:before {
+    background: transparent url(../../../images/sprites.png) -451px -55px no-repeat;
+  }
+
+  .catalog-main__item .catalog-item__bookmarks-button:hover:before {
+    background: transparent url(../../../images/sprites.png) -451px -33px no-repeat;
+  }
+
   /* Personal */
 
   .profile-menu__item .active {

@@ -1826,6 +1826,7 @@
 		display: inline-block;
 		width: 145px;
 		height: 42px;
+		text-align: center;
 		padding-top: 11px;
 		 -webkit-box-sizing: border-box;
 		 -moz-box-sizing: border-box;
@@ -1912,7 +1913,8 @@
 	.catalog-item__info {
 		display: inline-block;
 		width: 180px;
-		margin-left: 16px;
+		/* margin-left: 16px; */
+		margin-left: 0;
 	}	
 
 /* Product */
