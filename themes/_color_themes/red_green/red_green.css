@@ -854,7 +854,7 @@ a.cart-menu__cart-button:focus {
   /* Header */
 
   .btn-menu-click-mobile:checked + label + div > .menu-click > .menu-click-dropdown {
-    background: #363636 url(../../../images/_color_themes/black_gold/logo/logo-w.png) 40px 15px no-repeat;
+    background: #363636 url(../../../images/_color_themes/red_green/logo/logo-w.png) 40px 15px no-repeat;
   }
 
   /* Menu */
@@ -869,7 +869,7 @@ a.cart-menu__cart-button:focus {
   .btn-menu-click-mobile:indeterminate + label:hover:before, 
   .btn-menu-click-mobile + label:focus:before, 
   .btn-menu-click-mobile:indeterminate + label:focus:before {
-    background: transparent url(../../../images/sprites.png) -8px -117px no-repeat;
+    background: transparent url(../../../images/sprites.png) -8px -160px no-repeat;
   }
 
   .btn-menu-click-mobile:checked + label {
@@ -885,7 +885,7 @@ a.cart-menu__cart-button:focus {
   .btn-menu-click-mobile:checked + label:hover:before, 
   .btn-menu-click-mobile:checked + label:focus:before {
     margin-top: 2px;
-    background: transparent url(../../../images/sprites.png) -803px -28px no-repeat; /* по Х на 5px меньше */
+    background: transparent url(../../../images/sprites.png) -801px -48px no-repeat; /* по Х на 5px меньше */
   }
 
   .menu-login-cart .user-menu__item a.cart-menu__bay-button,
@@ -895,11 +895,11 @@ a.cart-menu__cart-button:focus {
   }
 
   .menu-login-cart .user-menu__item a.cart-menu__order-button {
-    background-color: #fecc51;
+    background-color: #e31837;
   }
 
   .menu-login-cart .user-menu__item a.cart-menu__order-button:hover {
-    background-color: #e4b749;
+    background-color: #b6132c;
   }
 
   /* Personal */
@@ -909,17 +909,17 @@ a.cart-menu__cart-button:focus {
   }
 
   .btn-menu-login-click + label:hover:before {
-    background: transparent url(../../../images/sprites.png) -425px -54px no-repeat;
+    background: transparent url(../../../images/sprites.png) -426px -121px no-repeat;
     cursor: pointer;
   }
 
   .user-menu__item > a.menu-login__login:hover:before {
-    background: transparent url(../../../images/sprites.png) -425px -54px no-repeat;
+    background: transparent url(../../../images/sprites.png) -426px -121px no-repeat;
   }
 
   .btn-menu-login-click:checked + label:hover:before {
     margin-top: 1px;
-    background: transparent url(../../../images/sprites.png) -807px -28px no-repeat; /* по Х на 1px меньше */
+    background: transparent url(../../../images/sprites.png) -806px -48px no-repeat; /* по Х на 1px меньше */
   }
 
   .profile-menu__item-info:before,
@@ -945,8 +945,8 @@ a.cart-menu__cart-button:focus {
   }
 
   .search_click_slide > input.btn_close-click + label:hover {
-    border-top: 1px solid #fecc51;
-    border-bottom: 1px solid #fecc51;
+    border-top: 1px solid #e31837;
+    border-bottom: 1px solid #e31837;
   }
 
   /* Cart */
@@ -956,25 +956,30 @@ a.cart-menu__cart-button:focus {
   }
 
   a#cart_dropdown__trigger:hover:before {
-    background: transparent url(../../../images/sprites.png) -475px -77px no-repeat;
+    background: transparent url(../../../images/sprites.png) -475px -144px no-repeat;
   }
 
   /* Bookmarks */
 
   .user-menu__item > a.user-menu__bookmarks:hover:before {
-    background: transparent url(../../../images/sprites.png) -450px -55px no-repeat;
+    background: transparent url(../../../images/sprites.png) -450px -124px no-repeat;
   }
 
   /* Back-to-top */
 
   .back-to-top {
-    background-color: #fecc51;
+    background-color: #e31837;
+    color: #ffffff;
     -webkit-box-shadow: 0 0 10px #333333;
     box-shadow: 0 0 10px #333333;
   }
 
+  .back-to-top:after {
+    background: transparent url(../../../images/sprites.png) -171px -159px no-repeat;
+  }
+
   .back-to-top:hover {
-    background-color: #e4b749;
+    background-color: #b6132c;
     color: #ffffff;
   }
 
@@ -990,18 +995,18 @@ a.cart-menu__cart-button:focus {
   /* Main */
 
   .catalog-main__item .catalog-item__bookmarks-button {
-    color: #fecc51;
-    border: 2px solid #fecc51;
+    color: #e31837;
+    border: 2px solid #e31837;
   }
 
   .catalog-main__item .catalog-item__bookmarks-button:hover {
-    background-color: #e4b749;
+    background-color: #b6132c;
     color: #ffffff;
-    border: 2px solid #e4b749;
+    border: 2px solid #b6132c;
   }
 
   .catalog-main__item .catalog-item__bookmarks-button:before {
-    background: transparent url(../../../images/sprites.png) -451px -55px no-repeat;
+    background: transparent url(../../../images/sprites.png) -451px -124px no-repeat;
   }
 
   .catalog-main__item .catalog-item__bookmarks-button:hover:before {
@@ -1019,7 +1024,7 @@ a.cart-menu__cart-button:focus {
   }
 
   .profile-menu__item-info.active:hover:before {
-    background: transparent url(../../../images/sprites.png) -425px -54px no-repeat;
+    background: transparent url(../../../images/sprites.png) -426px -121px no-repeat;
   }
 
   /* Bookmarks */
