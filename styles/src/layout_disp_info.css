@@ -1827,6 +1827,7 @@
 		width: 145px;
 		height: 42px;
 		text-align: center;
+		vertical-align: bottom;
 		padding-top: 11px;
 		 -webkit-box-sizing: border-box;
 		 -moz-box-sizing: border-box;
