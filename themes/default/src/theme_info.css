@@ -556,6 +556,18 @@ a.purchases-menu__purchases-button:focus{
 
 /* --------------- Sliders --------------- */
 
+.slider-image--1 {
+  background-color: #eb3d01;
+}
+
+.slider-image--2 {
+  background-color: #00c5e0;
+}
+
+.slider-image--3 {
+  background-color: #78c014;
+}
+
 .catalog-slider__nav a:first-child{
 	background: transparent url("images/sprites.png") -1671px -10px no-repeat;
 }
