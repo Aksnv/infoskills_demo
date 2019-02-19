@@ -4917,26 +4917,30 @@ h1 + .pmt-sum {
 
 .user-menu__messages::before {
   display: block;
-  width: 17px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   background-image: url("../../images/sprites.png");
-  background-position: -1818px -33px;
+  background-position: -608px -40px;
 }
 
 .user-menu__messages:hover::before,
 .user-menu__messages.active::before {
-  background-position: -1818px -33px;
+  background-position: -632px -88px;
 }
 
 .profile-menu__item-messages::before {
   width: 20px;
-  height: 17px;
+  height: 19px;
   content: "";
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
   background-image: url("../../images/sprites.png");
-  background-position: -1814px -55px;
+  background-position: -663px -40px;
+}
+
+.profile-menu__item-messages:hover::before {
+  background-position: -664px -92px;
 }
 
 .infoskills-messages {
@@ -5043,13 +5047,13 @@ h1 + .pmt-sum {
   color: black;
 }
 
-.infoskills-messages__header-button--new-message::before {
+/* .infoskills-messages__header-button--new-message::before {
   top: 12px;
   left: 20px;
   width: 20px;
   height: 15px;
   background-position: -109px -360px;
-}
+} */
 
 .infoskills-messages__content {
   clear: both;

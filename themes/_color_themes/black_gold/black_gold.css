@@ -699,6 +699,80 @@ a.cart-menu__cart-button:focus {
   border-left: 1px solid #fecc51;
 }
 
+/* Messages */
+
+.user-menu__messages::before {
+  background-position: -608px -64px;
+}
+
+.user-menu__messages:hover::before,
+.user-menu__messages.active::before {
+  background-position: -608px -87px;
+}
+
+.profile-menu__item-messages:hover::before {
+  background-position: -665px -118px;
+}
+
+.infoskills-messages__header-button:hover {
+  color: #FECC51;
+}
+
+.infoskills-messages__header-button--checked::before {
+  background-color: #FECC51;
+  border: 1px solid #FECC51;
+}
+
+.infoskills-messages__item-flag input[type="checkbox"]:checked + label,
+.infoskills-messages__item-flag input[checked="checked"] + label {
+  background-color: #FECC51;
+}
+
+.infoskills-messages__item-information h2 > a {
+  color: #FECC51;
+}
+
+.infoskills-messages__item-delete button:hover {
+  background-position: -1940px -32px;
+}
+
+.infoskills-messages__button-back a:hover {
+  color: #FECC51;
+}
+
+.infoskills-messages__button-back a:hover::before {
+  background-position: -1609px -61px;
+}
+
+.infoskills-message__show-all-button:hover {
+  color: #FECC51;
+}
+
+.infoskills-message__show-all-button:hover::before {
+  background-position: -1608px -72px;
+}
+
+.infoskills-message__delete-button:hover {
+  background-position: -1940px -32px;
+}
+
+.infoskills-message__item .item-information__text a {
+  color: #FECC51;
+}
+
+.item-information__new {
+  background-color: #FECC51;
+}
+
+.infoskills-message__form textarea:focus {
+  border: 1px solid #FECC51;
+}
+
+.infoskills-message__form-email input[type="checkbox"]:checked + label[for="message-email"]::before {
+  background-color: #FECC51;
+  border: 1px solid #FECC51;
+}
+
 /* Footer */
 
 .footer_pokupo a:hover,

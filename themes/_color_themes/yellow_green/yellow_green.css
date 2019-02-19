@@ -393,7 +393,7 @@ a.cart-menu__cart-button:focus {
 /* Purchases */
 
 .user-menu__purchases:before {
-  background: transparent url(../../../images/sprites.png) -287px -80px no-repeat;
+  background: transparent url(../../../images/sprites.png) -279px -11px no-repeat;
 }
 
 .user-menu__purchases:hover:before {
@@ -714,6 +714,80 @@ a.cart-menu__cart-button:focus {
 
 .main-content_help .main-content_help-answer {
   border-left: 1px solid #00883c;
+}
+
+/* Messages */
+
+.user-menu__messages::before {
+  background-position: -608px -40px;
+}
+
+.user-menu__messages:hover::before,
+.user-menu__messages.active::before {
+  background-position: -632px -64px;
+}
+
+.profile-menu__item-messages:hover::before {
+  background-position: -695px -93px;
+}
+
+.infoskills-messages__header-button:hover {
+  color: #00883C;
+}
+
+.infoskills-messages__header-button--checked::before {
+  background-color: #00883C;
+  border: 1px solid #00883C;
+}
+
+.infoskills-messages__item-flag input[type="checkbox"]:checked + label,
+.infoskills-messages__item-flag input[checked="checked"] + label {
+  background-color: #00883C;
+}
+
+.infoskills-messages__item-information h2 > a {
+  color: #00883C;
+}
+
+.infoskills-messages__item-delete button:hover {
+  background-position: -1940px -32px;
+}
+
+.infoskills-messages__button-back a:hover {
+  color: #00883C;
+}
+
+.infoskills-messages__button-back a:hover::before {
+  background-position: -1609px -61px;
+}
+
+.infoskills-message__show-all-button:hover {
+  color: #00883C;
+}
+
+.infoskills-message__show-all-button:hover::before {
+  background-position: -1608px -72px;
+}
+
+.infoskills-message__delete-button:hover {
+  background-position: -1940px -32px;
+}
+
+.infoskills-message__item .item-information__text a {
+  color: #00883C;
+}
+
+.item-information__new {
+  background-color: #00883C;
+}
+
+.infoskills-message__form textarea:focus {
+  border: 1px solid #00883C;
+}
+
+.infoskills-message__form-email input[type="checkbox"]:checked + label[for="message-email"]::before {
+  background-color: #00883C;
+  border: 1px solid #00883C;
 }
 
 /* Footer */
