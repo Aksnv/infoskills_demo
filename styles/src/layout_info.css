@@ -2362,11 +2362,22 @@ p.user-menu__name{
 
 .product-certificate--is .certificate-inner {
   overflow: hidden;
+  position: relative;
   width: 640px;
   min-height: 565px;
   margin: 0 auto;
   background-color: #f6f6f6;
   color: #000;
+}
+
+.product-certificate--is .certificate-inner::after {
+  position: absolute;
+  right: 13px;
+  bottom: 14px;
+  content: "Сертификат*";
+  font-size: 13px;
+  line-height: 20px;
+  color: #666;
 }
 
 .product-certificate--is .certificate__top {
