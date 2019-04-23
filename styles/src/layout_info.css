@@ -116,6 +116,13 @@ img:focus {
     transition: height 0.3s;
 }
 
+.header__cell img {
+  width: auto;
+  max-width: 130px;
+  height: auto;
+  max-height: 80px;
+}
+
 .menu-main-search{
 	margin-top: 54px;
 	float: left;

@@ -432,16 +432,16 @@ a.cart-menu__cart-button:focus {
 /* Slider */
 
 .slider-image--1 {
-  background-color: #eb3d01;
+  background-color: #797876;
 }
 
 .slider-image--2 {
-  background-color: #00c5e0;
+  background-color: #fecc51;
 }
 
 .slider-image--3 {
-  background-color: #78c014;
-}
+  background-color: #ca9103;
+} 
 
 .slider-pagination__item--active {
   background-color: #fecc51;
