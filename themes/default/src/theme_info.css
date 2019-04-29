@@ -2,6 +2,17 @@
 
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic);
 
+@font-face {
+  font-family: 'fontello';
+  src: url('fonts/fontello.eot');
+  src: url('fonts/fontello.eot') format('embedded-opentype'),
+       url('fonts/fontello.woff2') format('woff2'),
+       url('fonts/fontello.woff') format('woff'),
+       url('fonts/fontello.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
@@ -112,6 +123,38 @@ input[type="text"]:focus{
 	background: #0099cc;	
 }
 
+/* ---------------  --------------- Icon font ---------------  --------------- */
+
+[class*="--icon-font"]:before,
+[class*="--icon-font"] + label:before {
+  font-family: "fontello";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  height: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: none!important;
+  color: #000000;
+}
+
+[class*="--icon-font"]:hover:before,
+[class*="--icon-font"]:focus:before,
+[class*="--icon-font"] + label:hover:before,
+[class*="--icon-font"] + label:focus:before {
+  background: none!important;
+  color: #0099cc;
+}
+
 
 .main_theme{
 	
@@ -181,8 +224,18 @@ input[type="text"]:focus{
 	font-weight: bold;
 }
 
+.btn-menu-click--icon-font + label {
+	line-height: 18px;
+}
+
 .btn-menu-click + label:before, .btn-menu-click:indeterminate + label:before{
 	background: transparent url("images/sprites.png") -10px -10px no-repeat;
+}
+
+.btn-menu-click--icon-font + label:before, .btn-menu-click--icon-font:indeterminate + label:before{
+	content: '\f0c9'!important;
+  background: none;
+  font-size: 18px;
 }
 
 .btn-menu-click + label:hover:before, .btn-menu-click:indeterminate + label:hover:before,
@@ -270,6 +323,13 @@ input[type="text"]:focus{
 	background: transparent url("images/sprites.png") -72px -10px no-repeat;
 }
 
+.btn-search-click--icon-font + label:before{
+	content: '\e804'!important;
+	vertical-align: text-bottom;
+  background: none;
+  font-size: 18px;
+}
+
 .btn-search-click + label:hover:before,
 .btn-search-click + label:focus:before{
 	background: transparent url("images/sprites.png") -101px -10px no-repeat;
@@ -301,15 +361,36 @@ input[type="text"]:focus{
 	border: 0px;
 }
 
+.search-click-slide-holder button.btn_search--icon-font {
+	background: none;
+	text-indent: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.search-click-slide-holder button.btn_search--icon-font:before {
+	content: '\e804'!important;
+  font-size: 18px;
+}
+
 .search-click-slide-holder button.btn_search:hover,
 .search-click-slide-holder button.btn_search:focus{
 	background: transparent url("images/sprites.png") -101px -10px no-repeat;
+}
+
+.search-click-slide-holder button.btn_search--icon-font:hover,
+.search-click-slide-holder button.btn_search--icon-font:focus {
+	background: none;
 }
 
 .btn_close-click + label{
     background: #fff;
     border: 1px solid #d0d4d8;
     border-left: 0;
+}
+
+.btn_close-click--icon-font + label {
+	width: 42px;
 }
 
 .btn_close-click + label:hover,
@@ -320,6 +401,12 @@ input[type="text"]:focus{
 
 .btn_close-click + label:before{
 	background: transparent url("images/sprites.png") -829px -7px no-repeat;
+}
+
+.btn_close-click--icon-font + label:before {
+	content: '\e802'!important;
+  font-size: 20px;
+  background: none;
 }
 
 .btn_close-click + label:hover:before,
@@ -344,6 +431,13 @@ a#cart_dropdown__trigger:before{
 
 a#cart_dropdown__trigger:hover:before{
 	background: transparent url("images/sprites.png") -359px -10px no-repeat;
+}
+
+a#cart_dropdown__trigger.icon__cart--icon-font:before{
+	content: '\e803'!important;
+	vertical-align: baseline!important;
+	font-size: 17px;
+	background: none;
 }
 
 .circles-menu__num{
@@ -456,6 +550,11 @@ a.menu-login__login:focus{
 	background: transparent url("images/sprites.png") -260px -10px no-repeat;
 }
 
+.menu-login__login--icon-font:before{
+	content: '\e801'!important;
+	vertical-align: baseline!important;
+}
+
 a.user-menu__bookmarks:hover,
 a.user-menu__bookmarks:focus{
 	color: #0098cb;	
@@ -490,6 +589,11 @@ a.user-menu__bookmarks:focus{
 	background: transparent url("images/sprites.png") -305px -10px no-repeat;
 }
 
+.user-menu__purchases--icon-font:before{
+	content: '\e805'!important;
+	vertical-align: baseline!important;
+}
+
 .user-menu__bookmarks:before{
 	background: transparent url("images/sprites.png") -1727px -10px no-repeat;
 }
@@ -497,6 +601,11 @@ a.user-menu__bookmarks:focus{
 .user-menu__bookmarks:hover:before,
 .user-menu__bookmarks:focus:before{
 	background: transparent url("images/sprites.png") -1037px -10px no-repeat;
+}
+
+.user-menu__bookmarks--icon-font:before{
+	content: '\e800'!important;
+	vertical-align: baseline!important;
 }
 
 /* --------------- Purchases --------------- */

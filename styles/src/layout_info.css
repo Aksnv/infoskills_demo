@@ -190,10 +190,13 @@ img:focus {
 }
 
 .contact-information {
-  float: right;
+  /* float: right; */
+  position: absolute;
+  top: 5px;
+  right: 10px;
   text-align: right;
-  padding-top: 56px;
-  padding-right: 41px;
+  /* padding-top: 56px;
+  padding-right: 41px; */
 }
 
 .header_theme.sticky .contact-information {
@@ -1028,6 +1031,7 @@ a#cart_dropdown__trigger:before{
 } */
 
 .user-menu__item{
+  position: relative;
 	display: inline-block;
 	padding-right: 15px;
 }
@@ -4772,12 +4776,21 @@ p.user-menu__name{
 
 }
 
+.user-menu__bonuses--icon-font {
+  line-height: 20px;
+}
+
 .user-menu__bonuses::before {
   display: block;
   width: 16px;
   height: 16px;
   background-image: url("../../images/sprites.png");
   background-position: -1872px -31px;
+}
+
+.user-menu__bonuses--icon-font:before {
+  content: '\f295'!important;
+  vertical-align: baseline!important;
 }
 
 .user-menu__bonuses:hover::before,
@@ -4791,6 +4804,12 @@ p.user-menu__name{
   height: 17px;
   background-image: url("../../images/sprites.png");
   background-position: -1842px -32px;
+}
+
+.user-menu__bonuses-registered--icon-font:before {
+  content: '\f283'!important;
+  vertical-align: baseline!important;
+  margin-right: 10px!important;
 }
 
 .user-menu__bonuses-registered:hover::before,
@@ -4944,6 +4963,11 @@ h1 + .pmt-sum {
 .user-menu__messages:hover::before,
 .user-menu__messages.active::before {
   background-position: -632px -88px;
+}
+
+.user-menu__messages--icon-font::before {
+  content: '\f0e0'!important;
+  vertical-align: baseline!important;
 }
 
 .profile-menu__item-messages::before {

@@ -174,8 +174,8 @@
 	}	
 	
 	.menu-login__login{
-		width:8px;
-		height:11px;
+		width:12px;
+		height:12px;
 		overflow: hidden;
 	}
 	
@@ -193,7 +193,7 @@
 
 	.user-menu__bookmarks{
 		overflow: hidden;		
-		width: 9px;
+		width: 12px;
 		height: 12px;
 		display: inline-block;
 	}
